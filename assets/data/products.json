@@ -1,0 +1,934 @@
+[
+    {
+        "id": 1,
+        "name": "Striped Oxford Fun Shirt – Rainbow",
+        "category": [
+            "Áo sơ mi nam"
+        ],
+        "subCategory": [
+            "Oxford Shirt"
+        ],
+        "sold": 45,
+        "size": [
+            "S",
+            "M",
+            "L"
+        ],
+        "form": [
+            "Classic fit"
+        ],
+        "condition": 9,
+        "color": [
+            "Multicolor",
+            "Striped"
+        ],
+        "price": 1650000,
+        "originalPrice": 1980000,
+        "image": "../assets/images/product/sp1.jpg",
+        "isNew": false,
+        "isBestseller": false,
+        "isExclusive": false
+    },
+    {
+        "id": 2,
+        "name": "Stretch Mesh Polo Shirt – Ombre",
+        "category": [
+            "Áo thun nam"
+        ],
+        "subCategory": [
+            "Polo Shirt"
+        ],
+        "sold": 32,
+        "size": [
+            "S",
+            "M",
+            "L",
+            "XL"
+        ],
+        "form": [
+            "Custom (Slim) fit"
+        ],
+        "condition": 9,
+        "color": [
+            "Blue"
+        ],
+        "price": 850000,
+        "originalPrice": 1020000,
+        "image": "../assets/images/product/sp2.jpg",
+        "isNew": false,
+        "isBestseller": false,
+        "isExclusive": true
+    },
+    {
+        "id": 3,
+        "name": "Stretch Mesh Polo Shirt – Royal Blue",
+        "category": [
+            "Áo thun nam"
+        ],
+        "subCategory": [
+            "Polo Shirt"
+        ],
+        "size": [
+            "M",
+            "L",
+            "XL"
+        ],
+        "form": [
+            "Classic fit"
+        ],
+        "condition": 10,
+        "color": [
+            "Blue"
+        ],
+        "price": 950000,
+        "originalPrice": 1140000,
+        "image": "../assets/images/product/sp3.jpg",
+        "isNew": true,
+        "isBestseller": false,
+        "isExclusive": true
+    },
+    {
+        "id": 4,
+        "name": "Stretch Mesh Polo Shirt – Mint Green",
+        "category": [
+            "Áo thun nam"
+        ],
+        "subCategory": [
+            "Polo Shirt"
+        ],
+        "size": [
+            "S",
+            "M",
+            "L"
+        ],
+        "form": [
+            "Custom (Slim) fit"
+        ],
+        "condition": 10,
+        "color": [
+            "Xanh Mint",
+            "Green"
+        ],
+        "price": 1250000,
+        "originalPrice": 1500000,
+        "image": "../assets/images/product/sp4.jpg",
+        "isNew": true,
+        "isBestseller": false,
+        "isExclusive": true
+    },
+    {
+        "id": 5,
+        "name": "Iconic Mesh Polo Shirt – Red",
+        "category": [
+            "Áo thun nam"
+        ],
+        "subCategory": [
+            "Iconic Polo Shirt"
+        ],
+        "size": [
+            "M",
+            "L"
+        ],
+        "form": [
+            "Classic fit"
+        ],
+        "condition": 9,
+        "color": [
+            "Red"
+        ],
+        "price": 1250000,
+        "originalPrice": 1500000,
+        "image": "../assets/images/product/sp5.jpg",
+        "isNew": true,
+        "isBestseller": true,
+        "isExclusive": false
+    },
+    {
+        "id": 6,
+        "name": "Stretch Mesh Polo Shirt – Navy Line Vàng",
+        "category": [
+            "Áo thun nam"
+        ],
+        "subCategory": [
+            "Polo Shirt"
+        ],
+        "size": [
+            "S",
+            "M",
+            "L"
+        ],
+        "form": [
+            "Classic fit"
+        ],
+        "condition": 8,
+        "color": [
+            "Navy"
+        ],
+        "price": 950000,
+        "originalPrice": 1140000,
+        "image": "../assets/images/product/sp6.jpg",
+        "isNew": false,
+        "isBestseller": false,
+        "isExclusive": false
+    },
+    {
+        "id": 7,
+        "name": "Stretch Mesh Polo Shirt – Navy Tipped Collar",
+        "category": [
+            "Áo thun nam"
+        ],
+        "subCategory": [
+            "Polo Shirt"
+        ],
+        "size": [
+            "S",
+            "M",
+            "L",
+            "XL"
+        ],
+        "form": [
+            "Custom (Slim) fit"
+        ],
+        "condition": 9,
+        "color": [
+            "Navy"
+        ],
+        "price": 900000,
+        "originalPrice": 1080000,
+        "image": "../assets/images/product/sp7.jpg",
+        "isNew": false,
+        "isBestseller": false,
+        "isExclusive": false
+    },
+    {
+        "id": 8,
+        "name": "Stretch Mesh Polo Shirt – White Classic",
+        "category": [
+            "Áo thun nam"
+        ],
+        "subCategory": [
+            "Classic Polo Shirt"
+        ],
+        "size": [
+            "M",
+            "L",
+            "XL"
+        ],
+        "form": [
+            "Classic fit"
+        ],
+        "condition": 10,
+        "color": [
+            "White"
+        ],
+        "price": 2200000,
+        "originalPrice": 2640000,
+        "image": "../assets/images/product/sp8.jpg",
+        "isNew": true,
+        "isBestseller": false,
+        "isExclusive": true
+    },
+    {
+        "id": 9,
+        "name": "Iconic Oxford Shirt – White",
+        "category": [
+            "Áo sơ mi nam"
+        ],
+        "subCategory": [
+            "Iconic Oxford Shirt"
+        ],
+        "size": [
+            "S",
+            "M",
+            "L",
+            "XL"
+        ],
+        "form": [
+            "Classic fit"
+        ],
+        "condition": 9,
+        "color": [
+            "White"
+        ],
+        "price": 1850000,
+        "originalPrice": 2220000,
+        "image": "../assets/images/product/sp9.jpg",
+        "isNew": false,
+        "isBestseller": true,
+        "isExclusive": false
+    },
+    {
+        "id": 10,
+        "name": "Garment Oxford Shirt – Blue",
+        "category": [
+            "Áo sơ mi nam"
+        ],
+        "subCategory": [
+            "Garment Oxford Shirt"
+        ],
+        "size": [
+            "M",
+            "L",
+            "XL"
+        ],
+        "form": [
+            "Classic fit"
+        ],
+        "condition": 9,
+        "color": [
+            "Blue"
+        ],
+        "price": 1750000,
+        "originalPrice": 2100000,
+        "image": "../assets/images/product/sp10.jpg",
+        "isNew": false,
+        "isBestseller": false,
+        "isExclusive": false
+    },
+    {
+        "id": 11,
+        "name": "Poplin Shirt – Light Blue",
+        "category": [
+            "Áo sơ mi nam"
+        ],
+        "subCategory": [
+            "Poplin Shirt"
+        ],
+        "size": [
+            "S",
+            "M",
+            "L"
+        ],
+        "form": [
+            "Custom (Slim) fit"
+        ],
+        "condition": 10,
+        "color": [
+            "Blue"
+        ],
+        "price": 1650000,
+        "originalPrice": 1980000,
+        "image": "../assets/images/product/sp1.jpg",
+        "isNew": true,
+        "isBestseller": false,
+        "isExclusive": false
+    },
+    {
+        "id": 12,
+        "name": "Linen Shirt – Cream",
+        "category": [
+            "Áo sơ mi nam"
+        ],
+        "subCategory": [
+            "Linen Shirt"
+        ],
+        "size": [
+            "M",
+            "L",
+            "XL"
+        ],
+        "form": [
+            "Classic fit"
+        ],
+        "condition": 9,
+        "color": [
+            "Cream"
+        ],
+        "price": 1950000,
+        "originalPrice": 2340000,
+        "image": "../assets/images/product/1.3.jpg",
+        "isNew": true,
+        "isBestseller": false,
+        "isExclusive": false
+    },
+    {
+        "id": 13,
+        "name": "Seersucker Shirt – Striped Blue",
+        "category": [
+            "Áo sơ mi nam"
+        ],
+        "subCategory": [
+            "Seersucker Shirt"
+        ],
+        "size": [
+            "S",
+            "M",
+            "L"
+        ],
+        "form": [
+            "Classic fit"
+        ],
+        "condition": 8,
+        "color": [
+            "Striped",
+            "Blue"
+        ],
+        "price": 1550000,
+        "originalPrice": 1860000,
+        "image": "../assets/images/product/1.4.jpg",
+        "isNew": false,
+        "isBestseller": false,
+        "isExclusive": false
+    },
+    {
+        "id": 14,
+        "name": "Twill Cotton Shirt – Navy",
+        "category": [
+            "Áo sơ mi nam"
+        ],
+        "subCategory": [
+            "Twill Cotton Shirt"
+        ],
+        "size": [
+            "M",
+            "L",
+            "XL",
+            "XXL"
+        ],
+        "form": [
+            "Classic fit"
+        ],
+        "condition": 9,
+        "color": [
+            "Navy"
+        ],
+        "price": 2100000,
+        "originalPrice": 2520000,
+        "image": "../assets/images/product/1.5.jpg",
+        "isNew": false,
+        "isBestseller": true,
+        "isExclusive": false
+    },
+    {
+        "id": 15,
+        "name": "Flannel Shirt – Plaid Red",
+        "category": [
+            "Áo sơ mi nam"
+        ],
+        "subCategory": [
+            "Flannel Shirt"
+        ],
+        "size": [
+            "S",
+            "M",
+            "L",
+            "XL"
+        ],
+        "form": [
+            "Custom (Slim) fit"
+        ],
+        "condition": 8,
+        "color": [
+            "Plaid",
+            "Red"
+        ],
+        "price": 1450000,
+        "originalPrice": 1740000,
+        "image": "../assets/images/product/1.4.jpg",
+        "isNew": false,
+        "isBestseller": false,
+        "isExclusive": false
+    },
+    {
+        "id": 16,
+        "name": "Denim Shirt – Indigo",
+        "category": [
+            "Áo sơ mi nam"
+        ],
+        "subCategory": [
+            "Denim Shirt"
+        ],
+        "size": [
+            "M",
+            "L",
+            "XL"
+        ],
+        "form": [
+            "Classic fit"
+        ],
+        "condition": 9,
+        "color": [
+            "Indigo",
+            "Blue"
+        ],
+        "price": 2200000,
+        "originalPrice": 2640000,
+        "image": "../assets/images/product/1.2.jpg",
+        "isNew": true,
+        "isBestseller": false,
+        "isExclusive": true
+    },
+    {
+        "id": 17,
+        "name": "Classic Harrington Jacket",
+        "category": [
+            "Áo khoác nam"
+        ],
+        "subCategory": [
+            "Harrington Jacket"
+        ],
+        "size": [
+            "M",
+            "L",
+            "XL"
+        ],
+        "form": [
+            "Classic fit"
+        ],
+        "condition": 10,
+        "color": [
+            "Navy"
+        ],
+        "price": 2850000,
+        "originalPrice": 3420000,
+        "image": "../assets/images/product/sp1.jpg",
+        "isNew": true,
+        "isBestseller": false,
+        "isExclusive": false,
+        "stockStatus": "in-stock"
+    },
+    {
+        "id": 18,
+        "name": "Water-Repellent Puffer Jacket",
+        "category": [
+            "Áo khoác nam"
+        ],
+        "subCategory": [
+            "Down/Puffer"
+        ],
+        "size": [
+            "S",
+            "M",
+            "L"
+        ],
+        "form": [
+            "Regular fit"
+        ],
+        "condition": 9,
+        "color": [
+            "Black"
+        ],
+        "price": 3500000,
+        "originalPrice": 4200000,
+        "image": "../assets/images/product/sp2.jpg",
+        "isNew": false,
+        "isBestseller": true,
+        "isExclusive": false,
+        "stockStatus": "out-of-stock"
+    },
+    {
+        "id": 19,
+        "name": "Modern Sport Coat Blazer",
+        "category": [
+            "Áo khoác nam"
+        ],
+        "subCategory": [
+            "Sport Coat/Blazer"
+        ],
+        "size": [
+            "L",
+            "XL"
+        ],
+        "form": [
+            "Slim fit"
+        ],
+        "condition": 10,
+        "color": [
+            "Grey"
+        ],
+        "price": 4500000,
+        "originalPrice": 5400000,
+        "image": "../assets/images/product/sp3.jpg",
+        "isNew": true,
+        "isBestseller": false,
+        "isExclusive": true,
+        "stockStatus": "in-stock"
+    },
+    {
+        "id": 20,
+        "name": "Trucker Denim Jacket",
+        "category": [
+            "Áo khoác nam"
+        ],
+        "subCategory": [
+            "Trucker/Denim"
+        ],
+        "size": [
+            "S",
+            "M",
+            "L",
+            "XL"
+        ],
+        "form": [
+            "Classic fit"
+        ],
+        "condition": 9,
+        "color": [
+            "Blue"
+        ],
+        "price": 1950000,
+        "originalPrice": 2340000,
+        "image": "../assets/images/product/sp4.jpg",
+        "isNew": false,
+        "isBestseller": false,
+        "isExclusive": false,
+        "stockStatus": "in-stock"
+    },
+    {
+        "id": 21,
+        "name": "Military Bomber Jacket",
+        "category": [
+            "Áo khoác nam"
+        ],
+        "subCategory": [
+            "Military",
+            "Bomber/Varsity"
+        ],
+        "size": [
+            "M",
+            "L"
+        ],
+        "form": [
+            "Regular fit"
+        ],
+        "condition": 8,
+        "color": [
+            "Olive",
+            "Green"
+        ],
+        "price": 2200000,
+        "originalPrice": 2640000,
+        "image": "../assets/images/product/sp5.jpg",
+        "isNew": false,
+        "isBestseller": false,
+        "isExclusive": false,
+        "stockStatus": "out-of-stock"
+    },
+    {
+        "id": 22,
+        "name": "Genuine Leather Biker Jacket",
+        "category": [
+            "Áo khoác nam"
+        ],
+        "subCategory": [
+            "Leather"
+        ],
+        "size": [
+            "L",
+            "XL",
+            "XXL"
+        ],
+        "form": [
+            "Classic fit"
+        ],
+        "condition": 10,
+        "color": [
+            "Brown",
+            "Black"
+        ],
+        "price": 5500000,
+        "originalPrice": 6600000,
+        "image": "../assets/images/product/sp6.jpg",
+        "isNew": true,
+        "isBestseller": false,
+        "isExclusive": true,
+        "stockStatus": "in-stock"
+    },
+    {
+        "id": 23,
+        "name": "Classic Fit Checked Shirt",
+        "category": [
+            "Áo sơ mi nam"
+        ],
+        "subCategory": [
+            "Flannel Shirt"
+        ],
+        "size": [
+            "M",
+            "L",
+            "XL"
+        ],
+        "form": [
+            "Classic fit"
+        ],
+        "condition": 10,
+        "color": [
+            "Blue",
+            "Plaid"
+        ],
+        "price": 1450000,
+        "originalPrice": 1800000,
+        "image": "../assets/images/product/sp1.jpg",
+        "isNew": true,
+        "isBestseller": true,
+        "stockStatus": "in-stock",
+        "rating": 5
+    },
+    {
+        "id": 24,
+        "name": "Windbreaker Lightweight Jacket",
+        "category": [
+            "Áo khoác nam"
+        ],
+        "subCategory": [
+            "Windbreaker"
+        ],
+        "size": [
+            "S",
+            "M",
+            "L"
+        ],
+        "form": [
+            "Regular fit"
+        ],
+        "condition": 9,
+        "color": [
+            "Yellow",
+            "Black"
+        ],
+        "price": 1250000,
+        "originalPrice": 1550000,
+        "image": "../assets/images/product/sp2.jpg",
+        "isNew": false,
+        "isBestseller": false,
+        "stockStatus": "in-stock",
+        "rating": 4.2
+    },
+    {
+        "id": 25,
+        "name": "Premium Cotton V-Neck Tee",
+        "category": [
+            "Áo thun nam"
+        ],
+        "subCategory": [
+            "T-Shirt"
+        ],
+        "size": [
+            "S",
+            "M",
+            "L",
+            "XL"
+        ],
+        "form": [
+            "Custom (Slim) fit"
+        ],
+        "condition": 10,
+        "color": [
+            "Grey"
+        ],
+        "price": 450000,
+        "originalPrice": 600000,
+        "image": "../assets/images/product/sp4.jpg",
+        "isNew": true,
+        "isBestseller": true,
+        "stockStatus": "in-stock",
+        "rating": 4.8
+    },
+    {
+        "id": 26,
+        "name": "Cashmere V-Neck Sweater",
+        "category": [
+            "Áo len nam"
+        ],
+        "subCategory": [
+            "Sweater"
+        ],
+        "size": [
+            "M",
+            "L"
+        ],
+        "form": [
+            "Classic fit"
+        ],
+        "condition": 10,
+        "color": [
+            "Brown",
+            "Beige"
+        ],
+        "price": 2450000,
+        "originalPrice": 3100000,
+        "image": "../assets/images/product/sp5.jpg",
+        "isNew": true,
+        "isBestseller": false,
+        "stockStatus": "in-stock",
+        "rating": 5
+    },
+    {
+        "id": 27,
+        "name": "Cable-Knit Cardigan",
+        "category": [
+            "Áo len nam"
+        ],
+        "subCategory": [
+            "Cardigan"
+        ],
+        "size": [
+            "L",
+            "XL"
+        ],
+        "form": [
+            "Regular fit"
+        ],
+        "condition": 9,
+        "color": [
+            "Navy"
+        ],
+        "price": 1850000,
+        "originalPrice": 2200000,
+        "image": "../assets/images/product/sp6.jpg",
+        "isNew": false,
+        "isBestseller": true,
+        "stockStatus": "out-of-stock",
+        "rating": 4.5
+    },
+    {
+        "id": 28,
+        "name": "Slim Fit Stretch Jeans",
+        "category": [
+            "Quần nam"
+        ],
+        "subCategory": [
+            "Jeans"
+        ],
+        "size": [
+            "29",
+            "30",
+            "31",
+            "32"
+        ],
+        "form": [
+            "Slim fit"
+        ],
+        "condition": 9.5,
+        "color": [
+            "Light Blue"
+        ],
+        "price": 1200000,
+        "originalPrice": 1500000,
+        "image": "../assets/images/product/sp8.jpg",
+        "isNew": true,
+        "isBestseller": true,
+        "stockStatus": "in-stock",
+        "rating": 4.7
+    },
+    {
+        "id": 29,
+        "name": "Straight Fit Chino Pants",
+        "category": [
+            "Quần nam"
+        ],
+        "subCategory": [
+            "Chinos"
+        ],
+        "size": [
+            "30",
+            "32",
+            "34"
+        ],
+        "form": [
+            "Classic fit"
+        ],
+        "condition": 10,
+        "color": [
+            "Khaki",
+            "Beige"
+        ],
+        "price": 950000,
+        "originalPrice": 1200000,
+        "image": "../assets/images/product/sp9.jpg",
+        "isNew": false,
+        "isBestseller": false,
+        "stockStatus": "in-stock",
+        "rating": 4.3
+    },
+    {
+        "id": 30,
+        "name": "Leather Heritage Sneakers",
+        "category": [
+            "Giày nam"
+        ],
+        "subCategory": [
+            "Sneakers"
+        ],
+        "size": [
+            "40",
+            "41",
+            "42",
+            "43"
+        ],
+        "form": [
+            "Standard"
+        ],
+        "condition": 10,
+        "color": [
+            "White",
+            "Green"
+        ],
+        "price": 3200000,
+        "originalPrice": 3800000,
+        "image": "../assets/images/product/sp10.jpg",
+        "isNew": true,
+        "isBestseller": true,
+        "stockStatus": "in-stock",
+        "rating": 4.9
+    },
+    {
+        "id": 31,
+        "name": "Classic Suede Loafers",
+        "category": [
+            "Giày nam"
+        ],
+        "subCategory": [
+            "Loafers"
+        ],
+        "size": [
+            "39",
+            "40",
+            "41",
+            "42"
+        ],
+        "form": [
+            "Standard"
+        ],
+        "condition": 9,
+        "color": [
+            "Brown"
+        ],
+        "price": 4500000,
+        "originalPrice": 5200000,
+        "image": "../assets/images/product/sp3.jpg",
+        "isNew": false,
+        "isBestseller": false,
+        "stockStatus": "out-of-stock",
+        "rating": 4.6
+    },
+    {
+        "id": 32,
+        "name": "Brogue Oxford Shoes",
+        "category": [
+            "Giày nam"
+        ],
+        "subCategory": [
+            "Formal Shoes"
+        ],
+        "size": [
+            "40",
+            "41",
+            "42"
+        ],
+        "form": [
+            "Standard"
+        ],
+        "condition": 10,
+        "color": [
+            "Black"
+        ],
+        "price": 5800000,
+        "originalPrice": 6500000,
+        "image": "../assets/images/product/sp1.jpg",
+        "isNew": true,
+        "isBestseller": false,
+        "stockStatus": "in-stock",
+        "rating": 5
+    }
+]

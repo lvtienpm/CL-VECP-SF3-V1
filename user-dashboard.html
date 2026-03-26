@@ -1,0 +1,2709 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Fastkart">
+    <meta name="keywords" content="Fastkart">
+    <meta name="author" content="Fastkart">
+    <link rel="icon" href="../assets/images/favicon/1.png" type="image/x-icon">
+    <title>On-demand last-mile delivery</title>
+
+    <!-- Google font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com/">
+    <link href="https://fonts.googleapis.com/css2?family=Russo+One&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;500;600;700;800;900&amp;display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap">
+
+    <!-- bootstrap css -->
+    <link id="rtl-link" rel="stylesheet" type="text/css" href="../assets/css/vendors/bootstrap.css">
+
+    <!-- Iconly css -->
+    <link rel="stylesheet" type="text/css" href="../assets/css/bulk-style.css">
+
+    <!-- Template css -->
+    <link id="color-link" rel="stylesheet" type="text/css" href="../assets/css/style.css">
+</head>
+
+<body class="theme-color-5">
+
+    <!-- Loader Start -->
+    <div class="fullpage-loader">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <!-- Loader End -->
+
+    <!-- Header Start -->
+    <header class="">
+        <div class="header-top">
+            <div class="container-fluid-lg">
+                <div class="row">
+                    <div class="col-xxl-3 col-lg-3 d-sm-block d-none">
+                        <div class="top-left-header">
+                            <i class="fa-solid fa-phone text-white me-2"></i>
+                            <span class="text-white">Hotline: 0788335558</span>
+                        </div>
+                    </div>
+
+                    <div class="col-xxl-6 col-lg-6 col-sm-9 col-12">
+                        <div class="header-search-box">
+                            <div class="search-box">
+                                <div class="input-group">
+                                    <input type="search" class="form-control" placeholder="Tìm kiếm sản phẩm...">
+                                    <button class="btn search-button" type="button">
+                                        <i class="fa-solid fa-magnifying-glass"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xxl-3 col-lg-3 d-sm-block d-none">
+                        <ul class="about-list right-nav-about">
+                            <li class="right-nav-list">
+                                <a href="https://www.facebook.com/" title="Facebook">
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M10.2464 3.72483H11.4496V1.68963C10.8671 1.62905 10.2817 1.59915 9.69604 1.60003C7.95524 1.60003 6.76485 2.66243 6.76485 4.60803V6.28482H4.80005V8.56322H6.76485V14.4H9.12004V8.56322H11.0784L11.3728 6.28482H9.12004V4.83203C9.12004 4.16003 9.29924 3.72483 10.2464 3.72483Z"
+                                            fill="#fff"></path>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="right-nav-list">
+                                <a href="https://shopee.vn/" title="Shopee">
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M5.54698 5.17217H2.9581C2.65211 5.17217 2.3805 5.42659 2.40113 5.73258L2.92372 12.9732C2.97873 13.7571 3.46694 14.4 4.38834 14.4H11.794C12.6226 14.4 13.1933 13.8808 13.2586 12.9732L13.7778 5.72914C13.8018 5.42315 13.5268 5.17217 13.2208 5.17217H10.6353C10.5563 4.29546 10.3122 3.5047 9.96148 2.8996C9.4939 2.09852 8.83723 1.6 8.09116 1.6C7.3451 1.6 6.68499 2.09508 6.22084 2.8996C5.87016 3.50814 5.62605 4.29546 5.54698 5.17217ZM9.98211 5.17217H6.19334C6.27241 4.41579 6.4787 3.73849 6.77781 3.22622C7.1285 2.62111 7.59264 2.24636 8.09116 2.24636C8.58625 2.24636 9.05383 2.62111 9.39764 3.22278C9.69675 3.73849 9.90647 4.41236 9.98211 5.17217ZM6.14177 11.4948C6.05925 11.6151 6.09019 11.7767 6.21053 11.8593C6.30336 11.9246 6.39275 11.9796 6.4787 12.0277C7.16632 12.4472 7.81955 12.6535 8.37996 12.6535C8.97819 12.65 9.46983 12.4162 9.78958 11.9452C9.7915 11.942 9.79354 11.9386 9.79572 11.9349C9.80525 11.9188 9.81748 11.8982 9.83427 11.873C9.92366 11.7286 9.98899 11.5808 10.0302 11.4329C10.1231 11.1029 10.1059 10.7659 9.96836 10.4462C9.83427 10.1368 9.58329 9.85141 9.20854 9.6245C8.98163 9.48697 8.70658 9.37008 8.3834 9.27725C7.78517 9.10878 7.35541 8.89218 7.14913 8.6137C6.97034 8.37303 6.96691 8.05673 7.18694 7.65447C7.31759 7.41381 7.61327 7.26253 8.00177 7.23159C8.40746 7.20064 8.89567 7.30035 9.40795 7.56164C9.5386 7.6304 9.69331 7.57883 9.76207 7.44819C9.83083 7.31754 9.77926 7.15939 9.64862 7.09406C9.04695 6.78807 8.4556 6.67118 7.96395 6.709C7.39323 6.75369 6.94284 7.00467 6.7228 7.40693C6.39275 8.01547 6.41681 8.51743 6.72624 8.93344C7.00816 9.31163 7.53075 9.59355 8.239 9.79296C8.51748 9.8686 8.74784 9.9683 8.93349 10.0818C9.21198 10.2502 9.39076 10.4531 9.48359 10.6628C9.56954 10.8622 9.57985 11.0822 9.51797 11.2954C9.48702 11.3985 9.44233 11.5051 9.38044 11.6048C9.37868 11.6101 9.37421 11.6163 9.36842 11.6243C9.36291 11.632 9.35621 11.6412 9.3495 11.653C9.1329 11.9727 8.79253 12.1309 8.37308 12.1309C7.90894 12.1309 7.35197 11.9486 6.74687 11.5808C6.66092 11.5292 6.58184 11.4776 6.5062 11.4261C6.38587 11.3435 6.22428 11.3745 6.14177 11.4948Z"
+                                            fill="#fff"></path>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="right-nav-list">
+                                <a href="https://tiktok.com/" title="Tiktok">
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M13.7289 7.08739V4.8531C12.6825 4.8531 11.884 4.57381 11.3687 4.03097C10.8398 3.41145 10.5435 2.62689 10.5308 1.81241V1.65113L8.41846 1.59999V10.6749C8.346 11.0708 8.1538 11.435 7.86781 11.7182C7.58182 12.0015 7.21581 12.1902 6.81919 12.2588C6.42256 12.3274 6.01443 12.2727 5.64988 12.1021C5.28533 11.9314 4.98193 11.653 4.78062 11.3044C4.57931 10.9559 4.48979 10.5539 4.52416 10.1529C4.55852 9.75185 4.7151 9.371 4.97277 9.06176C5.23044 8.75252 5.57678 8.52979 5.96505 8.42362C6.35332 8.31746 6.76481 8.33298 7.14397 8.46809V6.3046C6.9229 6.26838 6.69928 6.24996 6.47526 6.24953C5.66925 6.24953 4.88135 6.48854 4.21118 6.93633C3.54101 7.38413 3.01868 8.02059 2.71023 8.76524C2.40179 9.50989 2.32109 10.3293 2.47833 11.1198C2.63557 11.9103 3.0237 12.6365 3.59363 13.2064C4.16356 13.7763 4.8897 14.1644 5.68022 14.3217C6.47074 14.4789 7.29013 14.3982 8.03478 14.0898C8.77943 13.7813 9.41589 13.259 9.86369 12.5888C10.3115 11.9187 10.5505 11.1308 10.5505 10.3248C10.55 10.1578 10.5395 9.99093 10.519 9.82519V6.22593C11.4795 6.82579 12.5971 7.12571 13.7289 7.08739Z"
+                                            fill="#fff"></path>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="right-nav-list">
+                                <a href="https://www.youtube.com/" title="Youtube">
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M14.397 6.36989C14.4258 5.53763 14.2438 4.7116 13.8679 3.96849C13.6129 3.66358 13.259 3.45781 12.8678 3.38704C11.2499 3.24024 9.62537 3.18007 8.00106 3.20679C6.38268 3.17886 4.76396 3.23709 3.15176 3.38123C2.83302 3.43921 2.53805 3.58871 2.30284 3.8115C1.77954 4.29411 1.72139 5.11977 1.66325 5.81751C1.57889 7.07203 1.57889 8.33079 1.66325 9.58531C1.68007 9.97803 1.73854 10.3678 1.83768 10.7482C1.90779 11.0419 2.04963 11.3136 2.25051 11.539C2.48732 11.7736 2.78916 11.9316 3.11687 11.9925C4.37043 12.1473 5.63352 12.2114 6.89631 12.1844C8.93139 12.2135 10.7164 12.1844 12.8271 12.0216C13.1629 11.9644 13.4732 11.8062 13.7167 11.5681C13.8795 11.4052 14.0011 11.2059 14.0714 10.9866C14.2794 10.3485 14.3815 9.68073 14.3738 9.00968C14.397 8.68406 14.397 6.71876 14.397 6.36989ZM6.68698 9.35855V5.75936L10.1292 7.56768C9.16397 8.10261 7.89059 8.70732 6.68698 9.35855Z"
+                                            fill="#fff"></path>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="top-nav top-header sticky-header">
+            <div class="container-fluid-lg">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="navbar-top">
+                            <button class="navbar-toggler d-xl-none d-inline navbar-menu-button me-2" type="button"
+                                data-bs-toggle="offcanvas" data-bs-target="#primaryMenu">
+                                <span class="navbar-toggler-icon">
+                                    <i class="fa-solid fa-bars"></i>
+                                </span>
+                            </button>
+                            <a href="index-6.html" class="web-logo nav-logo">
+                                <img src="../assets/images/logo/logo1.svg" class="img-fluid main-logo" alt="logo">
+
+                                <img src="../assets/images/logo/logo2-white.svg" class="img-fluid sticky-logo"
+                                    alt="logo">
+                            </a>
+
+                            <div class="header-nav-middle">
+                                <div class="main-nav navbar navbar-expand-xl navbar-light navbar-sticky">
+                                    <div class="offcanvas offcanvas-collapse order-xl-2" id="primaryMenu">
+                                        <div class="offcanvas-header navbar-shadow">
+                                            <h5>Menu</h5>
+                                            <button class="btn-close lead" type="button"
+                                                data-bs-dismiss="offcanvas"></button>
+                                        </div>
+                                        <div class="offcanvas-body">
+                                            <ul class="navbar-nav">
+                                                <li class="nav-item dropdown">
+                                                    <a class="nav-link dropdown-toggle current"
+                                                        href="javascript:void(0)" data-bs-toggle="dropdown">Nam</a>
+                                                    <ul class="dropdown-menu">
+                                                        <li>
+                                                            <a class="dropdown-item" href="men-shirt-fashion.html">Áo sơ
+                                                                mi nam</a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="dropdown-item" href="men-jacket-fashion.html">Áo
+                                                                khoác nam</a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="dropdown-item" href="men-t-shirt-fashion.html">Áo
+                                                                thun
+                                                                nam</a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="dropdown-item" href="men-sweater-fashion.html">Áo
+                                                                len nam</a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="dropdown-item" href="men-pants-fashion.html">Quần
+                                                                nam</a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="dropdown-item" href="men-shoes-fashion.html">Giày
+                                                                nam</a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+
+                                                <li class="nav-item dropdown">
+                                                    <a class="nav-link dropdown-toggle current"
+                                                        href="javascript:void(0)" data-bs-toggle="dropdown">Nữ</a>
+                                                    <ul class="dropdown-menu">
+                                                        <li>
+                                                            <a class="dropdown-item" href="women-jacket-fashion.html">Áo
+                                                                khoác nữ</a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="dropdown-item" href="women-shirt-fashion.html">Áo
+                                                                nữ</a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="dropdown-item"
+                                                                href="women-pants-fashion.html">Quần
+                                                                nữ</a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="dropdown-item" href="women-dress-fashion.html">Váy
+                                                                nữ</a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="dropdown-item"
+                                                                href="women-shoes-fashion.html">Giày
+                                                                nữ</a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+
+                                                <li class="nav-item">
+                                                    <a class="nav-link ps-xl-2 ps-0" href="kid-fashion.html">Trẻ
+                                                        em</a>
+                                                </li>
+
+                                                <li class="nav-item">
+                                                    <a class="nav-link ps-xl-2 ps-0" href="sale-fashion.html">Sale</a>
+                                                </li>
+
+                                                <li class="nav-item">
+                                                    <a class="nav-link ps-xl-2 ps-0" href="accessories-fashion.html">Phụ
+                                                        kiện</a>
+                                                </li>
+
+                                                <li class="nav-item">
+                                                    <a class="nav-link" href="blog-grid.html">Tin tức</a>
+                                                </li>
+
+                                                <li class="nav-item">
+                                                    <a class="nav-link" href="contact-us.html">Liên hệ</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="rightside-box">
+                                <ul class="right-side-menu">
+                                    <div class="search-full">
+                                        <div class="input-group">
+                                            <span class="input-group-text btn">
+                                                <i class="fa-solid fa-search font-light"></i>
+                                            </span>
+                                            <input type="text" class="form-control search-type"
+                                                placeholder="Tìm kiếm..">
+                                            <span class="input-group-text close-search">
+                                                <i data-feather="x" class="font-light"></i>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <li class="right-side">
+                                        <div class="delivery-login-box">
+                                            <div class="delivery-icon">
+                                                <div class="search-box btn p-0">
+                                                    <i class="fa-solid fa-search"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="right-side">
+                                        <a href="wishlist.html" class="btn p-0 position-relative header-wishlist">
+                                            <i class="fa-regular fa-heart"></i>
+                                        </a>
+                                    </li>
+                                    <li class="right-side">
+                                        <div class="onhover-dropdown header-badge">
+                                            <button type="button"
+                                                class="btn p-0 position-relative header-wishlist header-cart">
+                                                <i class="fa-solid fa-cart-shopping"></i>
+                                                <span
+                                                    class="position-absolute top-0 start-100 translate-middle badge cart-count">2
+                                                    <span class="visually-hidden">tin nhắn chưa đọc</span>
+                                                </span>
+                                            </button>
+
+                                            <div class="onhover-div">
+                                                <ul class="cart-list">
+                                                    <!-- Sản phẩm 1: Áo Oxford Rainbow -->
+                                                    <li class="product-box-contain">
+                                                        <div class="drop-cart">
+                                                            <a href="product-left-thumbnail.html" class="drop-image">
+                                                                <img src="../assets/images/product/sp1.jpg"
+                                                                    class="blur-up lazyloaded"
+                                                                    alt="Striped Oxford Fun Shirt">
+                                                            </a>
+
+                                                            <div class="drop-contain">
+                                                                <a href="product-left-thumbnail.html">
+                                                                    <h5>Striped Oxford Fun Shirt – Rainbow</h5>
+                                                                </a>
+                                                                <h6><span>1 x</span> 650.000 VNĐ</h6>
+                                                                <button class="close-button close_button">
+                                                                    <i class="fa-solid fa-xmark"></i>
+                                                                </button>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+
+                                                    <!-- Sản phẩm 2: Quần Chinos -->
+                                                    <li class="product-box-contain">
+                                                        <div class="drop-cart">
+                                                            <a href="product-left-thumbnail.html" class="drop-image">
+                                                                <img src="../assets/images/product/sp2.jpg"
+                                                                    class="blur-up lazyloaded" alt="Quần Chinos">
+                                                            </a>
+
+                                                            <div class="drop-contain">
+                                                                <a href="product-left-thumbnail.html">
+                                                                    <h5>Quần Chinos Slim-fit Cao Cấp</h5>
+                                                                </a>
+                                                                <h6><span>1 x</span> 550.000 VNĐ</h6>
+                                                                <button class="close-button close_button">
+                                                                    <i class="fa-solid fa-xmark"></i>
+                                                                </button>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+
+                                                <div class="price-box">
+                                                    <h5>Tổng cộng :</h5>
+                                                    <h4 class="theme-color fw-bold cart-total-price">1.200.000 VNĐ</h4>
+                                                </div>
+
+                                                <div class="button-group">
+                                                    <a href="cart.html" class="btn btn-sm cart-button">Xem giỏ hàng</a>
+                                                    <a href="checkout.html"
+                                                        class="btn btn-sm cart-button theme-bg-color text-white">Thanh
+                                                        toán</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="right-side onhover-dropdown">
+                                        <div class="delivery-login-box  gap-3">
+                                            <div class="delivery-icon">
+                                                <i class="fa-solid fa-user"></i>
+                                            </div>
+                                            <div class="delivery-detail">
+                                                <h6>Xin chào,</h6>
+                                                <h5>Nguyễn Văn A</h5>
+                                            </div>
+                                        </div>
+
+                                        <div class="onhover-div onhover-div-login">
+                                            <ul class="user-box-name">
+                                                <li class="product-box-contain">
+                                                    <i></i>
+                                                    <a href="login.html">Đăng nhập</a>
+                                                </li>
+
+                                                <li class="product-box-contain">
+                                                    <a href="sign-up.html">Đăng ký</a>
+                                                </li>
+
+                                                <li class="product-box-contain">
+                                                    <a href="forgot.html">Quên mật khẩu</a>
+                                                </li>
+
+                                                <li class="product-box-contain">
+                                                    <a href="user-dashboard.html">Thông tin tài khoản</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Header End -->
+
+    <!-- mobile fix menu start -->
+    <div class="mobile-menu d-md-none d-block mobile-cart">
+        <ul>
+            <li class="active">
+                <a href="index-6.html">
+                    <i class="fa-solid fa-house"></i>
+                    <span>Trang chủ</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="wishlist.html" class="notifi-wishlist">
+                    <i class="fa-solid fa-heart"></i>
+                    <span>Yêu thích</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="cart.html">
+                    <i class="fa-solid fa-cart-shopping fly-cate"></i>
+                    <span>Giỏ hàng</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <!-- mobile fix menu end -->
+
+    <!-- Breadcrumb Section Start -->
+    <section class="breadcrumb-section pt-0">
+        <div class="container-fluid-lg border-nav">
+            <div class="breadcrumb-contain">
+                <nav>
+                    <ol class="breadcrumb mb-0">
+                        <li class="breadcrumb-item">
+                            <a href="index-6.html">
+                                <i class="fa-solid fa-house"></i>
+                            </a>
+                        </li>
+                        <li class="breadcrumb-item active">
+                            <a href="#">
+                                Quản lý tài khoản
+                            </a>
+                        </li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+    </section>
+    <!-- Breadcrumb Section End -->
+
+    <!-- User Dashboard Section Start -->
+    <section class="user-dashboard-section section-b-space">
+        <div class="container-fluid-lg">
+            <div class="row">
+                <div class="col-xxl-3 col-lg-4">
+                    <div class="dashboard-left-sidebar">
+                        <!-- Nút đóng sidebar trên thiết bị di động -->
+                        <div class="close-button d-flex d-lg-none">
+                            <button class="close-sidebar">
+                                <i class="fa-solid fa-xmark"></i>
+                            </button>
+                        </div>
+
+                        <!-- Khung ảnh bìa và ảnh đại diện -->
+                        <div class="profile-box">
+                            <div class="profile-contain">
+                                <div class="profile-image">
+                                    <div class="position-relative">
+                                        <img src="../assets/images/avatar.png" class="blur-up lazyload update_img"
+                                            alt="Ảnh đại diện">
+                                        <div class="cover-icon">
+                                            <i class="fa-solid fa-pen">
+                                                <input type="file" onchange="readURL(this,0)">
+                                            </i>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="profile-name">
+                                    <h3>Nguyễn Văn An</h3>
+                                    <h6 class="text-content">an.nguyen@gmail.com</h6>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Danh sách menu điều hướng -->
+                        <ul class="nav nav-pills user-nav-pills" id="pills-tab" role="tablist">
+                            <!-- Tổng quan -->
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link active" id="pills-dashboard-tab" data-bs-toggle="pill"
+                                    data-bs-target="#pills-dashboard" type="button"><i data-feather="home"></i>
+                                    Tổng quan</button>
+                            </li>
+
+                            <!-- Đơn hàng -->
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="pills-order-tab" data-bs-toggle="pill"
+                                    data-bs-target="#pills-order" type="button"><i data-feather="shopping-bag"></i>Đơn
+                                    hàng của tôi</button>
+                            </li>
+
+                            <!-- Danh sách yêu thích -->
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="pills-wishlist-tab" data-bs-toggle="pill"
+                                    data-bs-target="#pills-wishlist" type="button"><i data-feather="heart"></i>
+                                    Danh sách yêu thích</button>
+                            </li>
+
+                            <!-- Thẻ đã lưu -->
+                            <!-- <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="pills-card-tab" data-bs-toggle="pill"
+                                    data-bs-target="#pills-card" type="button" role="tab"><i
+                                        data-feather="credit-card"></i> Thẻ đã lưu</button>
+                            </li> -->
+
+                            <!-- Địa chỉ nhận hàng -->
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="pills-address-tab" data-bs-toggle="pill"
+                                    data-bs-target="#pills-address" type="button" role="tab"><i
+                                        data-feather="map-pin"></i>Sổ địa chỉ</button>
+                            </li>
+
+                            <!-- Hồ sơ cá nhân -->
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill"
+                                    data-bs-target="#pills-profile" type="button" role="tab"><i data-feather="user"></i>
+                                    Thông tin cá nhân</button>
+                            </li>
+
+                            <!-- Tải xuống -->
+                            <!-- <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="pills-download-tab" data-bs-toggle="pill"
+                                    data-bs-target="#pills-download" type="button" role="tab"><i
+                                        data-feather="download"></i>Tải xuống</button>
+                            </li> -->
+
+                            <!-- Bảo mật & Quyền riêng tư -->
+                            <!-- <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="pills-security-tab" data-bs-toggle="pill"
+                                    data-bs-target="#pills-security" type="button" role="tab"><i
+                                        data-feather="shield"></i>
+                                    Bảo mật & Riêng tư</button>
+                            </li> -->
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-xxl-9 col-lg-8">
+                    <button class="btn left-dashboard-show btn-animation btn-md fw-bold d-block mb-4 d-lg-none">
+                        Menu</button>
+                    <div class="dashboard-right-sidebar">
+                        <div class="tab-content" id="pills-tabContent">
+                            <div class="tab-pane fade show active" id="pills-dashboard" role="tabpanel">
+                                <div class="dashboard-home">
+                                    <!-- Tiêu đề trang -->
+                                    <div class="title">
+                                        <h2>Bảng điều khiển của tôi</h2>
+                                        <span class="title-leaf">
+                                        </span>
+                                    </div>
+
+                                    <!-- Lời chào khách hàng -->
+                                    <div class="dashboard-user-name">
+                                        <h6 class="text-content">Xin chào, <b class="text-title">Nguyễn Văn An</b></h6>
+                                        <p class="text-content">Tại trang quản lý tài khoản cá nhân, bạn có thể dễ dàng
+                                            theo dõi các hoạt động gần đây,
+                                            kiểm tra tình trạng đơn hàng và cập nhật thông tin cá nhân của mình.
+                                            Hãy chọn các liên kết bên dưới để xem hoặc chỉnh sửa thông tin.</p>
+                                    </div>
+
+                                    <!-- Khối thống kê tổng quan -->
+                                    <div class="total-box">
+                                        <div class="row g-sm-4 g-3">
+                                            <!-- Tổng đơn hàng -->
+                                            <div class="col-xxl-4 col-lg-6 col-md-4 col-sm-6">
+                                                <div class="total-contain">
+                                                    <img src="https://themes.pixelstrap.com/fastkart/assets/images/svg/order.svg"
+                                                        class="img-1 blur-up lazyload" alt="">
+                                                    <img src="https://themes.pixelstrap.com/fastkart/assets/images/svg/order.svg"
+                                                        class="blur-up lazyload" alt="">
+                                                    <div class="total-detail">
+                                                        <h5>Tổng đơn hàng</h5>
+                                                        <h3>3,658</h3>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <!-- Đơn hàng đang chờ -->
+                                            <div class="col-xxl-4 col-lg-6 col-md-4 col-sm-6">
+                                                <div class="total-contain">
+                                                    <img src="https://themes.pixelstrap.com/fastkart/assets/images/svg/pending.svg"
+                                                        class="img-1 blur-up lazyload" alt="">
+                                                    <img src="https://themes.pixelstrap.com/fastkart/assets/images/svg/pending.svg"
+                                                        class="blur-up lazyload" alt="">
+                                                    <div class="total-detail">
+                                                        <h5>Đang chờ xử lý</h5>
+                                                        <h3>254</h3>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <!-- Danh sách yêu thích -->
+                                            <div class="col-xxl-4 col-lg-6 col-md-4 col-sm-6">
+                                                <div class="total-contain">
+                                                    <img src="https://themes.pixelstrap.com/fastkart/assets/images/svg/wishlist.svg"
+                                                        class="img-1 blur-up lazyload" alt="">
+                                                    <img src="https://themes.pixelstrap.com/fastkart/assets/images/svg/wishlist.svg"
+                                                        class="blur-up lazyload" alt="">
+                                                    <div class="total-detail">
+                                                        <h5>Sản phẩm yêu thích</h5>
+                                                        <h3>32,158</h3>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Thông tin chi tiết tài khoản -->
+                                    <div class="dashboard-title">
+                                        <h3>Thông tin tài khoản</h3>
+                                    </div>
+
+                                    <div class="row g-4">
+                                        <!-- Thông tin liên hệ -->
+                                        <div class="col-xxl-6">
+                                            <div class="dashboard-content-title">
+                                                <h4>Thông tin liên hệ <a href="javascript:void(0)"
+                                                        data-bs-toggle="modal" data-bs-target="#editProfile">Chỉnh
+                                                        sửa</a></h4>
+                                            </div>
+                                            <div class="dashboard-detail">
+                                                <h6 class="text-content">NGUYỄN VĂN AN</h6>
+                                                <h6 class="text-content">an.nguyen@gmail.com</h6>
+                                                <a href="javascript:void(0)">Đổi mật khẩu</a>
+                                            </div>
+                                        </div>
+
+                                        <!-- Đăng ký nhận tin -->
+                                        <div class="col-xxl-6">
+                                            <div class="dashboard-content-title">
+                                                <h4>Bản tin khuyến mãi <a href="javascript:void(0)"
+                                                        data-bs-toggle="modal" data-bs-target="#editProfile">Chỉnh
+                                                        sửa</a></h4>
+                                            </div>
+                                            <div class="dashboard-detail">
+                                                <h6 class="text-content">Bạn hiện tại chưa đăng ký nhận thông tin khuyến
+                                                    mãi nào từ chúng tôi.</h6>
+                                            </div>
+                                        </div>
+
+                                        <!-- Sổ địa chỉ -->
+                                        <div class="col-12">
+                                            <div class="dashboard-content-title">
+                                                <h4>Sổ địa chỉ <a href="javascript:void(0)" data-bs-toggle="modal"
+                                                        data-bs-target="#editProfile">Chỉnh sửa</a></h4>
+                                            </div>
+
+                                            <div class="row g-4">
+                                                <!-- Địa chỉ thanh toán -->
+                                                <div class="col-xxl-6">
+                                                    <div class="dashboard-detail">
+                                                        <h6 class="text-content">Địa chỉ thanh toán mặc định</h6>
+                                                        <h6 class="text-content">Bạn chưa thiết lập địa chỉ thanh toán
+                                                            mặc định.</h6>
+                                                        <a href="javascript:void(0)" data-bs-toggle="modal"
+                                                            data-bs-target="#editProfile">Thêm địa chỉ</a>
+                                                    </div>
+                                                </div>
+
+                                                <!-- Địa chỉ giao hàng -->
+                                                <div class="col-xxl-6">
+                                                    <div class="dashboard-detail">
+                                                        <h6 class="text-content">Địa chỉ giao hàng mặc định</h6>
+                                                        <h6 class="text-content">Bạn chưa thiết lập địa chỉ giao hàng
+                                                            mặc định.</h6>
+                                                        <a href="javascript:void(0)" data-bs-toggle="modal"
+                                                            data-bs-target="#editProfile">Thêm địa chỉ</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="tab-pane fade" id="pills-wishlist" role="tabpanel">
+                                <div class="dashboard-wishlist">
+                                    <div class="title">
+                                        <h2>Danh sách yêu thích của tôi</h2>
+                                        <span class="title-leaf title-leaf-gray">
+                                        </span>
+                                    </div>
+                                    <div class="row g-sm-4 g-3">
+                                        <!-- Sản phẩm 1 -->
+                                        <div class="col-xxl-3 col-lg-4 col-md-4 col-6 product-box-contain">
+                                            <div class="product-box-4 h-100">
+                                                <div class="product-header">
+                                                    <div class="product-image">
+
+                                                        <a href="#">
+                                                            <img src="../assets/images/product/sp1.jpg"
+                                                                class="img-fluid" alt="">
+                                                        </a>
+
+                                                        <div class="product-header-top">
+                                                            <button class="btn wishlist-button close_button">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                                                    height="24" viewBox="0 0 24 24" fill="none"
+                                                                    stroke="currentColor" stroke-width="2"
+                                                                    stroke-linecap="round" stroke-linejoin="round"
+                                                                    class="feather feather-x">
+                                                                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                                                                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                                                                </svg>
+                                                            </button>
+                                                        </div>
+
+                                                        <ul class="option">
+                                                            <li data-bs-toggle="tooltip" data-bs-placement="top"
+                                                                title="" data-bs-original-title="Xem nhanh">
+                                                                <a href="javascript:void(0)" data-bs-toggle="modal"
+                                                                    data-bs-target="#view">
+                                                                    <i class="fa-regular fa-eye"></i>
+                                                                </a>
+                                                            </li>
+
+                                                            <li data-bs-toggle="tooltip" data-bs-placement="top"
+                                                                title="" data-bs-original-title="Yêu thích">
+                                                                <a href="javascript:void(0)" class="notifi-wishlist">
+                                                                    <i class="fa-regular fa-heart"></i>
+                                                                </a>
+                                                            </li>
+
+                                                            <li data-bs-toggle="tooltip" data-bs-placement="top"
+                                                                title="" data-bs-original-title="So sánh">
+                                                                <a href="compare.html">
+                                                                    <i class="fa-solid fa-right-left"></i>
+                                                                </a>
+                                                            </li>
+                                                        </ul>
+
+                                                        <a href="javascript:void(0)" class="add-to-cart-btn btn-cart">
+                                                            <i class="fa-solid fa-cart-plus"></i> Thêm vào giỏ hàng
+                                                        </a>
+
+                                                    </div>
+                                                </div>
+
+                                                <div class="product-footer">
+                                                    <div class="product-detail">
+                                                        <span class="span-name-tag">Áo Sơ mi</span>
+                                                        <a href="product-left-thumbnail.html">
+                                                            <h5 class="name">Stretch Mesh Polo Shirt – Ombre</h5>
+                                                        </a>
+                                                        <h5 class="price theme-color"><strong>1.250.000
+                                                                VNĐ</strong><del>1.500.000
+                                                                VNĐ</del>
+                                                        </h5>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- Sản phẩm 2 -->
+                                        <div class="col-xxl-3 col-lg-4 col-md-4 col-6 product-box-contain">
+                                            <div class="product-box-4 h-100">
+                                                <div class="product-header">
+                                                    <div class="product-image">
+
+                                                        <a href="#">
+                                                            <img src="../assets/images/product/sp1.jpg"
+                                                                class="img-fluid" alt="">
+                                                        </a>
+
+                                                        <div class="product-header-top">
+                                                            <button class="btn wishlist-button close_button">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                                                    height="24" viewBox="0 0 24 24" fill="none"
+                                                                    stroke="currentColor" stroke-width="2"
+                                                                    stroke-linecap="round" stroke-linejoin="round"
+                                                                    class="feather feather-x">
+                                                                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                                                                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                                                                </svg>
+                                                            </button>
+                                                        </div>
+
+                                                        <ul class="option">
+                                                            <li data-bs-toggle="tooltip" data-bs-placement="top"
+                                                                title="" data-bs-original-title="Xem nhanh">
+                                                                <a href="javascript:void(0)" data-bs-toggle="modal"
+                                                                    data-bs-target="#view">
+                                                                    <i class="fa-regular fa-eye"></i>
+                                                                </a>
+                                                            </li>
+
+                                                            <li data-bs-toggle="tooltip" data-bs-placement="top"
+                                                                title="" data-bs-original-title="Yêu thích">
+                                                                <a href="javascript:void(0)" class="notifi-wishlist">
+                                                                    <i class="fa-regular fa-heart"></i>
+                                                                </a>
+                                                            </li>
+
+                                                            <li data-bs-toggle="tooltip" data-bs-placement="top"
+                                                                title="" data-bs-original-title="So sánh">
+                                                                <a href="compare.html">
+                                                                    <i class="fa-solid fa-right-left"></i>
+                                                                </a>
+                                                            </li>
+                                                        </ul>
+
+                                                        <a href="javascript:void(0)" class="add-to-cart-btn btn-cart">
+                                                            <i class="fa-solid fa-cart-plus"></i> Thêm vào giỏ hàng
+                                                        </a>
+
+                                                    </div>
+                                                </div>
+
+                                                <div class="product-footer">
+                                                    <div class="product-detail">
+                                                        <span class="span-name-tag">Áo Sơ mi</span>
+                                                        <a href="product-left-thumbnail.html">
+                                                            <h5 class="name">Stretch Mesh Polo Shirt – Ombre</h5>
+                                                        </a>
+                                                        <h5 class="price theme-color"><strong>1.250.000
+                                                                VNĐ</strong><del>1.500.000
+                                                                VNĐ</del>
+                                                        </h5>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- Sản phẩm 3 -->
+                                        <div class="col-xxl-3 col-lg-4 col-md-4 col-6 product-box-contain">
+                                            <div class="product-box-4 h-100">
+                                                <div class="product-header">
+                                                    <div class="product-image">
+
+                                                        <a href="#">
+                                                            <img src="../assets/images/product/sp1.jpg"
+                                                                class="img-fluid" alt="">
+                                                        </a>
+
+                                                        <div class="product-header-top">
+                                                            <button class="btn wishlist-button close_button">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                                                    height="24" viewBox="0 0 24 24" fill="none"
+                                                                    stroke="currentColor" stroke-width="2"
+                                                                    stroke-linecap="round" stroke-linejoin="round"
+                                                                    class="feather feather-x">
+                                                                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                                                                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                                                                </svg>
+                                                            </button>
+                                                        </div>
+
+                                                        <ul class="option">
+                                                            <li data-bs-toggle="tooltip" data-bs-placement="top"
+                                                                title="" data-bs-original-title="Xem nhanh">
+                                                                <a href="javascript:void(0)" data-bs-toggle="modal"
+                                                                    data-bs-target="#view">
+                                                                    <i class="fa-regular fa-eye"></i>
+                                                                </a>
+                                                            </li>
+
+                                                            <li data-bs-toggle="tooltip" data-bs-placement="top"
+                                                                title="" data-bs-original-title="Yêu thích">
+                                                                <a href="javascript:void(0)" class="notifi-wishlist">
+                                                                    <i class="fa-regular fa-heart"></i>
+                                                                </a>
+                                                            </li>
+
+                                                            <li data-bs-toggle="tooltip" data-bs-placement="top"
+                                                                title="" data-bs-original-title="So sánh">
+                                                                <a href="compare.html">
+                                                                    <i class="fa-solid fa-right-left"></i>
+                                                                </a>
+                                                            </li>
+                                                        </ul>
+
+                                                        <a href="javascript:void(0)" class="add-to-cart-btn btn-cart">
+                                                            <i class="fa-solid fa-cart-plus"></i> Thêm vào giỏ hàng
+                                                        </a>
+
+                                                    </div>
+                                                </div>
+
+                                                <div class="product-footer">
+                                                    <div class="product-detail">
+                                                        <span class="span-name-tag">Áo Sơ mi</span>
+                                                        <a href="product-left-thumbnail.html">
+                                                            <h5 class="name">Stretch Mesh Polo Shirt – Ombre</h5>
+                                                        </a>
+                                                        <h5 class="price theme-color"><strong>1.250.000
+                                                                VNĐ</strong><del>1.500.000
+                                                                VNĐ</del>
+                                                        </h5>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- Sản phẩm 4 -->
+                                        <div class="col-xxl-3 col-lg-4 col-md-4 col-6 product-box-contain">
+                                            <div class="product-box-4 h-100">
+                                                <div class="product-header">
+                                                    <div class="product-image">
+
+                                                        <a href="#">
+                                                            <img src="../assets/images/product/sp1.jpg"
+                                                                class="img-fluid" alt="">
+                                                        </a>
+
+                                                        <div class="product-header-top">
+                                                            <button class="btn wishlist-button close_button">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                                                    height="24" viewBox="0 0 24 24" fill="none"
+                                                                    stroke="currentColor" stroke-width="2"
+                                                                    stroke-linecap="round" stroke-linejoin="round"
+                                                                    class="feather feather-x">
+                                                                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                                                                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                                                                </svg>
+                                                            </button>
+                                                        </div>
+
+                                                        <ul class="option">
+                                                            <li data-bs-toggle="tooltip" data-bs-placement="top"
+                                                                title="" data-bs-original-title="Xem nhanh">
+                                                                <a href="javascript:void(0)" data-bs-toggle="modal"
+                                                                    data-bs-target="#view">
+                                                                    <i class="fa-regular fa-eye"></i>
+                                                                </a>
+                                                            </li>
+
+                                                            <li data-bs-toggle="tooltip" data-bs-placement="top"
+                                                                title="" data-bs-original-title="Yêu thích">
+                                                                <a href="javascript:void(0)" class="notifi-wishlist">
+                                                                    <i class="fa-regular fa-heart"></i>
+                                                                </a>
+                                                            </li>
+
+                                                            <li data-bs-toggle="tooltip" data-bs-placement="top"
+                                                                title="" data-bs-original-title="So sánh">
+                                                                <a href="compare.html">
+                                                                    <i class="fa-solid fa-right-left"></i>
+                                                                </a>
+                                                            </li>
+                                                        </ul>
+
+                                                        <a href="javascript:void(0)" class="add-to-cart-btn btn-cart">
+                                                            <i class="fa-solid fa-cart-plus"></i> Thêm vào giỏ hàng
+                                                        </a>
+
+                                                    </div>
+                                                </div>
+
+                                                <div class="product-footer">
+                                                    <div class="product-detail">
+                                                        <span class="span-name-tag">Áo Sơ mi</span>
+                                                        <a href="product-left-thumbnail.html">
+                                                            <h5 class="name">Stretch Mesh Polo Shirt – Ombre</h5>
+                                                        </a>
+                                                        <h5 class="price theme-color"><strong>1.250.000
+                                                                VNĐ</strong><del>1.500.000
+                                                                VNĐ</del>
+                                                        </h5>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="tab-pane fade" id="pills-order" role="tabpanel">
+                                <div class="dashboard-order">
+                                    <div class="title">
+                                        <h2>Lịch sử đơn hàng</h2>
+                                        <span class="title-leaf title-leaf-gray">
+
+                                        </span>
+                                    </div>
+
+                                    <div class="order-contain">
+                                        <!-- Đơn hàng 1: Đang chờ -->
+                                        <div class="order-box dashboard-bg-box w-100">
+                                            <div class="order-container">
+                                                <div class="order-icon">
+                                                    <i data-feather="box"></i>
+                                                </div>
+
+                                                <div class="order-detail">
+                                                    <!-- <h4>Trạng thái đơn hàng: <span>Đang chờ xử lý</span></h4> -->
+                                                    <h6 class="text-content">Đơn hàng của bạn đã được tiếp nhận và đang
+                                                        trong quá trình chuẩn bị hàng tại kho.</h6>
+                                                </div>
+                                            </div>
+
+                                            <div class="product-order-detail">
+                                                <a href="product-detail.html" class="order-image">
+                                                    <img src="../assets/images/fashion/product/shirt-1.jpg"
+                                                        class="blur-up lazyload" alt="">
+                                                </a>
+
+                                                <div class="order-wrap">
+                                                    <a href="product-detail.html">
+                                                        <h3>Striped Oxford Fun Shirt – Rainbow</h3>
+                                                    </a>
+                                                    <p class="text-content">Áo sơ mi chất liệu Oxford cao cấp với thiết
+                                                        kế kẻ sọc đa sắc trẻ trung.</p>
+                                                    <ul class="product-size">
+                                                        <li>
+                                                            <div class="size-box">
+                                                                <h6 class="text-content">Giá tiền: </h6>
+                                                                <h5>650.000 VNĐ</h5>
+                                                            </div>
+                                                        </li>
+
+                                                        <li>
+                                                            <div class="size-box">
+                                                                <h6 class="text-content">Người bán: </h6>
+                                                                <h5>THE FADED</h5>
+                                                            </div>
+                                                        </li>
+
+                                                        <li>
+                                                            <div class="size-box">
+                                                                <h6 class="text-content">Kích cỡ: </h6>
+                                                                <h5>Size L</h5>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="size-box">
+                                                                <h6 class="text-content">Ngày đặt: </h6>
+                                                                <h5>21/03/2026</h5>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="size-box">
+                                                                <h6 class="text-content">SĐT: </h6>
+                                                                <h5>0788335558</h5>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- Đơn hàng 2: Hoàn thành -->
+                                        <div class="order-box dashboard-bg-box w-100">
+                                            <div class="order-container">
+                                                <div class="order-icon">
+                                                    <i data-feather="box"></i>
+                                                </div>
+
+                                                <div class="order-detail">
+                                                    <!-- <h4>Trạng thái đơn hàng: <span class="success-bg">Giao hàng thành
+                                                            công</span></h4> -->
+                                                    <h6 class="text-content">Kiện hàng đã được giao thành công đến người
+                                                        nhận. Cảm ơn bạn đã mua sắm!</h6>
+                                                </div>
+                                            </div>
+
+                                            <div class="product-order-detail">
+                                                <a href="product-detail.html" class="order-image">
+                                                    <img src="../assets/images/fashion/product/jeans-1.jpg" alt=""
+                                                        class="blur-up lazyload">
+                                                </a>
+
+                                                <div class="order-wrap">
+                                                    <a href="product-detail.html">
+                                                        <h3>Quần Jean Slim-fit Cao Cấp</h3>
+                                                    </a>
+                                                    <p class="text-content">Chất liệu Denim co giãn, form dáng ôm vừa
+                                                        vặn và cực kỳ tôn dáng.</p>
+                                                    <ul class="product-size">
+                                                        <li>
+                                                            <div class="size-box">
+                                                                <h6 class="text-content">Giá tiền: </h6>
+                                                                <h5>550.000 VNĐ</h5>
+                                                            </div>
+                                                        </li>
+
+                                                        <li>
+                                                            <div class="size-box">
+                                                                <h6 class="text-content">Người bán: </h6>
+                                                                <h5>THE FADED</h5>
+                                                            </div>
+                                                        </li>
+
+                                                        <li>
+                                                            <div class="size-box">
+                                                                <h6 class="text-content">Kích cỡ: </h6>
+                                                                <h5>Size 31</h5>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="size-box">
+                                                                <h6 class="text-content">Ngày đặt: </h6>
+                                                                <h5>20/03/2026</h5>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="size-box">
+                                                                <h6 class="text-content">SĐT: </h6>
+                                                                <h5>0788335558</h5>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- Đơn hàng 3: Đang chờ -->
+                                        <div class="order-box dashboard-bg-box w-100">
+                                            <div class="order-container">
+                                                <div class="order-icon">
+                                                    <i data-feather="box"></i>
+                                                </div>
+
+                                                <div class="order-detail">
+                                                    <!-- <h4>Trạng thái đơn hàng: <span>Đang vận chuyển</span></h4> -->
+                                                    <h6 class="text-content">Đơn hàng đang trên đường đến địa chỉ của
+                                                        bạn. Vui lòng giữ điện thoại để shipper liên lạc.</h6>
+                                                </div>
+                                            </div>
+
+                                            <div class="product-order-detail">
+                                                <a href="product-detail.html" class="order-image">
+                                                    <img src="../assets/images/fashion/product/blazer-1.jpg" alt=""
+                                                        class="blur-up lazyload">
+                                                </a>
+
+                                                <div class="order-wrap">
+                                                    <a href="product-detail.html">
+                                                        <h3>Áo Blazer Hàn Quốc - Grey</h3>
+                                                    </a>
+                                                    <p class="text-content">Thiết kế thanh lịch, chất vải dày dặn, phù
+                                                        hợp cho môi trường công sở.</p>
+                                                    <ul class="product-size">
+                                                        <li>
+                                                            <div class="size-box">
+                                                                <h6 class="text-content">Giá tiền: </h6>
+                                                                <h5>1.250.000 VNĐ</h5>
+                                                            </div>
+                                                        </li>
+
+                                                        <li>
+                                                            <div class="size-box">
+                                                                <h6 class="text-content">Người bán: </h6>
+                                                                <h5>THE FADED</h5>
+                                                            </div>
+                                                        </li>
+
+                                                        <li>
+                                                            <div class="size-box">
+                                                                <h6 class="text-content">Kích cỡ: </h6>
+                                                                <h5>Size M</h5>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="size-box">
+                                                                <h6 class="text-content">Ngày đặt: </h6>
+                                                                <h5>20/03/2026</h5>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="size-box">
+                                                                <h6 class="text-content">SĐT: </h6>
+                                                                <h5>0788335558</h5>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="tab-pane fade" id="pills-address" role="tabpanel">
+                                <div class="dashboard-address">
+                                    <div class="title title-flex">
+                                        <div>
+                                            <h2>Sổ địa chỉ của tôi</h2>
+                                            <span class="title-leaf">
+                                            </span>
+                                        </div>
+
+                                        <button class="btn theme-bg-color text-white btn-sm fw-bold mt-lg-0 mt-3"
+                                            data-bs-toggle="modal" data-bs-target="#add-address"><i data-feather="plus"
+                                                class="me-2"></i> Thêm địa chỉ mới</button>
+                                    </div>
+
+                                    <div class="row g-sm-4 g-3">
+                                        <!-- Địa chỉ Nhà riêng -->
+                                        <div class="col-xxl-4 col-xl-6 col-lg-12 col-md-6">
+                                            <div class="address-box">
+                                                <div>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="radio" name="jack"
+                                                            id="flexRadioDefault2" checked>
+                                                    </div>
+
+                                                    <div class="label">
+                                                        <label>Nhà riêng</label>
+                                                    </div>
+
+                                                    <div class="table-responsive address-table">
+                                                        <table class="table">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td colspan="2">Nguyễn Văn An</td>
+                                                                </tr>
+
+                                                                <tr>
+                                                                    <td>Địa chỉ :</td>
+                                                                    <td>
+                                                                        <p>Số 123, Đường Lê Lợi, Phường Bến Thành, Quận
+                                                                            1, TP. Hồ Chí Minh</p>
+                                                                    </td>
+                                                                </tr>
+
+                                                                <tr>
+                                                                    <td>Mã bưu chính :</td>
+                                                                    <td>700000</td>
+                                                                </tr>
+
+                                                                <tr>
+                                                                    <td>Điện thoại :</td>
+                                                                    <td>0901 234 567</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+
+                                                <div class="button-group">
+                                                    <button class="btn btn-sm add-button w-100" data-bs-toggle="modal"
+                                                        data-bs-target="#editProfile"><i data-feather="edit"></i>
+                                                        Chỉnh sửa</button>
+                                                    <button class="btn btn-sm add-button w-100" data-bs-toggle="modal"
+                                                        data-bs-target="#removeProfile"><i data-feather="trash-2"></i>
+                                                        Xóa</button>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- Địa chỉ Văn phòng -->
+                                        <div class="col-xxl-4 col-xl-6 col-lg-12 col-md-6">
+                                            <div class="address-box">
+                                                <div>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="radio" name="jack"
+                                                            id="flexRadioDefault3">
+                                                    </div>
+
+                                                    <div class="label">
+                                                        <label>Văn phòng</label>
+                                                    </div>
+
+                                                    <div class="table-responsive address-table">
+                                                        <table class="table">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td colspan="2">Nguyễn Văn An</td>
+                                                                </tr>
+
+                                                                <tr>
+                                                                    <td>Địa chỉ :</td>
+                                                                    <td>
+                                                                        <p>Tòa nhà Landmark 81, 208 Nguyễn Hữu Cảnh,
+                                                                            Quận Bình Thạnh, TP. Hồ Chí Minh</p>
+                                                                    </td>
+                                                                </tr>
+
+                                                                <tr>
+                                                                    <td>Mã bưu chính :</td>
+                                                                    <td>72300</td>
+                                                                </tr>
+
+                                                                <tr>
+                                                                    <td>Điện thoại :</td>
+                                                                    <td>028 3823 3333</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+
+                                                <div class="button-group">
+                                                    <button class="btn btn-sm add-button w-100" data-bs-toggle="modal"
+                                                        data-bs-target="#editProfile"><i data-feather="edit"></i>
+                                                        Chỉnh sửa</button>
+                                                    <button class="btn btn-sm add-button w-100" data-bs-toggle="modal"
+                                                        data-bs-target="#removeProfile"><i data-feather="trash-2"></i>
+                                                        Xóa</button>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- Địa chỉ Người thân -->
+                                        <div class="col-xxl-4 col-xl-6 col-lg-12 col-md-6">
+                                            <div class="address-box">
+                                                <div>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="radio" name="jack"
+                                                            id="flexRadioDefault4">
+                                                    </div>
+
+                                                    <div class="label">
+                                                        <label>Người thân</label>
+                                                    </div>
+
+                                                    <div class="table-responsive address-table">
+                                                        <table class="table">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td colspan="2">Trần Thị Mai</td>
+                                                                </tr>
+
+                                                                <tr>
+                                                                    <td>Địa chỉ :</td>
+                                                                    <td>
+                                                                        <p>Số 45, Phố Lý Thường Kiệt, Quận Hoàn Kiếm, Hà
+                                                                            Nội</p>
+                                                                    </td>
+                                                                </tr>
+
+                                                                <tr>
+                                                                    <td>Mã bưu chính :</td>
+                                                                    <td>100000</td>
+                                                                </tr>
+
+                                                                <tr>
+                                                                    <td>Điện thoại :</td>
+                                                                    <td>0912 345 678</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+
+                                                <div class="button-group">
+                                                    <button class="btn btn-sm add-button w-100" data-bs-toggle="modal"
+                                                        data-bs-target="#editProfile"><i data-feather="edit"></i>
+                                                        Chỉnh sửa</button>
+                                                    <button class="btn btn-sm add-button w-100" data-bs-toggle="modal"
+                                                        data-bs-target="#removeProfile"><i data-feather="trash-2"></i>
+                                                        Xóa</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="tab-pane fade" id="pills-card" role="tabpanel">
+                                <div class="dashboard-card">
+                                    <div class="title title-flex">
+                                        <div>
+                                            <h2>My Card Details</h2>
+                                            <span class="title-leaf">
+                                                <svg class="icon-width bg-gray">
+                                                    <use
+                                                        xlink:href="https://themes.pixelstrap.com/fastkart/assets/svg/leaf.svg#leaf">
+                                                    </use>
+                                                </svg>
+                                            </span>
+                                        </div>
+
+                                        <button class="btn theme-bg-color text-white btn-sm fw-bold mt-lg-0 mt-3"
+                                            data-bs-toggle="modal" data-bs-target="#editCard"><i data-feather="plus"
+                                                class="me-2"></i> Add New Card</button>
+                                    </div>
+
+                                    <div class="row g-4">
+                                        <div class="col-xxl-4 col-xl-6 col-lg-12 col-sm-6">
+                                            <div class="payment-card-detail">
+                                                <div class="card-details">
+                                                    <div class="card-number">
+                                                        <h4>XXXX - XXXX - XXXX - 2548</h4>
+                                                    </div>
+
+                                                    <div class="valid-detail">
+                                                        <div class="title">
+                                                            <span>valid</span>
+                                                            <span>thru</span>
+                                                        </div>
+                                                        <div class="date">
+                                                            <h3>08/05</h3>
+                                                        </div>
+                                                        <div class="primary">
+                                                            <span class="badge bg-pill badge-light">primary</span>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="name-detail">
+                                                        <div class="name">
+                                                            <h5>Audrey Carol</h5>
+                                                        </div>
+                                                        <div class="card-img">
+                                                            <img src="../assets/images/payment-icon/1.jpg"
+                                                                class="img-fluid blur-up lazyloaded" alt="">
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="edit-card">
+                                                    <a data-bs-toggle="modal" data-bs-target="#editCard"
+                                                        href="javascript:void(0)"><i class="far fa-edit"></i> edit</a>
+                                                    <a href="javascript:void(0)" data-bs-toggle="modal"
+                                                        data-bs-target="#removeProfile"><i
+                                                            class="far fa-minus-square"></i> delete</a>
+                                                </div>
+                                            </div>
+
+                                            <div class="edit-card-mobile">
+                                                <a data-bs-toggle="modal" data-bs-target="#editCard"
+                                                    href="javascript:void(0)"><i class="far fa-edit"></i> edit</a>
+                                                <a href="javascript:void(0)"><i class="far fa-minus-square"></i>
+                                                    delete</a>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-xxl-4 col-xl-6 col-lg-12 col-sm-6">
+                                            <div class="payment-card-detail">
+                                                <div class="card-details card-visa">
+                                                    <div class="card-number">
+                                                        <h4>XXXX - XXXX - XXXX - 1536</h4>
+                                                    </div>
+
+                                                    <div class="valid-detail">
+                                                        <div class="title">
+                                                            <span>valid</span>
+                                                            <span>thru</span>
+                                                        </div>
+                                                        <div class="date">
+                                                            <h3>12/23</h3>
+                                                        </div>
+                                                        <div class="primary">
+                                                            <span class="badge bg-pill badge-light">primary</span>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="name-detail">
+                                                        <div class="name">
+                                                            <h5>Leah Heather</h5>
+                                                        </div>
+                                                        <div class="card-img">
+                                                            <img src="../assets/images/payment-icon/2.jpg"
+                                                                class="img-fluid blur-up lazyloaded" alt="">
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="edit-card">
+                                                    <a data-bs-toggle="modal" data-bs-target="#editCard"
+                                                        href="javascript:void(0)"><i class="far fa-edit"></i> edit</a>
+                                                    <a href="javascript:void(0)" data-bs-toggle="modal"
+                                                        data-bs-target="#removeProfile"><i
+                                                            class="far fa-minus-square"></i> delete</a>
+                                                </div>
+                                            </div>
+
+                                            <div class="edit-card-mobile">
+                                                <a data-bs-toggle="modal" data-bs-target="#editCard"
+                                                    href="javascript:void(0)"><i class="far fa-edit"></i> edit</a>
+                                                <a href="javascript:void(0)"><i class="far fa-minus-square"></i>
+                                                    delete</a>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-xxl-4 col-xl-6 col-lg-12 col-sm-6">
+                                            <div class="payment-card-detail">
+                                                <div class="card-details debit-card">
+                                                    <div class="card-number">
+                                                        <h4>XXXX - XXXX - XXXX - 1366</h4>
+                                                    </div>
+
+                                                    <div class="valid-detail">
+                                                        <div class="title">
+                                                            <span>valid</span>
+                                                            <span>thru</span>
+                                                        </div>
+                                                        <div class="date">
+                                                            <h3>05/21</h3>
+                                                        </div>
+                                                        <div class="primary">
+                                                            <span class="badge bg-pill badge-light">primary</span>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="name-detail">
+                                                        <div class="name">
+                                                            <h5>mark jecno</h5>
+                                                        </div>
+                                                        <div class="card-img">
+                                                            <img src="../assets/images/payment-icon/3.jpg"
+                                                                class="img-fluid blur-up lazyloaded" alt="">
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="edit-card">
+                                                    <a data-bs-toggle="modal" data-bs-target="#editCard"
+                                                        href="javascript:void(0)"><i class="far fa-edit"></i> edit</a>
+                                                    <a href="javascript:void(0)" data-bs-toggle="modal"
+                                                        data-bs-target="#removeProfile"><i
+                                                            class="far fa-minus-square"></i> delete</a>
+                                                </div>
+                                            </div>
+
+                                            <div class="edit-card-mobile">
+                                                <a data-bs-toggle="modal" data-bs-target="#editCard"
+                                                    href="javascript:void(0)"><i class="far fa-edit"></i> edit</a>
+                                                <a href="javascript:void(0)"><i class="far fa-minus-square"></i>
+                                                    delete</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="tab-pane fade" id="pills-profile" role="tabpanel">
+                                <div class="dashboard-profile">
+                                    <div class="title">
+                                        <h2>Hồ sơ của tôi</h2>
+                                        <span class="title-leaf">
+
+                                        </span>
+                                    </div>
+
+                                    <div class="profile-detail dashboard-bg-box">
+                                        <div class="dashboard-title">
+                                            <h3>Thông tin người dùng</h3>
+                                        </div>
+                                        <div class="profile-name-detail">
+                                            <div class="d-sm-flex align-items-center d-block">
+                                                <h3>Nguyễn Văn An</h3>
+                                            </div>
+
+                                            <a href="javascript:void(0)" data-bs-toggle="modal"
+                                                data-bs-target="#editProfile">Chỉnh sửa</a>
+                                        </div>
+
+                                        <div class="location-profile">
+                                            <ul>
+                                                <li>
+                                                    <div class="location-box">
+                                                        <i data-feather="map-pin"></i>
+                                                        <h6>Quận 1, TP. Hồ Chí Minh</h6>
+                                                    </div>
+                                                </li>
+
+                                                <li>
+                                                    <div class="location-box">
+                                                        <i data-feather="mail"></i>
+                                                        <h6>an.nguyen@gmail.com</h6>
+                                                    </div>
+                                                </li>
+
+                                                <li>
+                                                    <div class="location-box">
+                                                        <i data-feather="check-square"></i>
+                                                        <h6>Thành viên từ năm 2022</h6>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+
+                                        <div class="profile-description">
+                                            <p>Yêu thích phong cách thời trang tối giản và hiện đại. Thường xuyên quan
+                                                tâm đến các bộ sưu tập áo sơ mi Oxford và Blazer thiết kế riêng. Ưu tiên
+                                                chất liệu vải organic và bền vững.</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="profile-about dashboard-bg-box">
+                                        <div class="row">
+                                            <div class="col-xxl-7">
+                                                <div class="dashboard-title mb-3">
+                                                    <h3>Chi tiết hồ sơ</h3>
+                                                </div>
+
+                                                <div class="table-responsive">
+                                                    <table class="table">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>Giới tính :</td>
+                                                                <td>Nam</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Ngày sinh :</td>
+                                                                <td>21/05/1997</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Số điện thoại :</td>
+                                                                <td>
+                                                                    <a href="javascript:void(0)"> +84 901 234 567</a>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Địa chỉ :</td>
+                                                                <td>123 Đường Lê Lợi, Phường Bến Thành, Quận 1, TP. Hồ
+                                                                    Chí Minh</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+
+                                                <div class="dashboard-title mb-3">
+                                                    <h3>Thông tin đăng nhập</h3>
+                                                </div>
+
+                                                <div class="table-responsive">
+                                                    <table class="table">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>Email :</td>
+                                                                <td>
+                                                                    <a href="javascript:void(0)">an.nguyen@gmail.com
+                                                                        <span data-bs-toggle="modal"
+                                                                            data-bs-target="#editProfile">Chỉnh
+                                                                            sửa</span></a>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Mật khẩu :</td>
+                                                                <td>
+                                                                    <a href="javascript:void(0)">●●●●●●
+                                                                        <span data-bs-toggle="modal"
+                                                                            data-bs-target="#editProfile">Chỉnh
+                                                                            sửa</span></a>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-xxl-5">
+                                                <div class="profile-image">
+                                                    <img src="../assets/images/inner-page/dashboard-profile.png"
+                                                        class="img-fluid blur-up lazyload" alt="Ảnh hồ sơ">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="tab-pane fade" id="pills-download" role="tabpanel">
+                                <div class="dashboard-download">
+                                    <div class="title">
+                                        <h2>My Download</h2>
+                                        <span class="title-leaf">
+
+                                        </span>
+                                    </div>
+
+                                    <div class="download-detail dashboard-bg-box">
+                                        <form>
+                                            <div class="input-group download-form">
+                                                <input type="text" class="form-control"
+                                                    placeholder="Search your download">
+                                                <button class="btn theme-bg-color text-light" type="button"
+                                                    id="button-addon2">Search</button>
+                                            </div>
+                                        </form>
+
+                                        <div class="select-filter-box">
+                                            <select class="form-select">
+                                                <option selected="">All marketplaces</option>
+                                                <option value="1">One</option>
+                                                <option value="2">Two</option>
+                                                <option value="3">Three</option>
+                                            </select>
+
+
+                                            <ul class="nav nav-pills filter-box" id="pills-tab" role="tablist">
+                                                <li class="nav-item" role="presentation">
+                                                    <button class="nav-link active" id="pills-data-tab"
+                                                        data-bs-toggle="pill" data-bs-target="#pills-data"
+                                                        type="button">Data Purchased</button>
+                                                </li>
+                                                <li class="nav-item" role="presentation">
+                                                    <button class="nav-link" id="pills-title-tab" data-bs-toggle="pill"
+                                                        data-bs-target="#pills-title" type="button">Title</button>
+                                                </li>
+                                                <li class="nav-item" role="presentation">
+                                                    <button class="nav-link" id="pills-rating-tab" data-bs-toggle="pill"
+                                                        data-bs-target="#pills-rating" type="button">My Rating</button>
+                                                </li>
+                                                <li class="nav-item" role="presentation">
+                                                    <button class="nav-link" id="pills-recent-tab" data-bs-toggle="pill"
+                                                        data-bs-target="#pills-recent" type="button">Recent
+                                                        Updates</button>
+                                                </li>
+                                            </ul>
+                                        </div>
+
+                                        <div class="tab-content" id="pills-tabContent">
+                                            <div class="tab-pane fade show active" id="pills-data" role="tabpanel">
+                                                <div class="download-table">
+                                                    <div class="table-responsive">
+                                                        <table class="table">
+                                                            <thead>
+                                                                <tr>
+                                                                    <th>No</th>
+                                                                    <th>Image</th>
+                                                                    <th>Name</th>
+                                                                    <th></th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>1</td>
+                                                                    <td>
+                                                                        <img src="../assets/images/theme-icon/1.png"
+                                                                            class="img-fluid" alt="">
+                                                                    </td>
+                                                                    <td>Sheltos - Real Estate Angular 17 Template</td>
+                                                                    <td>
+                                                                        <div class="dropdown download-dropdown">
+                                                                            <button class="btn dropdown-toggle"
+                                                                                type="button"
+                                                                                data-bs-toggle="dropdown">Download</button>
+                                                                            <ul class="dropdown-menu">
+                                                                                <li>
+                                                                                    <a class="dropdown-item"
+                                                                                        href="#">All files
+                                                                                        & documentation</a>
+                                                                                </li>
+                                                                                <li>
+                                                                                    <a class="dropdown-item"
+                                                                                        href="#">License
+                                                                                        certificate & purchase code
+                                                                                        (PDF)</a>
+                                                                                </li>
+                                                                                <li>
+                                                                                    <a class="dropdown-item"
+                                                                                        href="#">License
+                                                                                        certificate & purchase code
+                                                                                        (text)</a>
+                                                                                </li>
+                                                                            </ul>
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>2</td>
+                                                                    <td>
+                                                                        <img src="../assets/images/theme-icon/2.png"
+                                                                            class="img-fluid" alt="">
+                                                                    </td>
+                                                                    <td>Oslo - Multipurpose Shopify Theme. Fast, Clean,
+                                                                        and
+                                                                        Flexible. OS 2.0</td>
+                                                                    <td>
+                                                                        <div class="dropdown download-dropdown">
+                                                                            <button class="btn dropdown-toggle"
+                                                                                type="button"
+                                                                                data-bs-toggle="dropdown">Download</button>
+                                                                            <ul class="dropdown-menu">
+                                                                                <li>
+                                                                                    <a class="dropdown-item"
+                                                                                        href="#">All files
+                                                                                        & documentation</a>
+                                                                                </li>
+                                                                                <li>
+                                                                                    <a class="dropdown-item"
+                                                                                        href="#">License
+                                                                                        certificate & purchase code
+                                                                                        (PDF)</a>
+                                                                                </li>
+                                                                                <li>
+                                                                                    <a class="dropdown-item"
+                                                                                        href="#">License
+                                                                                        certificate & purchase code
+                                                                                        (text)</a>
+                                                                                </li>
+                                                                            </ul>
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>3</td>
+                                                                    <td>
+                                                                        <img src="../assets/images/theme-icon/3.png"
+                                                                            class="img-fluid" alt="">
+                                                                    </td>
+                                                                    <td>Boho - React JS Admin Dashboard Template</td>
+                                                                    <td>
+                                                                        <div class="dropdown download-dropdown">
+                                                                            <button class="btn dropdown-toggle"
+                                                                                type="button"
+                                                                                data-bs-toggle="dropdown">Download</button>
+                                                                            <ul class="dropdown-menu">
+                                                                                <li>
+                                                                                    <a class="dropdown-item"
+                                                                                        href="#">All files
+                                                                                        & documentation</a>
+                                                                                </li>
+                                                                                <li>
+                                                                                    <a class="dropdown-item"
+                                                                                        href="#">License
+                                                                                        certificate & purchase code
+                                                                                        (PDF)</a>
+                                                                                </li>
+                                                                                <li>
+                                                                                    <a class="dropdown-item"
+                                                                                        href="#">License
+                                                                                        certificate & purchase code
+                                                                                        (text)</a>
+                                                                                </li>
+                                                                            </ul>
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane fade" id="pills-title">
+                                                <div class="download-table">
+                                                    <div class="table-responsive">
+                                                        <table class="table">
+                                                            <thead>
+                                                                <tr>
+                                                                    <th>No</th>
+                                                                    <th>Image</th>
+                                                                    <th>Name</th>
+                                                                    <th></th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>1</td>
+                                                                    <td>
+                                                                        <img src="../assets/images/theme-icon/1.png"
+                                                                            class="img-fluid" alt="">
+                                                                    </td>
+                                                                    <td>Sheltos - Real Estate Angular 17 Template</td>
+                                                                    <td>
+                                                                        <div class="dropdown download-dropdown">
+                                                                            <button class="btn dropdown-toggle"
+                                                                                type="button"
+                                                                                data-bs-toggle="dropdown">Download</button>
+                                                                            <ul class="dropdown-menu">
+                                                                                <li>
+                                                                                    <a class="dropdown-item"
+                                                                                        href="#">All files
+                                                                                        & documentation</a>
+                                                                                </li>
+                                                                                <li>
+                                                                                    <a class="dropdown-item"
+                                                                                        href="#">License
+                                                                                        certificate & purchase code
+                                                                                        (PDF)</a>
+                                                                                </li>
+                                                                                <li>
+                                                                                    <a class="dropdown-item"
+                                                                                        href="#">License
+                                                                                        certificate & purchase code
+                                                                                        (text)</a>
+                                                                                </li>
+                                                                            </ul>
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>2</td>
+                                                                    <td>
+                                                                        <img src="../assets/images/theme-icon/2.png"
+                                                                            class="img-fluid" alt="">
+                                                                    </td>
+                                                                    <td>Oslo - Multipurpose Shopify Theme. Fast, Clean,
+                                                                        and
+                                                                        Flexible. OS 2.0</td>
+                                                                    <td>
+                                                                        <div class="dropdown download-dropdown">
+                                                                            <button class="btn dropdown-toggle"
+                                                                                type="button"
+                                                                                data-bs-toggle="dropdown">Download</button>
+                                                                            <ul class="dropdown-menu">
+                                                                                <li>
+                                                                                    <a class="dropdown-item"
+                                                                                        href="#">All files
+                                                                                        & documentation</a>
+                                                                                </li>
+                                                                                <li>
+                                                                                    <a class="dropdown-item"
+                                                                                        href="#">License
+                                                                                        certificate & purchase code
+                                                                                        (PDF)</a>
+                                                                                </li>
+                                                                                <li>
+                                                                                    <a class="dropdown-item"
+                                                                                        href="#">License
+                                                                                        certificate & purchase code
+                                                                                        (text)</a>
+                                                                                </li>
+                                                                            </ul>
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>3</td>
+                                                                    <td>
+                                                                        <img src="../assets/images/theme-icon/3.png"
+                                                                            class="img-fluid" alt="">
+                                                                    </td>
+                                                                    <td>Boho - React JS Admin Dashboard Template</td>
+                                                                    <td>
+                                                                        <div class="dropdown download-dropdown">
+                                                                            <button class="btn dropdown-toggle"
+                                                                                type="button"
+                                                                                data-bs-toggle="dropdown">Download</button>
+                                                                            <ul class="dropdown-menu">
+                                                                                <li>
+                                                                                    <a class="dropdown-item"
+                                                                                        href="#">All files
+                                                                                        & documentation</a>
+                                                                                </li>
+                                                                                <li>
+                                                                                    <a class="dropdown-item"
+                                                                                        href="#">License
+                                                                                        certificate & purchase code
+                                                                                        (PDF)</a>
+                                                                                </li>
+                                                                                <li>
+                                                                                    <a class="dropdown-item"
+                                                                                        href="#">License
+                                                                                        certificate & purchase code
+                                                                                        (text)</a>
+                                                                                </li>
+                                                                            </ul>
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane fade" id="pills-rating">
+                                                <div class="download-table">
+                                                    <div class="table-responsive">
+                                                        <table class="table">
+                                                            <thead>
+                                                                <tr>
+                                                                    <th>No</th>
+                                                                    <th>Image</th>
+                                                                    <th>Name</th>
+                                                                    <th></th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>1</td>
+                                                                    <td>
+                                                                        <img src="../assets/images/theme-icon/1.png"
+                                                                            class="img-fluid" alt="">
+                                                                    </td>
+                                                                    <td>Sheltos - Real Estate Angular 17 Template</td>
+                                                                    <td>
+                                                                        <div class="dropdown download-dropdown">
+                                                                            <button class="btn dropdown-toggle"
+                                                                                type="button"
+                                                                                data-bs-toggle="dropdown">Download</button>
+                                                                            <ul class="dropdown-menu">
+                                                                                <li>
+                                                                                    <a class="dropdown-item"
+                                                                                        href="#">All files
+                                                                                        & documentation</a>
+                                                                                </li>
+                                                                                <li>
+                                                                                    <a class="dropdown-item"
+                                                                                        href="#">License
+                                                                                        certificate & purchase code
+                                                                                        (PDF)</a>
+                                                                                </li>
+                                                                                <li>
+                                                                                    <a class="dropdown-item"
+                                                                                        href="#">License
+                                                                                        certificate & purchase code
+                                                                                        (text)</a>
+                                                                                </li>
+                                                                            </ul>
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>2</td>
+                                                                    <td>
+                                                                        <img src="../assets/images/theme-icon/2.png"
+                                                                            class="img-fluid" alt="">
+                                                                    </td>
+                                                                    <td>Oslo - Multipurpose Shopify Theme. Fast, Clean,
+                                                                        and
+                                                                        Flexible. OS 2.0</td>
+                                                                    <td>
+                                                                        <div class="dropdown download-dropdown">
+                                                                            <button class="btn dropdown-toggle"
+                                                                                type="button"
+                                                                                data-bs-toggle="dropdown">Download</button>
+                                                                            <ul class="dropdown-menu">
+                                                                                <li>
+                                                                                    <a class="dropdown-item"
+                                                                                        href="#">All files
+                                                                                        & documentation</a>
+                                                                                </li>
+                                                                                <li>
+                                                                                    <a class="dropdown-item"
+                                                                                        href="#">License
+                                                                                        certificate & purchase code
+                                                                                        (PDF)</a>
+                                                                                </li>
+                                                                                <li>
+                                                                                    <a class="dropdown-item"
+                                                                                        href="#">License
+                                                                                        certificate & purchase code
+                                                                                        (text)</a>
+                                                                                </li>
+                                                                            </ul>
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>3</td>
+                                                                    <td>
+                                                                        <img src="../assets/images/theme-icon/3.png"
+                                                                            class="img-fluid" alt="">
+                                                                    </td>
+                                                                    <td>Boho - React JS Admin Dashboard Template</td>
+                                                                    <td>
+                                                                        <div class="dropdown download-dropdown">
+                                                                            <button class="btn dropdown-toggle"
+                                                                                type="button"
+                                                                                data-bs-toggle="dropdown">Download</button>
+                                                                            <ul class="dropdown-menu">
+                                                                                <li>
+                                                                                    <a class="dropdown-item"
+                                                                                        href="#">All files
+                                                                                        & documentation</a>
+                                                                                </li>
+                                                                                <li>
+                                                                                    <a class="dropdown-item"
+                                                                                        href="#">License
+                                                                                        certificate & purchase code
+                                                                                        (PDF)</a>
+                                                                                </li>
+                                                                                <li>
+                                                                                    <a class="dropdown-item"
+                                                                                        href="#">License
+                                                                                        certificate & purchase code
+                                                                                        (text)</a>
+                                                                                </li>
+                                                                            </ul>
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane fade" id="pills-recent">
+                                                <div class="download-table">
+                                                    <div class="table-responsive">
+                                                        <table class="table">
+                                                            <thead>
+                                                                <tr>
+                                                                    <th>No</th>
+                                                                    <th>Image</th>
+                                                                    <th>Name</th>
+                                                                    <th></th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>1</td>
+                                                                    <td>
+                                                                        <img src="../assets/images/theme-icon/1.png"
+                                                                            class="img-fluid" alt="">
+                                                                    </td>
+                                                                    <td>Sheltos - Real Estate Angular 17 Template</td>
+                                                                    <td>
+                                                                        <div class="dropdown download-dropdown">
+                                                                            <button class="btn dropdown-toggle"
+                                                                                type="button"
+                                                                                data-bs-toggle="dropdown">Download</button>
+                                                                            <ul class="dropdown-menu">
+                                                                                <li>
+                                                                                    <a class="dropdown-item"
+                                                                                        href="#">All files
+                                                                                        & documentation</a>
+                                                                                </li>
+                                                                                <li>
+                                                                                    <a class="dropdown-item"
+                                                                                        href="#">License
+                                                                                        certificate & purchase code
+                                                                                        (PDF)</a>
+                                                                                </li>
+                                                                                <li>
+                                                                                    <a class="dropdown-item"
+                                                                                        href="#">License
+                                                                                        certificate & purchase code
+                                                                                        (text)</a>
+                                                                                </li>
+                                                                            </ul>
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>2</td>
+                                                                    <td>
+                                                                        <img src="../assets/images/theme-icon/2.png"
+                                                                            class="img-fluid" alt="">
+                                                                    </td>
+                                                                    <td>Oslo - Multipurpose Shopify Theme. Fast, Clean,
+                                                                        and
+                                                                        Flexible. OS 2.0</td>
+                                                                    <td>
+                                                                        <div class="dropdown download-dropdown">
+                                                                            <button class="btn dropdown-toggle"
+                                                                                type="button"
+                                                                                data-bs-toggle="dropdown">Download</button>
+                                                                            <ul class="dropdown-menu">
+                                                                                <li>
+                                                                                    <a class="dropdown-item"
+                                                                                        href="#">All files
+                                                                                        & documentation</a>
+                                                                                </li>
+                                                                                <li>
+                                                                                    <a class="dropdown-item"
+                                                                                        href="#">License
+                                                                                        certificate & purchase code
+                                                                                        (PDF)</a>
+                                                                                </li>
+                                                                                <li>
+                                                                                    <a class="dropdown-item"
+                                                                                        href="#">License
+                                                                                        certificate & purchase code
+                                                                                        (text)</a>
+                                                                                </li>
+                                                                            </ul>
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>3</td>
+                                                                    <td>
+                                                                        <img src="../assets/images/theme-icon/3.png"
+                                                                            class="img-fluid" alt="">
+                                                                    </td>
+                                                                    <td>Boho - React JS Admin Dashboard Template</td>
+                                                                    <td>
+                                                                        <div class="dropdown download-dropdown">
+                                                                            <button class="btn dropdown-toggle"
+                                                                                type="button"
+                                                                                data-bs-toggle="dropdown">Download</button>
+                                                                            <ul class="dropdown-menu">
+                                                                                <li>
+                                                                                    <a class="dropdown-item"
+                                                                                        href="#">All files
+                                                                                        & documentation</a>
+                                                                                </li>
+                                                                                <li>
+                                                                                    <a class="dropdown-item"
+                                                                                        href="#">License
+                                                                                        certificate & purchase code
+                                                                                        (PDF)</a>
+                                                                                </li>
+                                                                                <li>
+                                                                                    <a class="dropdown-item"
+                                                                                        href="#">License
+                                                                                        certificate & purchase code
+                                                                                        (text)</a>
+                                                                                </li>
+                                                                            </ul>
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="tab-pane fade" id="pills-security" role="tabpanel">
+                                <div class="dashboard-privacy">
+                                    <div class="dashboard-bg-box">
+                                        <div class="dashboard-title mb-4">
+                                            <h3>Privacy</h3>
+                                        </div>
+
+                                        <div class="privacy-box">
+                                            <div class="d-flex align-items-start">
+                                                <h6>Allows others to see my profile</h6>
+                                                <div class="form-check form-switch switch-radio ms-auto">
+                                                    <input class="form-check-input" type="checkbox" role="switch"
+                                                        id="redio">
+                                                    <label class="form-check-label" for="redio"></label>
+                                                </div>
+                                            </div>
+
+                                            <p class="text-content">all peoples will be able to see my profile</p>
+                                        </div>
+
+                                        <div class="privacy-box">
+                                            <div class="d-flex align-items-start">
+                                                <h6>who has save this profile only that people see my profile</h6>
+                                                <div class="form-check form-switch switch-radio ms-auto">
+                                                    <input class="form-check-input" type="checkbox" role="switch"
+                                                        id="redio2">
+                                                    <label class="form-check-label" for="redio2"></label>
+                                                </div>
+                                            </div>
+
+                                            <p class="text-content">all peoples will not be able to see my profile</p>
+                                        </div>
+
+                                        <button class="btn theme-bg-color btn-md fw-bold mt-4 text-white">Save
+                                            Changes</button>
+                                    </div>
+
+                                    <div class="dashboard-bg-box mt-4">
+                                        <div class="dashboard-title mb-4">
+                                            <h3>Account settings</h3>
+                                        </div>
+
+                                        <div class="privacy-box">
+                                            <div class="d-flex align-items-start">
+                                                <h6>Deleting Your Account Will Permanently</h6>
+                                                <div class="form-check form-switch switch-radio ms-auto">
+                                                    <input class="form-check-input" type="checkbox" role="switch"
+                                                        id="redio3">
+                                                    <label class="form-check-label" for="redio3"></label>
+                                                </div>
+                                            </div>
+                                            <p class="text-content">Once your account is deleted, you will be logged out
+                                                and will be unable to log in back.</p>
+                                        </div>
+
+                                        <div class="privacy-box">
+                                            <div class="d-flex align-items-start">
+                                                <h6>Deleting Your Account Will Temporary</h6>
+                                                <div class="form-check form-switch switch-radio ms-auto">
+                                                    <input class="form-check-input" type="checkbox" role="switch"
+                                                        id="redio4">
+                                                    <label class="form-check-label" for="redio4"></label>
+                                                </div>
+                                            </div>
+
+                                            <p class="text-content">Once your account is deleted, you will be logged out
+                                                and you will be create new account</p>
+                                        </div>
+
+                                        <button class="btn theme-bg-color btn-md fw-bold mt-4 text-white">Delete My
+                                            Account</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- User Dashboard Section End -->
+
+    <!-- Footer Section Start -->
+    <footer class="section-t-space footer-section-2 footer-color-3">
+        <div class="container-fluid-lg">
+            <div class="main-footer">
+                <div class="row g-md-4 gy-sm-5">
+                    <div class="col-xxl-3 col-xl-4 col-sm-6">
+                        <a href="index-6.html" class="foot-logo theme-logo">
+                            <img src="../assets/images/logo/logo2-white.svg" class="img-fluid blur-up lazyload"
+                                alt="logo">
+                        </a>
+                        <p class="information-text information-text-2">Cửa hàng thời trang tại Hà Nội chuyên cung cấp
+                            quần áo nam, nữ và unisex theo xu hướng mới nhất
+                            thiết kế hiện đại chất liệu chất lượng giá hợp lý
+                            mang đến phong cách tự tin và trẻ trung mỗi ngày.</p>
+                        <ul class="social-icon">
+                            <li class="light-bg">
+                                <a href="https://www.facebook.com/" class="footer-link-color">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                            </li>
+                            <li class="light-bg">
+                                <a href="https://x.com/" class="footer-link-color">
+                                    <svg version="1.1" width="15px" id="Layer_1" xmlns:x="ns_extend;" xmlns:i="ns_ai;"
+                                        xmlns:graph="ns_graphs;" xmlns="http://www.w3.org/2000/svg"
+                                        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 49.8 45"
+                                        style="enable-background:new 0 0 49.8 45;" xml:space="preserve">
+                                        <style type="text/css">
+                                            .st0 {
+                                                fill: #FFFFFF;
+                                            }
+                                        </style>
+                                        <metadata>
+                                            <sfw xmlns="ns_sfw;">
+                                                <slices>
+                                                </slices>
+                                                <sliceSourceBounds bottomLeftOrigin="true" height="45" width="49.8"
+                                                    x="-67.2" y="-209.8">
+                                                </sliceSourceBounds>
+                                            </sfw>
+                                        </metadata>
+                                        <g>
+                                            <path class="st0" d="M39.2,0h7.6L30.2,19.1L49.8,45H34.4l-12-15.7L8.6,45H1l17.8-20.4L0,0h15.8l10.9,14.4L39.2,0z M36.5,40.4h4.2
+		L13.5,4.3H8.9L36.5,40.4z">
+                                            </path>
+                                        </g>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class=" light-bg">
+                                <a href="https://www.instagram.com/" class="footer-link-color">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-xxl-2 col-xl-4 col-sm-6">
+                        <div class="footer-title">
+                            <h4 class="text-white">Hỗ trợ khách hàng</h4>
+                        </div>
+                        <ul class="footer-list footer-contact footer-list-light">
+                            <li>
+                                <a href="#" class="light-text">Chính sách chung</a>
+                            </li>
+                            <li>
+                                <a href="#" class="light-text">Bảo hành</a>
+                            </li>
+                            <li>
+                                <a href="#" class="light-text">Giao hàng và kiểm hàng</a>
+                            </li>
+                            <li>
+                                <a href="#" class="light-text">Bảo mật thông tin</a>
+                            </li>
+                            <li>
+                                <a href="#" class="light-text">Chính sách Quyền riêng tư</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-xxl-2 col-xl-4 col-sm-6">
+                        <div class="footer-title">
+                            <h4 class="text-white">Về chúng tôi</h4>
+                        </div>
+                        <ul class="footer-list footer-list-light footer-contact">
+                            <li>
+                                <a href="order-success.html" class="light-text">Giới thiệu về The Faded</a>
+                            </li>
+                            <li>
+                                <a href="user-dashboard.html" class="light-text">Cộng đồng khách hàng</a>
+                            </li>
+                            <li>
+                                <a href="order-tracking.html" class="light-text">Tin tức mới nhất</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-xxl-2 col-xl-4 col-sm-6">
+                        <div class="footer-title">
+                            <h4 class="text-white">Danh mục</h4>
+                        </div>
+                        <ul class="footer-list footer-list-light footer-contact">
+                            <li>
+                                <a href="vegetables-demo.html" class="light-text">Phong cách nam</a>
+                            </li>
+                            <li>
+                                <a href="spice-demo.html" class="light-text">Phong cách nữ</a>
+                            </li>
+                            <li>
+                                <a href="bags-demo.html" class="light-text">Phong cách trẻ em</a>
+                            </li>
+                            <li>
+                                <a href="bakery-demo.html" class="light-text">Sale</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-xxl-3 col-xl-4 col-sm-6">
+                        <div class="footer-title">
+                            <h4 class="text-white">Địa chỉ shop</h4>
+                        </div>
+                        <ul class="footer-address footer-contact">
+                            <li>
+                                <a href="javascript:void(0)" class="light-text">
+                                    <div class="inform-box flex-start-box">
+                                        <i data-feather="map-pin"></i>
+                                        <p>Số 3, Ngách 41 (Đối diện THPT Phan Huy Chú), Ngõ 49 Huỳnh Thúc Kháng, Láng,
+                                            Hà Nội</p>
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="javascript:void(0)" class="light-text">
+                                    <div class="inform-box">
+                                        <i data-feather="phone"></i>
+                                        <p>Số điện thoại: 0788335558</p>
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="javascript:void(0)" class="light-text">
+                                    <div class="inform-box">
+                                        <i data-feather="mail"></i>
+                                        <p>Email: Thefaded.vn@gmail.com</p>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sub-footer sub-footer-lite section-b-space section-t-space">
+                <div class="left-footer">
+                    <p class="light-text">© 2026 Copyright by The Faded.</p>
+                </div>
+
+                <ul class="payment-box">
+                    <li>
+                        <img src="../assets/images/icon/paymant/visa.png" class="blur-up lazyload" alt="">
+                    </li>
+                    <li>
+                        <img src="../assets/images/icon/paymant/master-card.png" alt="" class="blur-up lazyload">
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer Section End -->
+
+    <!-- Quick View Modal Box Start -->
+    <div class="modal fade theme-modal view-modal" id="view" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-xl modal-fullscreen-sm-down">
+            <div class="modal-content">
+                <div class="modal-header p-0">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="row g-sm-4 g-2">
+                        <div class="col-lg-6">
+                            <div class="slider-image">
+                                <!-- Thay ảnh bánh bằng ảnh áo sơ mi -->
+                                <img src="../assets/images/product/sp5.jpg" class="img-fluid blur-up lazyloaded"
+                                    alt="Áo sơ mi nam">
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6">
+                            <div class="right-sidebar-modal">
+                                <h4 class="title-name">Striped Oxford Fun Shirt – Rainbow</h4>
+                                <h4 class="price">1.650.000 VNĐ</h4>
+
+                                <div class="product-detail">
+                                    <h4>Chi tiết sản phẩm :</h4>
+                                    <p>Áo sơ mi nam với chất liệu cotton lụa mềm mại, khả năng thấm hút mồ hôi cực tốt
+                                        và hạn chế nhăn tối đa.
+                                        Thiết kế form dáng ôm vừa vặn (Slim-fit) giúp tôn lên vẻ ngoài lịch lãm và hiện
+                                        đại.
+                                        Đường may tinh tế, tỉ mỉ, phù hợp cho cả môi trường công sở, gặp gỡ đối tác hay
+                                        các sự kiện quan trọng.</p>
+                                </div>
+
+                                <ul class="brand-list">
+                                    <li>
+                                        <div class="brand-box">
+                                            <h5>Thương hiệu:</h5>
+                                            <h6>THE FADED</h6>
+                                        </div>
+                                    </li>
+
+                                    <li>
+                                        <div class="brand-box">
+                                            <h5>Mã sản phẩm:</h5>
+                                            <h6>SM-2024-069</h6>
+                                        </div>
+                                    </li>
+
+                                    <li>
+                                        <div class="brand-box">
+                                            <h5>Phân loại:</h5>
+                                            <h6>Áo sơ mi nam</h6>
+                                        </div>
+                                    </li>
+                                </ul>
+
+                                <div class="select-size">
+                                    <h4>Kích thước (Size) :</h4>
+                                    <select class="form-select select-form-size">
+                                        <option selected="">Chọn kích cỡ</option>
+                                        <option value="s">Size S (50-58kg)</option>
+                                        <option value="m">Size M (59-67kg)</option>
+                                        <option value="l">Size L (68-75kg)</option>
+                                        <option value="xl">Size XL (76-85kg)</option>
+                                        <option value="xxl">Size XXL (>85kg)</option>
+                                    </select>
+                                </div>
+
+                                <div class="modal-button">
+                                    <button onclick="location.href = 'cart.html';"
+                                        class="btn btn-md add-cart-button icon">Thêm vào giỏ hàng</button>
+                                    <button onclick="location.href = 'product-left-thumbnail.html';"
+                                        class="btn theme-bg-color view-button icon text-white fw-bold btn-md">
+                                        Xem chi tiết hơn</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Quick View Modal Box End -->
+
+    <!-- Tap to top and theme setting button start -->
+    <div class="theme-option">
+        <div class="back-to-top">
+            <a id="back-to-top" href="#">
+                <i class="fas fa-chevron-up"></i>
+            </a>
+        </div>
+    </div>
+
+    <!-- Bg overlay Start -->
+    <div class="bg-overlay"></div>
+    <!-- Bg overlay End -->
+
+    <!-- Add address modal box start -->
+    <div class="modal fade theme-modal" id="add-address" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-fullscreen-sm-down">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Thêm địa chỉ mới</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-floating mb-4 theme-form-floating">
+                            <input type="text" class="form-control" id="fname" placeholder="Họ và tên">
+                            <label for="fname">Họ và tên</label>
+                        </div>
+                    </form>
+
+                    <form>
+                        <div class="form-floating mb-4 theme-form-floating">
+                            <input type="email" class="form-control" id="email" placeholder="Email">
+                            <label for="email">Email</label>
+                        </div>
+                    </form>
+
+                    <form>
+                        <div class="form-floating mb-4 theme-form-floating">
+                            <textarea class="form-control" placeholder="Địa chỉ" id="address"
+                                style="height: 100px"></textarea>
+                            <label for="address">Địa chỉ</label>
+                        </div>
+                    </form>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary btn-md" data-bs-dismiss="modal">Hủy</button>
+                    <button type="button" class="btn theme-bg-color btn-md text-white"
+                        data-bs-dismiss="modal">Lưu</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Add address modal box end -->
+
+    <!-- Edit Profile Start -->
+    <div class="modal fade theme-modal" id="editProfile" tabindex="-1">
+        <div class="modal-dialog modal-lg modal-dialog-centered modal-fullscreen-sm-down">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel2">Chỉnh sửa thông tin</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="row g-4">
+                        <div class="col-xxl-12">
+                            <form>
+                                <div class="form-floating theme-form-floating">
+                                    <input type="text" class="form-control" id="fname">
+                                    <label for="fname">Họ và tên</label>
+                                </div>
+                            </form>
+                        </div>
+
+                        <div class="col-xxl-6">
+                            <form>
+                                <div class="form-floating theme-form-floating">
+                                    <input type="email" class="form-control" id="email1">
+                                    <label for="email">Email</label>
+                                </div>
+                            </form>
+                        </div>
+
+                        <div class="col-xxl-6">
+                            <form>
+                                <div class="form-floating theme-form-floating">
+                                    <input class="form-control" type="tel" name="mobile" id="mobile" maxlength="10"
+                                        oninput="javascript: if (this.value.length > this.maxLength) this.value =
+                                            this.value.slice(0, this.maxLength);">
+                                    <label for="mobile">Số điện thoại</label>
+                                </div>
+                            </form>
+                        </div>
+
+                        <div class="col-12">
+                            <form>
+                                <div class="form-floating theme-form-floating">
+                                    <input type="text" class="form-control" id="address">
+                                    <label for="address">Địa chỉ</label>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-animation btn-md fw-bold" data-bs-dismiss="modal">Đóng</button>
+                    <button type="button" data-bs-dismiss="modal"
+                        class="btn theme-bg-color btn-md fw-bold text-light">Lưu</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Edit Profile End -->
+
+    <!-- Remove Profile Modal Start -->
+    <div class="modal fade theme-modal remove-profile" id="removeProfile" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-fullscreen-sm-down">
+            <div class="modal-content">
+                <div class="modal-header d-block text-center">
+                    <h5 class="modal-title w-100" id="exampleModalLabel22">Xác nhận gỡ bỏ thông tin</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="remove-box">
+                        <p>Quý khách có chắc chắn muốn xóa thông tin này không? Sau khi xác nhận, dữ liệu liên quan sẽ
+                            được gỡ bỏ hoàn toàn khỏi hệ thống quản lý tài khoản.</p>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-animation btn-md fw-bold" data-bs-dismiss="modal">Hủy
+                        bỏ</button>
+                    <button type="button" class="btn theme-bg-color btn-md fw-bold text-light"
+                        data-bs-target="#removeAddress" data-bs-toggle="modal">Xác nhận xóa</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade theme-modal remove-profile" id="removeAddress" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-fullscreen-sm-down">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title text-center" id="exampleModalLabel12">Thông báo thành công</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="remove-box text-center">
+                        <h4 class="text-content">Yêu cầu của Quý khách đã được thực hiện. Thông tin đã được gỡ bỏ.</h4>
+                    </div>
+                </div>
+                <div class="modal-footer pt-0">
+                    <button type="button" class="btn theme-bg-color btn-md fw-bold text-light"
+                        data-bs-dismiss="modal">Đóng</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Remove Profile Modal End -->
+
+    <!-- latest jquery-->
+    <script src="../assets/js/jquery-3.6.0.min.js"></script>
+
+    <!-- jquery ui-->
+    <script src="../assets/js/jquery-ui.min.js"></script>
+
+    <!-- Bootstrap js-->
+    <script src="../assets/js/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="../assets/js/bootstrap/bootstrap-notify.min.js"></script>
+    <script src="../assets/js/bootstrap/popper.min.js"></script>
+
+    <!-- feather icon js-->
+    <script src="../assets/js/feather/feather.min.js"></script>
+    <script src="../assets/js/feather/feather-icon.js"></script>
+
+    <!-- Lazyload Js -->
+    <script src="../assets/js/lazysizes.min.js"></script>
+
+    <!-- Slick js-->
+    <script src="../assets/js/slick/slick.js"></script>
+    <script src="../assets/js/slick/custom_slick.js"></script>
+
+    <!-- Quantity js -->
+    <script src="../assets/js/quantity-2.js"></script>
+
+    <!-- Nav & tab upside js -->
+    <script src="../assets/js/nav-tab.js"></script>
+
+    <!-- script js -->
+    <script src="../assets/js/script.js"></script>
+</body>
+
+</html>

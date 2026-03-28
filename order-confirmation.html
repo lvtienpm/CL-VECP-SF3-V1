@@ -55,14 +55,10 @@
 
                     <div class="col-xxl-6 col-lg-6 col-sm-9 col-12">
                         <div class="header-search-box">
-                            <div class="search-box">
-                                <div class="input-group">
-                                    <input type="search" class="form-control" placeholder="Tìm kiếm sản phẩm...">
-                                    <button class="btn search-button" type="button">
-                                        <i class="fa-solid fa-magnifying-glass"></i>
-                                    </button>
-                                </div>
-                            </div>
+                            <a href="#">
+                                <img src="../assets/images/banner/4a44f0be600d626bcdf3e8dc31deecf2 copy.png"
+                                    class="img-fluid" alt="Banner">
+                            </a>
                         </div>
                     </div>
 
@@ -126,7 +122,7 @@
                                     <i class="fa-solid fa-bars"></i>
                                 </span>
                             </button>
-                            <a href="index-6.html" class="web-logo nav-logo">
+                            <a href="index.html" class="web-logo nav-logo">
                                 <img src="../assets/images/logo/logo1.svg" class="img-fluid main-logo" alt="logo">
 
                                 <img src="../assets/images/logo/logo2-white.svg" class="img-fluid sticky-logo"
@@ -374,7 +370,7 @@
     <div class="mobile-menu d-md-none d-block mobile-cart">
         <ul>
             <li class="active">
-                <a href="index-6.html">
+                <a href="index.html">
                     <i class="fa-solid fa-house"></i>
                     <span>Trang chủ</span>
                 </a>
@@ -398,15 +394,18 @@
     <!-- mobile fix menu end -->
 
     <!-- Breadcrumb Section Start -->
-    <section class="breadcrumb-section pt-0">
-        <div class="container-fluid-lg border-nav">
+    <section class="breadcrumb-section pb-3 pt-3 mb-3 mt-3 mt-3">
+        <div class="container-fluid-lg ">
             <div class="breadcrumb-contain">
                 <nav>
                     <ol class="breadcrumb mb-0">
                         <li class="breadcrumb-item">
-                            <a href="index-6.html">
+                            <a href="index.html">
                                 <i class="fa-solid fa-house"></i>
                             </a>
+                        </li>
+                        <li class="breadcrumb-item">
+                            <a href="#">Thanh toán</a>
                         </li>
                         <li class="breadcrumb-item active">
                             <a href="#">
@@ -578,9 +577,8 @@
                             </ul>
                         </div>
 
-                        <a href="order-success.html" id="confirm-order-link"><button
-                                class="btn theme-bg-color text-white btn-md w-100 mt-4 fw-bold">Xác nhận & Đặt
-                                hàng</button></a>
+                        <a href="payment-qr.html" id="confirm-order-link"><button
+                                class="btn theme-bg-color text-white btn-md w-100 mt-4 fw-bold">Xác nhận</button></a>
 
                     </div>
                 </div>
@@ -595,7 +593,7 @@
             <div class="main-footer">
                 <div class="row g-md-4 gy-sm-5">
                     <div class="col-xxl-3 col-xl-4 col-sm-6">
-                        <a href="index-6.html" class="foot-logo theme-logo">
+                        <a href="index.html" class="foot-logo theme-logo">
                             <img src="../assets/images/logo/logo2-white.svg" class="img-fluid blur-up lazyload"
                                 alt="logo">
                         </a>
@@ -754,6 +752,15 @@
                     <li>
                         <img src="../assets/images/icon/paymant/master-card.png" alt="" class="blur-up lazyload">
                     </li>
+                    <li>
+                        <img src="../assets/images/icon/paymant/vnpay-seeklogo.svg" class="blur-up lazyload" alt="">
+                    </li>
+                    <li>
+                        <img src="../assets/images/icon/paymant/zalo-pay.png" class="blur-up lazyload" alt="">
+                    </li>
+                    <li>
+                        <img src="../assets/images/icon/paymant/MOMO.png" class="blur-up lazyload" alt="">
+                    </li>
                 </ul>
             </div>
         </div>
@@ -815,11 +822,40 @@
 
             if (selectedMethod === 'banking' || selectedMethod.startsWith('bank')) {
                 paymentBox.innerHTML = `
-                    <div class="delivery-option">
-                        <div class="delivery-category">
-                            <div class="shipment-detail">
-                                <h5 class="fw-bold theme-color mb-1">Ngân hàng trực tuyến (Internet Banking)</h5>
-                                <p class="text-content mb-0">Quý khách sẽ thực hiện quét mã QR thanh toán ở bước tiếp theo.</p>
+                    <div class="qr-code-payment text-center p-3 border rounded-4 bg-white shadow-sm">
+                        <h6 class="text-uppercase mb-3 fw-bold theme-color">Quét mã QR để thanh toán</h6>
+                        <div class="qr-container mb-3 position-relative d-inline-block p-2 border rounded-3 bg-white">
+                            <img src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=STT:1708031724431131|Amount:1630000|Bank:Vietcombank" 
+                                 alt="QR Code" class="img-fluid" style="max-width: 180px;">
+                        </div>
+                        
+                        <div class="payment-info mt-2 text-start mx-auto" style="max-width: 380px;">
+                            <div class="card border-0 bg-light rounded-4 overflow-hidden">
+                                <div class="card-body p-3">
+                                    <div class="d-flex align-items-center justify-content-between mb-2 border-bottom pb-2">
+                                        <span class="text-muted small text-uppercase fw-semibold">Ngân hàng</span>
+                                        <span class="fw-bold text-dark small">Vietcombank (VCB)</span>
+                                    </div>
+                                    <div class="d-flex align-items-center justify-content-between mb-2 border-bottom pb-2">
+                                        <span class="text-muted small text-uppercase fw-semibold">Số tài khoản</span>
+                                        <span class="fw-bold text-dark small">1234 5678 90</span>
+                                    </div>
+                                    <div class="d-flex align-items-center justify-content-between mb-2 border-bottom pb-2">
+                                        <span class="text-muted small text-uppercase fw-semibold">Số tiền</span>
+                                        <span class="fw-bold text-primary small">1.630.000 VNĐ</span>
+                                    </div>
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <span class="text-muted small text-uppercase fw-semibold">Nội dung</span>
+                                        <span class="fw-bold theme-color small">FADED_ORDER_123</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mt-3 p-2 bg-warning-subtle rounded-3 text-center">
+                                <p class="text-dark extra-small mb-0 fw-medium">
+                                    <i class="fa-solid fa-triangle-exclamation me-1"></i>
+                                    Vui lòng nhập đúng nội dung chuyển khoản để chúng tôi có thể liên hệ với bạn để xác
+                                    nhận lại đơn hàng.
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -828,10 +864,12 @@
             } else {
                 paymentBox.innerHTML = `
                     <div class="delivery-option">
-                        <div class="delivery-category">
-                            <div class="shipment-detail">
-                                <h5 class="fw-bold theme-color mb-1">Thanh toán khi nhận hàng (COD)</h5>
-                                <p class="text-content mb-0">Quý khách sẽ thanh toán tiền mặt cho nhân viên giao hàng sau khi kiểm tra sản phẩm.</p>
+                        <div class="card-body p-4">
+                            <div class="d-flex align-items-center gap-3">
+                                <div>
+                                    <h5 class="fw-bold theme-color mb-1">Thanh toán khi nhận hàng (COD)</h5>
+                                    <p class="text-content mb-0">Quý khách sẽ thanh toán tiền mặt cho nhân viên giao hàng sau khi kiểm tra sản phẩm.</p>
+                                </div>
                             </div>
                         </div>
                     </div>

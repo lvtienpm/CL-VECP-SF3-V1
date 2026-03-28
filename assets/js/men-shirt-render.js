@@ -53,9 +53,11 @@ document.addEventListener('DOMContentLoaded', () => {
                     if (el) el.checked = true;
                 });
 
-                // Reset Stock Status UI
-                const stockBtn = document.getElementById('dropdownStockStatus');
-                if (stockBtn) stockBtn.querySelector('span').innerText = "Kho hàng";
+                // Reset Stock Status UI (Horizontal Checkboxes)
+                const stockInCbs = document.querySelectorAll('.stock-filter-group .checkbox_animated');
+                stockInCbs.forEach(cb => cb.checked = false);
+                const allStockCb = document.getElementById('stock-all-top');
+                if (allStockCb) allStockCb.checked = true;
                 container.dataset.currentStock = 'stock-all-top';
 
                 applyFilters(baseProducts);
@@ -79,19 +81,22 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         });
 
-        // Lắng nghe dropdown Kho hàng (Stock Status)
-        const stockItems = document.querySelectorAll('.top-filter-menu .dropdown-menu .dropdown-item[id^="stock-"]');
-        stockItems.forEach(item => {
-            item.addEventListener('click', (e) => {
-                e.preventDefault();
-                const stockType = item.id; // stock-all-top, stock-in-top, stock-out-top
-                const stockText = item.innerText;
-
-                // Cập nhật UI dropdown kho hàng
-                const btn = document.getElementById('dropdownStockStatus');
-                if (btn) btn.querySelector('span').innerText = stockText;
-
-                container.dataset.currentStock = stockType;
+        // Lắng nghe nút Kho hàng (Stock Status - Horizontal Checkboxes)
+        const stockCheckboxes = document.querySelectorAll('.stock-filter-group .checkbox_animated');
+        stockCheckboxes.forEach(cb => {
+            cb.addEventListener('change', () => {
+                if (cb.checked) {
+                    // Mutual exclusivity: uncheck others
+                    stockCheckboxes.forEach(other => {
+                        if (other !== cb) other.checked = false;
+                    });
+                    container.dataset.currentStock = cb.id;
+                } else {
+                    // If unchecked, default back to 'all'
+                    const allBtn = document.getElementById('stock-all-top');
+                    if (allBtn) allBtn.checked = true;
+                    container.dataset.currentStock = 'stock-all-top';
+                }
                 applyFilters(baseProducts);
             });
         });

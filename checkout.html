@@ -55,14 +55,10 @@
 
                     <div class="col-xxl-6 col-lg-6 col-sm-9 col-12">
                         <div class="header-search-box">
-                            <div class="search-box">
-                                <div class="input-group">
-                                    <input type="search" class="form-control" placeholder="Tìm kiếm sản phẩm...">
-                                    <button class="btn search-button" type="button">
-                                        <i class="fa-solid fa-magnifying-glass"></i>
-                                    </button>
-                                </div>
-                            </div>
+                            <a href="#">
+                                <img src="../assets/images/banner/4a44f0be600d626bcdf3e8dc31deecf2 copy.png"
+                                    class="img-fluid" alt="Banner">
+                            </a>
                         </div>
                     </div>
 
@@ -126,7 +122,7 @@
                                     <i class="fa-solid fa-bars"></i>
                                 </span>
                             </button>
-                            <a href="index-6.html" class="web-logo nav-logo">
+                            <a href="index.html" class="web-logo nav-logo">
                                 <img src="../assets/images/logo/logo1.svg" class="img-fluid main-logo" alt="logo">
 
                                 <img src="../assets/images/logo/logo2-white.svg" class="img-fluid sticky-logo"
@@ -374,7 +370,7 @@
     <div class="mobile-menu d-md-none d-block mobile-cart">
         <ul>
             <li class="active">
-                <a href="index-6.html">
+                <a href="index.html">
                     <i class="fa-solid fa-house"></i>
                     <span>Trang chủ</span>
                 </a>
@@ -398,13 +394,13 @@
     <!-- mobile fix menu end -->
 
     <!-- Breadcrumb Section Start -->
-    <section class="breadcrumb-section pt-0">
-        <div class="container-fluid-lg border-nav">
+    <section class="breadcrumb-section pb-3 pt-3 mb-3">
+        <div class="container-fluid-lg ">
             <div class="breadcrumb-contain">
                 <nav>
                     <ol class="breadcrumb mb-0">
                         <li class="breadcrumb-item">
-                            <a href="index-6.html">
+                            <a href="index.html">
                                 <i class="fa-solid fa-house"></i>
                             </a>
                         </li>
@@ -584,8 +580,7 @@
                                                             <div class="custom-form-check form-check mb-0">
                                                                 <label class="form-check-label" for="banking">
                                                                     <input class="form-check-input mt-0" type="radio"
-                                                                        name="flexRadioDefault" id="banking">
-                                                                    Ngân hàng trực tuyến (Internet Banking)
+                                                                        name="flexRadioDefault" id="banking">Quét mã QR
                                                                 </label>
                                                             </div>
                                                         </div>
@@ -593,162 +588,82 @@
                                                     <div id="flush-collapseTwo" class="accordion-collapse collapse"
                                                         data-bs-parent="#accordionFlushExample">
                                                         <div class="accordion-body">
-                                                            <h5 class="text-uppercase mb-4">Chọn ngân hàng của bạn</h5>
-                                                            <div class="row g-2">
-                                                                <div class="col-md-6">
-                                                                    <div class="custom-form-check form-check">
-                                                                        <input class="form-check-input mt-0"
-                                                                            type="radio" name="flexRadioDefault"
-                                                                            id="bank1">
-                                                                        <label class="form-check-label"
-                                                                            for="bank1">VietinBank</label>
-                                                                    </div>
+                                                            <div class="qr-code-payment text-center p-3">
+                                                                <h5 class="text-uppercase mb-4 fw-bold theme-color">Quét
+                                                                    mã QR để thanh toán</h5>
+                                                                <div
+                                                                    class="qr-container mb-4 position-relative d-inline-block p-3 border rounded-4 shadow-sm bg-white">
+                                                                    <img src="https://api.qrserver.com/v1/create-qr-code/?size=250x250&data=STT:1708031724431131|Amount:1630000|Bank:Vietcombank"
+                                                                        alt="QR Code" class="img-fluid"
+                                                                        style="max-width: 220px;">
                                                                 </div>
-                                                                <div class="col-md-6">
-                                                                    <div class="custom-form-check form-check">
-                                                                        <input class="form-check-input mt-0"
-                                                                            type="radio" name="flexRadioDefault"
-                                                                            id="bank2">
-                                                                        <label class="form-check-label"
-                                                                            for="bank2">Agribank</label>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="col-md-6">
-                                                                    <div class="custom-form-check form-check">
-                                                                        <input class="form-check-input mt-0"
-                                                                            type="radio" name="flexRadioDefault"
-                                                                            id="bank3">
-                                                                        <label class="form-check-label"
-                                                                            for="bank3">Vietcombank</label>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="col-md-6">
-                                                                    <div class="custom-form-check form-check">
-                                                                        <input class="form-check-input mt-0"
-                                                                            type="radio" name="flexRadioDefault"
-                                                                            id="bank4">
-                                                                        <label class="form-check-label"
-                                                                            for="bank4">BIDV</label>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="col-md-6">
-                                                                    <div class="custom-form-check form-check">
-                                                                        <input class="form-check-input mt-0"
-                                                                            type="radio" name="flexRadioDefault"
-                                                                            id="bank5">
-                                                                        <label class="form-check-label" for="bank5">HSBC
-                                                                            Việt Nam</label>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="col-md-6">
-                                                                    <div class="custom-form-check form-check">
-                                                                        <input class="form-check-input mt-0"
-                                                                            type="radio" name="flexRadioDefault"
-                                                                            id="bank6">
-                                                                        <label class="form-check-label"
-                                                                            for="bank6">Techcombank</label>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="col-12">
-                                                                    <div class="select-option">
-                                                                        <div class="form-floating theme-form-floating">
-                                                                            <select
-                                                                                class="form-select theme-form-select">
-                                                                                <option value="vcb">Vietcombank</option>
-                                                                                <option value="tcb">Techcombank</option>
-                                                                                <option value="acb">ACB</option>
-                                                                                <option value="tp">TPBank</option>
-                                                                                <option value="other">Ngân hàng khác
-                                                                                </option>
-                                                                            </select>
-                                                                            <label>Hoặc chọn ngân hàng khác</label>
+
+                                                                <div class="payment-info mt-2 text-start mx-auto"
+                                                                    style="max-width: 450px;">
+                                                                    <div
+                                                                        class="card border-0 bg-light rounded-4 shadow-sm">
+                                                                        <div class="card-body p-4">
+                                                                            <div
+                                                                                class="d-flex align-items-center justify-content-between mb-3 border-bottom pb-2">
+                                                                                <span
+                                                                                    class="text-muted small text-uppercase fw-semibold">Ngân
+                                                                                    hàng</span>
+                                                                                <span
+                                                                                    class="fw-bold text-dark">Vietcombank
+                                                                                    (VCB)</span>
+                                                                            </div>
+
+                                                                            <div
+                                                                                class="d-flex align-items-center justify-content-between mb-3 border-bottom pb-2">
+                                                                                <span
+                                                                                    class="text-muted small text-uppercase fw-semibold">Số
+                                                                                    tài khoản</span>
+                                                                                <div class="d-flex align-items-center">
+                                                                                    <span
+                                                                                        class="fw-bold text-dark me-2">1234
+                                                                                        5678 90</span>
+                                                                                    <a href="javascript:void(0)"
+                                                                                        class="text-primary copy-btn"
+                                                                                        title="Sao chép">
+                                                                                        <i class="fa-solid fa-copy"></i>
+                                                                                    </a>
+                                                                                </div>
+                                                                            </div>
+
+                                                                            <div
+                                                                                class="d-flex align-items-center justify-content-between mb-3 border-bottom pb-2">
+                                                                                <span
+                                                                                    class="text-muted small text-uppercase fw-semibold">Chủ
+                                                                                    tài khoản</span>
+                                                                                <span class="fw-bold text-dark">NGUYEN
+                                                                                    VAN A</span>
+                                                                            </div>
+
+                                                                            <div
+                                                                                class="d-flex align-items-center justify-content-between">
+                                                                                <span
+                                                                                    class="text-muted small text-uppercase fw-semibold">Nội
+                                                                                    dung CK</span>
+                                                                                <span
+                                                                                    class="fw-bold theme-color">FADED_ORDER_123</span>
+                                                                            </div>
                                                                         </div>
+                                                                    </div>
+                                                                    <div
+                                                                        class="mt-3 p-2 bg-warning-subtle rounded-3 text-center">
+                                                                        <p class="text-dark small mb-0 fw-medium">
+                                                                            <i
+                                                                                class="fa-solid fa-triangle-exclamation me-1"></i>
+                                                                            Vui lòng nhập đúng nội dung chuyển khoản để
+                                                                            chúng tôi có thể liên hệ với bạn để xác nhận
+                                                                            lại đơn hàng.
+                                                                        </p>
                                                                     </div>
                                                                 </div>
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </div>
-
-                                                <!-- Ví điện tử -->
-                                                <!-- <div class="accordion-item">
-                                                    <div class="accordion-header" id="flush-headingThree">
-                                                        <div class="accordion-button collapsed"
-                                                            data-bs-toggle="collapse"
-                                                            data-bs-target="#flush-collapseThree">
-                                                            <div class="custom-form-check form-check mb-0">
-                                                                <label class="form-check-label" for="wallet">
-                                                                    <input class="form-check-input mt-0" type="radio"
-                                                                        name="flexRadioDefault" id="wallet">
-                                                                    Ví điện tử
-                                                                </label>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div id="flush-collapseThree" class="accordion-collapse collapse"
-                                                        data-bs-parent="#accordionFlushExample">
-                                                        <div class="accordion-body">
-                                                            <h5 class="text-uppercase mb-4">Chọn ví điện tử</h5>
-                                                            <div class="row">
-                                                                <div class="col-md-6">
-                                                                    <div class="custom-form-check form-check">
-                                                                        <label class="form-check-label" for="momo">
-                                                                            <input class="form-check-input mt-0"
-                                                                                type="radio" name="flexRadioDefault"
-                                                                                id="momo">
-                                                                            Ví MoMo
-                                                                        </label>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="col-md-6">
-                                                                    <div class="custom-form-check form-check">
-                                                                        <input class="form-check-input mt-0"
-                                                                            type="radio" name="flexRadioDefault"
-                                                                            id="zalo">
-                                                                        <label class="form-check-label"
-                                                                            for="zalo">ZaloPay</label>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="col-md-6">
-                                                                    <div class="custom-form-check form-check">
-                                                                        <input class="form-check-input mt-0"
-                                                                            type="radio" name="flexRadioDefault"
-                                                                            id="vnpay">
-                                                                        <label class="form-check-label"
-                                                                            for="vnpay">VNPay</label>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="col-md-6">
-                                                                    <div class="custom-form-check form-check">
-                                                                        <input class="form-check-input mt-0"
-                                                                            type="radio" name="flexRadioDefault"
-                                                                            id="shopee">
-                                                                        <label class="form-check-label"
-                                                                            for="shopee">ShopeePay</label>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="col-md-6">
-                                                                    <div class="custom-form-check form-check">
-                                                                        <input class="form-check-input mt-0"
-                                                                            type="radio" name="flexRadioDefault"
-                                                                            id="viettel">
-                                                                        <label class="form-check-label"
-                                                                            for="viettel">Viettel Money</label>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="col-md-6">
-                                                                    <div class="custom-form-check form-check">
-                                                                        <input class="form-check-input mt-0"
-                                                                            type="radio" name="flexRadioDefault"
-                                                                            id="moca">
-                                                                        <label class="form-check-label" for="moca">Moca
-                                                                            / GrabPay</label>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div> -->
                                             </div>
                                         </div>
                                     </div>
@@ -858,8 +773,7 @@
                             </ul>
                         </div>
                         <a href="order-confirmation.html"><button
-                                class="btn theme-bg-color text-white btn-md w-100 mt-4 fw-bold">Xác nhận đơn
-                                hàng</button></a>
+                                class="btn theme-bg-color text-white btn-md w-100 mt-4 fw-bold">Xác nhận</button></a>
 
                     </div>
                 </div>
@@ -874,7 +788,7 @@
             <div class="main-footer">
                 <div class="row g-md-4 gy-sm-5">
                     <div class="col-xxl-3 col-xl-4 col-sm-6">
-                        <a href="index-6.html" class="foot-logo theme-logo">
+                        <a href="index.html" class="foot-logo theme-logo">
                             <img src="../assets/images/logo/logo2-white.svg" class="img-fluid blur-up lazyload"
                                 alt="logo">
                         </a>
@@ -1032,6 +946,15 @@
                     </li>
                     <li>
                         <img src="../assets/images/icon/paymant/master-card.png" alt="" class="blur-up lazyload">
+                    </li>
+                    <li>
+                        <img src="../assets/images/icon/paymant/vnpay-seeklogo.svg" class="blur-up lazyload" alt="">
+                    </li>
+                    <li>
+                        <img src="../assets/images/icon/paymant/zalo-pay.png" class="blur-up lazyload" alt="">
+                    </li>
+                    <li>
+                        <img src="../assets/images/icon/paymant/MOMO.png" class="blur-up lazyload" alt="">
                     </li>
                 </ul>
             </div>

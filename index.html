@@ -843,10 +843,27 @@
                         </div>
 
                         <div class="col-xxl-12 col-lg-12 d-lg-block d-none mb-3">
-                            <div class="return-banner-box shadow-sm border">
-                                <a href="#">
+                            <div class="return-banner-box shadow-sm border video-banner-wrapper" id="openVideo">
+                                <a href="javascript:void(0)" class="video-link">
                                     <img src="../assets/images/banner/100ngay.jpg" class="img-fluid" alt="Return">
+                                    <!-- Nút Play nằm giữa -->
+                                    <div class="play-icon">
+                                        <i class="fa-solid fa-play"></i>
+                                    </div>
                                 </a>
+                            </div>
+                        </div>
+
+                        <!-- Cấu trúc Overlay Video (Mặc định ẩn) -->
+                        <div class="video-overlay" id="videoOverlay">
+                            <div class="video-overlay-close"></div> <!-- Click ra ngoài để đóng -->
+                            <div class="video-container">
+                                <button class="close-btn" id="closeVideo">&times;</button>
+                                <div class="video-wrapper">
+                                    <!-- Thay LINK_VIDEO_CUA_BAN bằng link youtube (dạng embed) -->
+                                    <iframe id="videoIframe" src="https://youtu.be/6wLHiMVLNbE?si=QxnbPfiPPDzugvVv"
+                                        frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -1278,7 +1295,8 @@
                                         chọn tốt nhất.</h4>
                                     <h2 class="mt-sm-3 mt-1 mb-2 text-content"><span class="theme-color fw-bold">Cuốn
                                             cẩm nang phong cách nam giới 2026.</h2>
-                                    <p class="text-content">Nâng tầm tủ đồ với những thiết kế vượt thời gian. Sự kết hợp
+                                    <p class="text-content fw-500">Nâng tầm tủ đồ với những thiết kế vượt thời gian.
+                                        Sự kết hợp
                                         hoàn mỹ giữa chất liệu Mesh Cotton thoáng mát và form dáng chuẩn mực.</p>
                                     <button class="btn theme-bg-color mt-sm-4 mt-2 btn-md text-white fw-bold"
                                         onclick="location.href = '#';">Mua ngay</button>
@@ -1608,7 +1626,7 @@
                 <div>
                     <div class="review-box text-center">
                         <div class="review-image">
-                            <img src="../assets/images/product/sp1.jpg" class="img-fluid rounded-circle mx-auto"
+                            <img src="../assets/images/avata/avata4.jpg" class="img-fluid rounded-circle mx-auto"
                                 style="width: 80px; height: 80px; object-fit: cover;" alt="">
                             <i class="fa-solid fa-quote-right quote-icon"></i>
                         </div>
@@ -1630,7 +1648,7 @@
                 <div>
                     <div class="review-box text-center">
                         <div class="review-image">
-                            <img src="../assets/images/product/sp2.jpg" class="img-fluid rounded-circle mx-auto"
+                            <img src="../assets/images/avata/avata1.jpg" class="img-fluid rounded-circle mx-auto"
                                 style="width: 80px; height: 80px; object-fit: cover;" alt="">
                             <i class="fa-solid fa-quote-right quote-icon"></i>
                         </div>
@@ -1652,7 +1670,7 @@
                 <div>
                     <div class="review-box text-center">
                         <div class="review-image">
-                            <img src="../assets/images/product/sp3.jpg" class="img-fluid rounded-circle mx-auto"
+                            <img src="../assets/images/avata/avata3.jpg" class="img-fluid rounded-circle mx-auto"
                                 style="width: 80px; height: 80px; object-fit: cover;" alt="">
                             <i class="fa-solid fa-quote-right quote-icon"></i>
                         </div>
@@ -1674,7 +1692,7 @@
                 <div>
                     <div class="review-box text-center">
                         <div class="review-image">
-                            <img src="../assets/images/product/sp4.jpg" class="img-fluid rounded-circle mx-auto"
+                            <img src="../assets/images/avata/avata2.jpg" class="img-fluid rounded-circle mx-auto"
                                 style="width: 80px; height: 80px; object-fit: cover;" alt="">
                             <i class="fa-solid fa-quote-right quote-icon"></i>
                         </div>
@@ -1993,6 +2011,9 @@
     <!-- latest jquery-->
     <script src="../assets/js/jquery-3.6.0.min.js"></script>
 
+    <!-- search-redirect.js -->
+    <script src="../assets/js/search-redirect.js"></script>
+
     <!-- jquery ui-->
     <script src="../assets/js/jquery-ui.min.js"></script>
 
@@ -2036,6 +2057,7 @@
     <script src="../assets/js/script.js"></script>
     <script src="../assets/js/product-common.js"></script>
     <script src="../assets/js/product-render.js"></script>
+    <script src="../assets/js/video-popup.js"></script>
 
 </body>
 

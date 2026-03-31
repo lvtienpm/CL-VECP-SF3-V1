@@ -232,14 +232,14 @@
                                 <ul class="right-side-menu">
                                     <div class="search-full">
                                         <div class="input-group">
-                                            <span class="input-group-text btn">
+                                            <button class="input-group-text btn">
                                                 <i class="fa-solid fa-search font-light"></i>
-                                            </span>
+                                            </button>
                                             <input type="text" class="form-control search-type"
                                                 placeholder="Tìm kiếm..">
-                                            <span class="input-group-text close-search">
+                                            <button class="input-group-text close-search">
                                                 <i data-feather="x" class="font-light"></i>
-                                            </span>
+                                            </button>
                                         </div>
                                     </div>
                                     <li class="right-side">
@@ -1590,10 +1590,7 @@
                                                             <tr>
                                                                 <td>Email :</td>
                                                                 <td>
-                                                                    <a href="javascript:void(0)">an.nguyen@gmail.com
-                                                                        <span data-bs-toggle="modal"
-                                                                            data-bs-target="#editProfile">Chỉnh
-                                                                            sửa</span></a>
+                                                                    <a href="javascript:void(0)">an.nguyen@gmail.com</a>
                                                                 </td>
                                                             </tr>
                                                             <tr>
@@ -1601,7 +1598,7 @@
                                                                 <td>
                                                                     <a href="javascript:void(0)">●●●●●●
                                                                         <span data-bs-toggle="modal"
-                                                                            data-bs-target="#editProfile">Chỉnh
+                                                                            data-bs-target="#editPassword">Chỉnh
                                                                             sửa</span></a>
                                                                 </td>
                                                             </tr>
@@ -2590,16 +2587,7 @@
                             </form>
                         </div>
 
-                        <div class="col-xxl-6">
-                            <form>
-                                <div class="form-floating theme-form-floating">
-                                    <input type="email" class="form-control" id="email1">
-                                    <label for="email">Email</label>
-                                </div>
-                            </form>
-                        </div>
-
-                        <div class="col-xxl-6">
+                        <div class="col-xxl-12">
                             <form>
                                 <div class="form-floating theme-form-floating">
                                     <input class="form-control" type="tel" name="mobile" id="mobile" maxlength="10"
@@ -2629,6 +2617,56 @@
         </div>
     </div>
     <!-- Edit Profile End -->
+
+    <!-- Edit Password Start -->
+    <div class="modal fade theme-modal" id="editPassword" tabindex="-1">
+        <div class="modal-dialog modal-lg modal-dialog-centered modal-fullscreen-sm-down">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel2">Đổi mật khẩu</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="row g-4">
+                        <div class="col-12">
+                            <form>
+                                <div class="form-floating theme-form-floating">
+                                    <input type="text" class="form-control" id="current_password">
+                                    <label for="current_password">Mật khẩu hiện tại</label>
+                                </div>
+                            </form>
+                        </div>
+
+                        <div class="col-12">
+                            <form>
+                                <div class="form-floating theme-form-floating">
+                                    <input type="text" class="form-control" id="new_password">
+                                    <label for="new_password">Mật khẩu mới</label>
+                                </div>
+                            </form>
+                        </div>
+
+                        <div class="col-12">
+                            <form>
+                                <div class="form-floating theme-form-floating">
+                                    <input type="text" class="form-control" id="confirm_password">
+                                    <label for="confirm_password">Xác nhận lại mật khẩu</label>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-animation btn-md fw-bold" data-bs-dismiss="modal">Đóng</button>
+                    <button type="button" data-bs-dismiss="modal"
+                        class="btn theme-bg-color btn-md fw-bold text-light">Đổi mật khẩu</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Edit Password End -->
 
     <!-- Remove Profile Modal Start -->
     <div class="modal fade theme-modal remove-profile" id="removeProfile" tabindex="-1">
@@ -2709,6 +2747,9 @@
 
     <!-- script js -->
     <script src="../assets/js/script.js"></script>
+
+    <!-- search-redirect.js -->
+    <script src="../assets/js/search-redirect.js"></script>
 </body>
 
 </html>

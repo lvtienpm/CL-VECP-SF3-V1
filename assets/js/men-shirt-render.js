@@ -272,11 +272,7 @@ document.addEventListener('DOMContentLoaded', () => {
                                 </a>
                             </li>
 
-                            <li data-bs-toggle="tooltip" data-bs-placement="top" title="So sánh">
-                                <a href="compare.html">
-                                    <i class="fa-solid fa-right-left"></i>
-                                </a>
-                            </li>
+                            
                         </ul>
 
                         <a href="javascript:void(0)" class="add-to-cart-btn btn-cart-dynamic ${isOutOfStock ? 'disabled' : ''}" data-id="${product.id}">

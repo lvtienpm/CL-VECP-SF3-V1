@@ -8,7 +8,7 @@
     <meta name="description" content="Fastkart">
     <meta name="keywords" content="Fastkart">
     <meta name="author" content="Fastkart">
-    <link rel="icon" href="../assets/images/favicon/1.png" type="image/x-icon">
+    <link rel="icon" href="assets/images/favicon/1.png" type="image/x-icon">
     <title>On-demand last-mile delivery</title>
 
     <!-- Google font -->
@@ -20,13 +20,16 @@
         href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap">
 
     <!-- bootstrap css -->
-    <link id="rtl-link" rel="stylesheet" type="text/css" href="../assets/css/vendors/bootstrap.css">
+    <link id="rtl-link" rel="stylesheet" type="text/css" href="assets/css/vendors/bootstrap.css">
 
     <!-- Iconly css -->
-    <link rel="stylesheet" type="text/css" href="../assets/css/bulk-style.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/bulk-style.css">
+
+    <!-- iziToast CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/izitoast/1.4.0/css/iziToast.min.css">
 
     <!-- Template css -->
-    <link id="color-link" rel="stylesheet" type="text/css" href="../assets/css/style.css">
+    <link id="color-link" rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 
 <body class="theme-color-5">
@@ -55,14 +58,10 @@
 
                     <div class="col-xxl-6 col-lg-6 col-sm-9 col-12">
                         <div class="header-search-box">
-                            <div class="search-box">
-                                <div class="input-group">
-                                    <input type="search" class="form-control" placeholder="Tìm kiếm sản phẩm...">
-                                    <button class="btn search-button" type="button">
-                                        <i class="fa-solid fa-magnifying-glass"></i>
-                                    </button>
-                                </div>
-                            </div>
+                            <a href="#">
+                                <img src="assets/images/banner/4a44f0be600d626bcdf3e8dc31deecf2 copy.png"
+                                    class="img-fluid" alt="Banner">
+                            </a>
                         </div>
                     </div>
 
@@ -126,11 +125,9 @@
                                     <i class="fa-solid fa-bars"></i>
                                 </span>
                             </button>
-                            <a href="index-6.html" class="web-logo nav-logo">
-                                <img src="../assets/images/logo/logo1.svg" class="img-fluid main-logo" alt="logo">
-
-                                <img src="../assets/images/logo/logo2-white.svg" class="img-fluid sticky-logo"
-                                    alt="logo">
+                            <a href="index.html" class="web-logo nav-logo">
+                                <img src="assets/images/logo/logo1.svg" class="img-fluid main-logo" alt="logo">
+                                <img src="assets/images/logo/logo2-white.svg" class="img-fluid sticky-logo" alt="logo">
                             </a>
 
                             <div class="header-nav-middle">
@@ -235,14 +232,14 @@
                                 <ul class="right-side-menu">
                                     <div class="search-full">
                                         <div class="input-group">
-                                            <span class="input-group-text btn">
+                                            <button class="input-group-text btn">
                                                 <i class="fa-solid fa-search font-light"></i>
-                                            </span>
+                                            </button>
                                             <input type="text" class="form-control search-type"
                                                 placeholder="Tìm kiếm..">
-                                            <span class="input-group-text close-search">
+                                            <button class="input-group-text close-search">
                                                 <i data-feather="x" class="font-light"></i>
-                                            </span>
+                                            </button>
                                         </div>
                                     </div>
                                     <li class="right-side">
@@ -342,20 +339,39 @@
                                         <div class="onhover-div onhover-div-login">
                                             <ul class="user-box-name">
                                                 <li class="product-box-contain">
-                                                    <i></i>
-                                                    <a href="login.html">Đăng nhập</a>
+
+                                                    <a href="login.html">
+                                                        <svg width="24" height="24" class="pr-1">
+                                                            <use xlink:href="#icon-login"></use>
+                                                        </svg>
+                                                        Đăng nhập
+                                                    </a>
                                                 </li>
 
                                                 <li class="product-box-contain">
-                                                    <a href="sign-up.html">Đăng ký</a>
+                                                    <a href="sign-up.html">
+                                                        <svg width="24" height="24" class="pr-1">
+                                                            <use xlink:href="#icon-register"></use>
+                                                        </svg>
+                                                        Đăng ký
+                                                    </a>
                                                 </li>
 
                                                 <li class="product-box-contain">
-                                                    <a href="forgot.html">Quên mật khẩu</a>
+                                                    <a href="forgot.html">
+                                                        <svg width="24" height="24">
+                                                            <use href="#icon-key"></use>
+                                                        </svg>
+                                                        Quên mật khẩu
+                                                    </a>
                                                 </li>
 
                                                 <li class="product-box-contain">
-                                                    <a href="user-dashboard.html">Thông tin tài khoản</a>
+                                                    <a href="user-dashboard.html">
+                                                        <svg width="24" height="24">
+                                                            <use href="#icon-user"></use>
+                                                        </svg>
+                                                        Thông tin tài khoản</a>
                                                 </li>
                                             </ul>
                                         </div>
@@ -374,9 +390,16 @@
     <div class="mobile-menu d-md-none d-block mobile-cart">
         <ul>
             <li class="active">
-                <a href="index-6.html">
+                <a href="index.html">
                     <i class="fa-solid fa-house"></i>
                     <span>Trang chủ</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="javascript:void(0)" class="search-box">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <span>Tìm kiếm</span>
                 </a>
             </li>
 
@@ -388,8 +411,11 @@
             </li>
 
             <li>
-                <a href="cart.html">
+                <a href="cart.html" class="position-relative">
                     <i class="fa-solid fa-cart-shopping fly-cate"></i>
+                    <span
+                        class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger cart-count"
+                        style="font-size: 10px; padding: 2px 5px;">0</span>
                     <span>Giỏ hàng</span>
                 </a>
             </li>
@@ -398,13 +424,13 @@
     <!-- mobile fix menu end -->
 
     <!-- Breadcrumb Section Start -->
-    <section class="breadcrumb-section pt-0">
-        <div class="container-fluid-lg border-nav">
+    <section class="breadcrumb-section pb-3 pt-3 mb-3">
+        <div class="container-fluid-lg ">
             <div class="breadcrumb-contain">
                 <nav>
                     <ol class="breadcrumb mb-0">
                         <li class="breadcrumb-item">
-                            <a href="index-6.html">
+                            <a href="index.html">
                                 <i class="fa-solid fa-house"></i>
                             </a>
                         </li>
@@ -421,7 +447,7 @@
     <!-- Breadcrumb Section End -->
 
     <!-- Checkout section Start -->
-    <section class="checkout-section-2 section-b-space">
+    <section class="checkout-section-2 section-b-space pt-3">
         <div class="container-fluid-lg">
             <div class="row g-sm-4 g-3">
                 <div class="col-lg-8">
@@ -507,10 +533,12 @@
                                                                 <div class="delivery-items">
                                                                     <div>
                                                                         <h5 class="items text-content">
-                                                                            <span class="text-decoration-underline">3
+                                                                            <span class="text-decoration-underline"
+                                                                                id="future-item-count">0
                                                                                 Sản phẩm</span>
                                                                             <span class="mx-2">|</span>
-                                                                            <span>Tổng: 693.000 VNĐ</span>
+                                                                            <span>Tổng: <span id="future-total-price">0
+                                                                                    VNĐ</span></span>
                                                                         </h5>
                                                                     </div>
                                                                 </div>
@@ -549,43 +577,42 @@
 
                                                 <!-- Thanh toán khi nhận hàng (COD) -->
                                                 <div class="accordion-item">
-                                                    <div class="accordion-header" id="flush-headingFour">
-                                                        <div class="accordion-button collapsed"
-                                                            data-bs-toggle="collapse"
-                                                            data-bs-target="#flush-collapseFour">
+                                                    <div class="accordion-header" id="flush-headingOne">
+                                                        <div class="accordion-button" data-bs-toggle="collapse"
+                                                            data-bs-target="#flush-collapseOne">
                                                             <div class="custom-form-check form-check mb-0">
-                                                                <label class="form-check-label" for="cash">
+                                                                <label class="form-check-label" for="payment-cod">
                                                                     <input class="form-check-input mt-0" type="radio"
-                                                                        name="flexRadioDefault" id="cash" checked>
+                                                                        name="paymentMethod" id="payment-cod" checked>
                                                                     Thanh toán khi nhận hàng (COD)
                                                                 </label>
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div id="flush-collapseFour"
-                                                        class="accordion-collapse collapse show"
+                                                    <div id="flush-collapseOne" class="accordion-collapse collapse show"
                                                         data-bs-parent="#accordionFlushExample">
                                                         <div class="accordion-body">
                                                             <p class="cod-review">Thanh toán bằng tiền mặt khi shipper
                                                                 giao hàng đến địa chỉ của bạn.
                                                                 Vui lòng kiểm tra kỹ gói hàng trước khi thanh toán.
-                                                                <a href="javascript:void(0)">Tìm hiểu thêm.</a>
+                                                                <a href="javascript:void(0)"
+                                                                    class="theme-color fw-bold">Tìm hiểu thêm.</a>
                                                             </p>
                                                         </div>
                                                     </div>
                                                 </div>
 
-                                                <!-- Chuyển khoản ngân hàng -->
+                                                <!-- Chuyển khoản qua mã QR -->
                                                 <div class="accordion-item">
                                                     <div class="accordion-header" id="flush-headingTwo">
                                                         <div class="accordion-button collapsed"
                                                             data-bs-toggle="collapse"
                                                             data-bs-target="#flush-collapseTwo">
                                                             <div class="custom-form-check form-check mb-0">
-                                                                <label class="form-check-label" for="banking">
+                                                                <label class="form-check-label" for="payment-qr">
                                                                     <input class="form-check-input mt-0" type="radio"
-                                                                        name="flexRadioDefault" id="banking">
-                                                                    Ngân hàng trực tuyến (Internet Banking)
+                                                                        name="paymentMethod" id="payment-qr">
+                                                                    Chuyển khoản qua mã QR
                                                                 </label>
                                                             </div>
                                                         </div>
@@ -593,94 +620,56 @@
                                                     <div id="flush-collapseTwo" class="accordion-collapse collapse"
                                                         data-bs-parent="#accordionFlushExample">
                                                         <div class="accordion-body">
-                                                            <h5 class="text-uppercase mb-4">Chọn ngân hàng của bạn</h5>
-                                                            <div class="row g-2">
-                                                                <div class="col-md-6">
-                                                                    <div class="custom-form-check form-check">
-                                                                        <input class="form-check-input mt-0"
-                                                                            type="radio" name="flexRadioDefault"
-                                                                            id="bank1">
-                                                                        <label class="form-check-label"
-                                                                            for="bank1">VietinBank</label>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="col-md-6">
-                                                                    <div class="custom-form-check form-check">
-                                                                        <input class="form-check-input mt-0"
-                                                                            type="radio" name="flexRadioDefault"
-                                                                            id="bank2">
-                                                                        <label class="form-check-label"
-                                                                            for="bank2">Agribank</label>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="col-md-6">
-                                                                    <div class="custom-form-check form-check">
-                                                                        <input class="form-check-input mt-0"
-                                                                            type="radio" name="flexRadioDefault"
-                                                                            id="bank3">
-                                                                        <label class="form-check-label"
-                                                                            for="bank3">Vietcombank</label>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="col-md-6">
-                                                                    <div class="custom-form-check form-check">
-                                                                        <input class="form-check-input mt-0"
-                                                                            type="radio" name="flexRadioDefault"
-                                                                            id="bank4">
-                                                                        <label class="form-check-label"
-                                                                            for="bank4">BIDV</label>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="col-md-6">
-                                                                    <div class="custom-form-check form-check">
-                                                                        <input class="form-check-input mt-0"
-                                                                            type="radio" name="flexRadioDefault"
-                                                                            id="bank5">
-                                                                        <label class="form-check-label" for="bank5">HSBC
-                                                                            Việt Nam</label>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="col-md-6">
-                                                                    <div class="custom-form-check form-check">
-                                                                        <input class="form-check-input mt-0"
-                                                                            type="radio" name="flexRadioDefault"
-                                                                            id="bank6">
-                                                                        <label class="form-check-label"
-                                                                            for="bank6">Techcombank</label>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="col-12">
-                                                                    <div class="select-option">
-                                                                        <div class="form-floating theme-form-floating">
-                                                                            <select
-                                                                                class="form-select theme-form-select">
-                                                                                <option value="vcb">Vietcombank</option>
-                                                                                <option value="tcb">Techcombank</option>
-                                                                                <option value="acb">ACB</option>
-                                                                                <option value="tp">TPBank</option>
-                                                                                <option value="other">Ngân hàng khác
-                                                                                </option>
-                                                                            </select>
-                                                                            <label>Hoặc chọn ngân hàng khác</label>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
+                                                            <div class="qr-payment-instruction">
+                                                                <p class="cod-review mb-3">
+                                                                    <i class="fas fa-info-circle me-1 theme-color"></i>
+                                                                    Sau khi bạn nhấn <strong>"Đặt hàng"</strong>, hệ
+                                                                    thống sẽ hiển thị mã QR thanh toán riêng cho đơn
+                                                                    hàng này.
+                                                                </p>
+
+                                                                <ul class="list-unstyled mb-3">
+                                                                    <li
+                                                                        class="p-3 bg-light rounded border-start border-4 border-success mb-2 d-flex align-items-center">
+                                                                        <i
+                                                                            class="fas fa-qrcode text-success fs-4 me-3"></i>
+                                                                        <span class="small text-muted">Mã QR chứa chính
+                                                                            xác <strong>Số tiền đơn hàng</strong> của
+                                                                            bạn.</span>
+                                                                    </li>
+                                                                    <li
+                                                                        class="p-3 bg-light rounded border-start border-4 border-success mb-2 d-flex align-items-center">
+                                                                        <i
+                                                                            class="fas fa-file-invoice-dollar text-success fs-4 me-3"></i>
+                                                                        <span class="small text-muted">Nội dung chuyển
+                                                                            khoản tự động là <strong>Mã đơn
+                                                                                hàng</strong>.</span>
+                                                                    </li>
+                                                                    <li
+                                                                        class="p-3 bg-light rounded border-start border-4 border-success d-flex align-items-center">
+                                                                        <i
+                                                                            class="fas fa-user-check text-success fs-4 me-3"></i>
+                                                                        <span class="small text-muted">Nhân viên sẽ gọi
+                                                                            điện xác nhận ngay sau khi nhận được thông
+                                                                            báo.</span>
+                                                                    </li>
+                                                                </ul>
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </div>
 
-                                                <!-- Ví điện tử -->
-                                                <!-- <div class="accordion-item">
+                                                <!-- Liên hệ qua Cửa hàng -->
+                                                <div class="accordion-item">
                                                     <div class="accordion-header" id="flush-headingThree">
                                                         <div class="accordion-button collapsed"
                                                             data-bs-toggle="collapse"
                                                             data-bs-target="#flush-collapseThree">
                                                             <div class="custom-form-check form-check mb-0">
-                                                                <label class="form-check-label" for="wallet">
+                                                                <label class="form-check-label" for="payment-contact">
                                                                     <input class="form-check-input mt-0" type="radio"
-                                                                        name="flexRadioDefault" id="wallet">
-                                                                    Ví điện tử
+                                                                        name="paymentMethod" id="payment-contact">
+                                                                    Liên hệ qua Cửa hàng
                                                                 </label>
                                                             </div>
                                                         </div>
@@ -688,67 +677,18 @@
                                                     <div id="flush-collapseThree" class="accordion-collapse collapse"
                                                         data-bs-parent="#accordionFlushExample">
                                                         <div class="accordion-body">
-                                                            <h5 class="text-uppercase mb-4">Chọn ví điện tử</h5>
-                                                            <div class="row">
-                                                                <div class="col-md-6">
-                                                                    <div class="custom-form-check form-check">
-                                                                        <label class="form-check-label" for="momo">
-                                                                            <input class="form-check-input mt-0"
-                                                                                type="radio" name="flexRadioDefault"
-                                                                                id="momo">
-                                                                            Ví MoMo
-                                                                        </label>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="col-md-6">
-                                                                    <div class="custom-form-check form-check">
-                                                                        <input class="form-check-input mt-0"
-                                                                            type="radio" name="flexRadioDefault"
-                                                                            id="zalo">
-                                                                        <label class="form-check-label"
-                                                                            for="zalo">ZaloPay</label>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="col-md-6">
-                                                                    <div class="custom-form-check form-check">
-                                                                        <input class="form-check-input mt-0"
-                                                                            type="radio" name="flexRadioDefault"
-                                                                            id="vnpay">
-                                                                        <label class="form-check-label"
-                                                                            for="vnpay">VNPay</label>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="col-md-6">
-                                                                    <div class="custom-form-check form-check">
-                                                                        <input class="form-check-input mt-0"
-                                                                            type="radio" name="flexRadioDefault"
-                                                                            id="shopee">
-                                                                        <label class="form-check-label"
-                                                                            for="shopee">ShopeePay</label>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="col-md-6">
-                                                                    <div class="custom-form-check form-check">
-                                                                        <input class="form-check-input mt-0"
-                                                                            type="radio" name="flexRadioDefault"
-                                                                            id="viettel">
-                                                                        <label class="form-check-label"
-                                                                            for="viettel">Viettel Money</label>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="col-md-6">
-                                                                    <div class="custom-form-check form-check">
-                                                                        <input class="form-check-input mt-0"
-                                                                            type="radio" name="flexRadioDefault"
-                                                                            id="moca">
-                                                                        <label class="form-check-label" for="moca">Moca
-                                                                            / GrabPay</label>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
+                                                            <p class="cod-review">Vui lòng liên hệ hotline: <a
+                                                                    href="tel:0788335558"
+                                                                    style="text-decoration: underline;">
+                                                                    078 833 5558
+                                                                </a>
+                                                                hoặc đến trực
+                                                                tiếp cửa hàng để thực hiện các thủ tục đặt hàng đặc biệt
+                                                                hoặc nhận tư vấn trực tiếp.
+                                                            </p>
                                                         </div>
                                                     </div>
-                                                </div> -->
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -765,74 +705,40 @@
                                 <h3>Đơn hàng</h3>
                             </div>
 
-                            <ul class="summery-contain">
+                            <ul class="summery-contain" id="checkout-cart-items">
+                                <!-- Dữ liệu sản phẩm động sẽ render tại đây -->
                                 <li>
-                                    <img src="../assets/images/product/sp1.jpg"
-                                        class="img-fluid blur-up lazyloaded checkout-image" alt="">
-                                    <h4>Áo thun Cotton Premium <span>X 1</span></h4>
-                                    <h4 class="price">250.000 VNĐ</h4>
-                                </li>
-
-                                <li>
-                                    <img src="../assets/images/product/sp2.jpg"
-                                        class="img-fluid blur-up lazyloaded checkout-image" alt="">
-                                    <h4>Quần Jean Slimfit Nam <span>X 3</span></h4>
-                                    <h4 class="price">1.350.000 VNĐ</h4>
-                                </li>
-
-                                <li>
-                                    <img src="../assets/images/product/sp3.jpg"
-                                        class="img-fluid blur-up lazyloaded checkout-image" alt="">
-                                    <h4>Chân váy Midi xếp ly <span>X 2</span></h4>
-                                    <h4 class="price">700.000 VNĐ</h4>
-                                </li>
-
-                                <li>
-                                    <img src="../assets/images/product/sp4.jpg"
-                                        class="img-fluid blur-up lazyloaded checkout-image" alt="">
-                                    <h4>Áo khoác Blazer thanh lịch <span>X 1</span></h4>
-                                    <h4 class="price">890.000 VNĐ</h4>
-                                </li>
-
-                                <li>
-                                    <img src="../assets/images/product/sp5.jpg"
-                                        class="img-fluid blur-up lazyloaded checkout-image" alt="">
-                                    <h4>Sơ mi lụa công sở <span>X 1</span></h4>
-                                    <h4 class="price">420.000 VNĐ</h4>
-                                </li>
-
-                                <li>
-                                    <img src="../assets/images/product/sp6.jpg"
-                                        class="img-fluid blur-up lazyloaded checkout-image" alt="">
-                                    <h4>Quần Jogger nỉ cao cấp <span>X 2</span></h4>
-                                    <h4 class="price">640.000 VNĐ</h4>
+                                    <div class="text-center w-100 py-3">
+                                        <div class="spinner-border spinner-border-sm theme-color" role="status"></div>
+                                        <span class="ms-2">Đang tải danh sách đơn hàng...</span>
+                                    </div>
                                 </li>
                             </ul>
 
                             <ul class="summery-total">
                                 <li>
                                     <h4>Tạm tính</h4>
-                                    <h4 class="price">4.250.000 VNĐ</h4>
+                                    <h4 class="price" id="checkout-subtotal">0 VNĐ</h4>
                                 </li>
 
                                 <li>
                                     <h4>Phí vận chuyển</h4>
-                                    <h4 class="price">30.000 VNĐ</h4>
+                                    <h4 class="price" id="checkout-shipping">30.000 VNĐ</h4>
                                 </li>
 
                                 <li>
                                     <h4>Thuế (VAT 10%)</h4>
-                                    <h4 class="price">425.000 VNĐ</h4>
+                                    <h4 class="price" id="checkout-tax">0 VNĐ</h4>
                                 </li>
 
                                 <li>
                                     <h4>Mã giảm giá</h4>
-                                    <h4 class="price">-150.000 VNĐ</h4>
+                                    <h4 class="price" id="checkout-discount">(-) 0 VNĐ</h4>
                                 </li>
 
                                 <li class="list-total">
-                                    <h4>Tổng cộng ( VNĐ)</h4>
-                                    <h4 class="price">4.555.000 VNĐ</h4>
+                                    <h4>Tổng cộng (VNĐ)</h4>
+                                    <h4 class="price" id="checkout-total">0 VNĐ</h4>
                                 </li>
                             </ul>
                         </div>
@@ -857,9 +763,8 @@
                                 </li>
                             </ul>
                         </div>
-                        <a href="order-confirmation.html"><button
-                                class="btn theme-bg-color text-white btn-md w-100 mt-4 fw-bold">Xác nhận đơn
-                                hàng</button></a>
+                        <button id="confirm-order-btn"
+                            class="btn theme-bg-color text-white btn-md w-100 mt-4 fw-bold">Xác nhận đặt hàng</button>
 
                     </div>
                 </div>
@@ -874,9 +779,8 @@
             <div class="main-footer">
                 <div class="row g-md-4 gy-sm-5">
                     <div class="col-xxl-3 col-xl-4 col-sm-6">
-                        <a href="index-6.html" class="foot-logo theme-logo">
-                            <img src="../assets/images/logo/logo2-white.svg" class="img-fluid blur-up lazyload"
-                                alt="logo">
+                        <a href="index.html" class="foot-logo theme-logo">
+                            <img src="assets/images/logo/logo2-white.svg" class="img-fluid blur-up lazyload" alt="logo">
                         </a>
                         <p class="information-text information-text-2">Cửa hàng thời trang tại Hà Nội chuyên cung cấp
                             quần áo nam, nữ và unisex theo xu hướng mới nhất
@@ -1028,10 +932,19 @@
 
                 <ul class="payment-box">
                     <li>
-                        <img src="../assets/images/icon/paymant/visa.png" class="blur-up lazyload" alt="">
+                        <img src="assets/images/icon/paymant/visa.png" class="blur-up lazyload" alt="">
                     </li>
                     <li>
-                        <img src="../assets/images/icon/paymant/master-card.png" alt="" class="blur-up lazyload">
+                        <img src="assets/images/icon/paymant/master-card.png" alt="" class="blur-up lazyload">
+                    </li>
+                    <li>
+                        <img src="assets/images/icon/paymant/vnpay-seeklogo.svg" class="blur-up lazyload" alt="">
+                    </li>
+                    <li>
+                        <img src="assets/images/icon/paymant/zalo-pay.png" class="blur-up lazyload" alt="">
+                    </li>
+                    <li>
+                        <img src="assets/images/icon/paymant/MOMO.png" class="blur-up lazyload" alt="">
                     </li>
                 </ul>
             </div>
@@ -1041,42 +954,105 @@
 
     <!-- Add address modal box start -->
     <div class="modal fade theme-modal" id="add-address" tabindex="-1">
-        <div class="modal-dialog modal-dialog-centered modal-fullscreen-sm-down">
+        <div class="modal-dialog modal-lg modal-dialog-centered modal-fullscreen-sm-down    ">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel1">Thêm địa chỉ mới</h5>
+                    <h5 class="modal-title" id="exampleModalLabel">Thêm địa chỉ mới</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal">
                         <i class="fa-solid fa-xmark"></i>
                     </button>
                 </div>
                 <div class="modal-body">
-                    <form id="addressForm">
-                        <div class="form-floating mb-4 theme-form-floating">
-                            <input type="text" class="form-control" id="fname" placeholder="Họ và tên" required>
-                            <label for="fname">Họ và tên</label>
+                    <div class="row g-4">
+                        <div class="col-xxl-12">
+                            <form>
+                                <div class="form-floating theme-form-floating">
+                                    <input type="text" class="form-control" id="fname" placeholder="Họ và tên">
+                                    <label for="fname">Họ và tên</label>
+                                </div>
+                            </form>
                         </div>
 
-                        <div class="form-floating mb-4 theme-form-floating">
-                            <input type="text" class="form-control" id="phone" placeholder="Số điện thoại" required>
-                            <label for="phone">Số điện thoại</label>
+                        <div class="col-xxl-6">
+                            <form>
+                                <div class="form-floating theme-form-floating">
+                                    <input type="text" class="form-control" id="phone" placeholder="Số điện thoại">
+                                    <label for="phone">Số điện thoại</label>
+                                </div>
+                            </form>
                         </div>
 
-                        <div class="form-floating mb-4 theme-form-floating">
-                            <input type="email" class="form-control" id="email" placeholder="Địa chỉ email" required>
-                            <label for="email">Địa chỉ Email</label>
+                        <div class="col-xxl-6">
+                            <form>
+                                <div class="form-floating theme-form-floating">
+                                    <input type="email" class="form-control" id="email" placeholder="Email">
+                                    <label for="email">Email</label>
+                                </div>
+                            </form>
                         </div>
 
-                        <div class="form-floating mb-4 theme-form-floating">
-                            <textarea class="form-control" placeholder="Nhập địa chỉ" id="address" style="height: 100px"
-                                required></textarea>
-                            <label for="address">Địa chỉ chi tiết</label>
+                        <div class="col-xxl-12">
+                            <form>
+                                <div class="form-floating theme-form-floating">
+                                    <select class="form-select" id="address-type">
+                                        <option selected disabled>Chọn loại địa chỉ</option>
+                                        <option value="home">Nhà riêng</option>
+                                        <option value="office">Văn phòng</option>
+                                        <option value="other">Khác</option>
+                                    </select>
+                                    <label for="address-type">Loại địa chỉ</label>
+                                </div>
+                            </form>
                         </div>
-                    </form>
+
+                        <div class="col-xxl-4 col-lg-12 col-md-4">
+                            <form>
+                                <div class="form-floating theme-form-floating">
+                                    <select class="form-select" id="province">
+                                        <option selected disabled>Đang tải dữ liệu...</option>
+                                    </select>
+                                    <label for="province">Tỉnh/Thành phố</label>
+                                </div>
+                            </form>
+                        </div>
+
+                        <div class="col-xxl-4 col-lg-12 col-md-4">
+                            <form>
+                                <div class="form-floating theme-form-floating">
+                                    <select class="form-select" id="district">
+                                        <option selected disabled>Chọn Quận/Huyện</option>
+                                    </select>
+                                    <label for="district">Quận/Huyện</label>
+                                </div>
+                            </form>
+                        </div>
+
+                        <div class="col-xxl-4 col-lg-12 col-md-4">
+                            <form>
+                                <div class="form-floating theme-form-floating">
+                                    <select class="form-select" id="ward">
+                                        <option selected disabled>Chọn Phường/Xã</option>
+                                    </select>
+                                    <label for="ward">Phường/Xã</label>
+                                </div>
+                            </form>
+                        </div>
+
+                        <div class="col-xxl-12">
+                            <form>
+                                <div class="form-floating theme-form-floating">
+                                    <textarea class="form-control" placeholder="Địa chỉ cụ thể" id="address"
+                                        style="height: 100px"></textarea>
+                                    <label for="address">Địa chỉ cụ thể (Số nhà, tên đường...)</label>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary btn-md" data-bs-dismiss="modal">Đóng</button>
-                    <button type="button" class="btn theme-bg-color btn-md text-white" id="saveAddressBtn">Lưu địa
-                        chỉ</button>
+                    <button type="button" class="btn btn-secondary btn-md" data-bs-dismiss="modal">Hủy</button>
+                    <button type="button" class="btn theme-bg-color btn-md text-white"
+                        id="saveAddressBtn" data-bs-dismiss="modal">Lưu</button>
                 </div>
             </div>
         </div>
@@ -1097,166 +1073,339 @@
     <div class="bg-overlay"></div>
     <!-- Bg overlay End -->
 
+    <svg xmlns="http://www.w3.org/2000/svg" style="display: none">
+        <symbol id="icon-key" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+            stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="7" cy="15" r="4"></circle>
+            <path d="M11 15h10"></path>
+            <path d="M18 12v6"></path>
+        </symbol>
+        <symbol id="icon-cart" viewBox="0 0 24 24" fill="none">
+            <path
+                d="M9 22C9.55228 22 10 21.5523 10 21C10 20.4477 9.55228 20 9 20C8.44772 20 8 20.4477 8 21C8 21.5523 8.44772 22 9 22Z"
+                stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+            <path
+                d="M20 22C20.5523 22 21 21.5523 21 21C21 20.4477 20.5523 20 20 20C19.4477 20 19 20.4477 19 21C19 21.5523 19.4477 22 20 22Z"
+                stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+            <path
+                d="M1 1H5L7.68 14.39C7.77144 14.8504 8.02191 15.264 8.38755 15.5583C8.75318 15.8526 9.2107 16.009 9.68 16H19.4C19.8693 16.009 20.3268 15.8526 20.6925 15.5583C21.0581 15.264 21.3086 14.8504 21.4 14.39L23 6H6"
+                stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+        </symbol>
+        <symbol id="icon-heart" viewBox="0 0 24 24" fill="none">
+            <path
+                d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.8 1-1a5.5 5.5 0 0 0 0-7.8Z"
+                stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+        </symbol>
+        <symbol id="icon-user" viewBox="0 0 24 24" fill="none">
+            <path
+                d="M20 21V19C20 17.9391 19.5786 16.9217 18.8284 16.1716C18.0783 15.4214 17.0609 15 16 15H8C6.93913 15 5.92172 15.4214 5.17157 16.1716C4.42143 16.9217 4 17.9391 4 19V21"
+                stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+            <path
+                d="M12 11C14.2091 11 16 9.20914 16 7C16 4.79086 14.2091 3 12 3C9.79086 3 8 4.79086 8 7C8 9.20914 9.79086 11 12 11Z"
+                stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+        </symbol>
+        <symbol id="icon-user-edit" viewBox="0 0 24 24" fill="none">
+            <path d="M12 12a5 5 0 1 0 0-10 5 5 0 0 0 0 10ZM4 20h6l10-10-6-6L4 14v6Z" stroke="currentColor"
+                stroke-width="2" stroke-linecap="round"></path>
+        </symbol>
+        <symbol id="icon-login" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path d="M15 3a4 4 0 1 1-8 0 4 4 0 0 1 8 0Z"></path>
+            <path d="M3 21c0-3.5 3-6.5 6.5-6.5h1"></path>
+            <path d="M17 16l4-4-4-4"></path>
+            <path d="M21 12H10"></path>
+        </symbol>
+        <symbol id="icon-register" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path d="M16 7a4 4 0 1 0-8 0 4 4 0 0 0 8 0Z"></path>
+            <path d="M4 21c0-3.5 3-6.5 6.5-6.5h3"></path>
+            <path d="M18 16v6"></path>
+            <path d="M21 19h-6"></path>
+        </symbol>
+        <symbol id="icon-logout" viewBox="0 0 24 24" fill="none">
+            <path d="M16 17v1a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1M10 12h10m0 0-3-3m3 3-3 3"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round"></path>
+        </symbol>
+        <symbol id="icon-search" viewBox="0 0 24 24" fill="none">
+            <circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="1.5"></circle>
+            <path d="M20 20l-4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path>
+        </symbol>
+        <symbol id="icon-variant" viewBox="0 0 24 24" fill="none">
+            <path d="M4 4h6v6H4V4Zm10 0h6v6h-6V4ZM4 14h6v6H4v-6Zm10 0h6v6h-6v-6Z" stroke="currentColor"
+                stroke-width="1.5"></path>
+        </symbol>
+        <symbol id="icon-filter" viewBox="0 0 24 24" fill="none">
+            <path d="M4 4h16M6 12h12M10 20h4" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path>
+        </symbol>
+        <symbol id="icon-sort" viewBox="0 0 24 24" fill="none">
+            <path d="M3 18h6M3 6h18M3 12h12" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path>
+        </symbol>
+        <symbol id="icon-menu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+            stroke-linecap="round" stroke-linejoin="round">
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+        </symbol>
+        <symbol id="icon-close" viewBox="0 0 24 24" fill="none">
+            <path d="M6 6l12 12M6 18L18 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path>
+        </symbol>
+        <symbol id="icon-clock" viewBox="0 0 24 24" fill="none">
+            <circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="2"></circle>
+            <path d="M12 7v5l3 3" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path>
+        </symbol>
+        <symbol id="icon-trash" viewBox="0 0 24 24" fill="none">
+            <path
+                d="M4 7h16M10 11v6M14 11v6M6 7l1 12a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2l1-12M9 7V5a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v2"
+                stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+        </symbol>
+        <symbol id="icon-eye" viewBox="0 0 24 24" fill="none">
+            <path d="M1 12s4-7 11-7 11 7 11 7-4 7-11 7-11-7-11-7Z" stroke="currentColor" stroke-width="2"></path>
+            <circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="1.5"></circle>
+        </symbol>
+
+        <!-- Ẩn mắt -->
+        <symbol id="icon-minimize" viewBox="0 0 24 24" fill="none">
+            <path d="M5 12h14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path>
+        </symbol>
+        <!-- Hệ thống cửa hàng -->
+        <symbol id="icon-store" viewBox="0 0 24 24" fill="none">
+            <path d="M3 9L4.5 4H19.5L21 9M3 9H21M3 9V19C3 20.1 3.9 21 5 21H10V15H14V21H19C20.1 21 21 20.1 21 19V9"
+                stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+        </symbol>
+        <symbol id="icon-bell" viewBox="0 0 24 24" fill="none">
+            <path
+                d="M18 16v-5c0-3.07-1.64-5.64-4.5-6.32V4a1.5 1.5 0 0 0-3 0v0.68C7.64 5.36 6 7.92 6 11v5l-2 2v1h16v-1l-2-2z"
+                stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round"></path>
+            <path d="M13.73 21a2 2 0 0 1-3.46 0" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"
+                stroke-linecap="round"></path>
+        </symbol>
+        <symbol id="icon-cart-empty" viewBox="0 0 201.387 201.387" fill="currentColor">
+            <g>
+                <g>
+                    <path d="M129.413,24.885C127.389,10.699,115.041,0,100.692,0C91.464,0,82.7,4.453,77.251,11.916
+						 c-1.113,1.522-0.78,3.657,0.742,4.77c1.517,1.109,3.657,0.78,4.768-0.744c4.171-5.707,10.873-9.115,17.93-9.115
+						 c10.974,0,20.415,8.178,21.963,19.021c0.244,1.703,1.705,2.932,3.376,2.932c0.159,0,0.323-0.012,0.486-0.034
+						 C128.382,28.479,129.679,26.75,129.413,24.885z"></path>
+                </g>
+            </g>
+            <g>
+                <g>
+                    <path d="M178.712,63.096l-10.24-17.067c-0.616-1.029-1.727-1.657-2.927-1.657h-9.813c-1.884,0-3.413,1.529-3.413,3.413
+						 s1.529,3.413,3.413,3.413h7.881l6.144,10.24H31.626l6.144-10.24h3.615c1.884,0,3.413-1.529,3.413-3.413s-1.529-3.413-3.413-3.413
+						 h-5.547c-1.2,0-2.311,0.628-2.927,1.657l-10.24,17.067c-0.633,1.056-0.648,2.369-0.043,3.439s1.739,1.732,2.97,1.732h150.187
+						 c1.231,0,2.364-0.662,2.97-1.732S179.345,64.15,178.712,63.096z"></path>
+                </g>
+            </g>
+            <g>
+                <g>
+                    <path d="M161.698,31.623c-0.478-0.771-1.241-1.318-2.123-1.524l-46.531-10.883c-0.881-0.207-1.809-0.053-2.579,0.423
+						 c-0.768,0.478-1.316,1.241-1.522,2.123l-3.509,15c-0.43,1.835,0.71,3.671,2.546,4.099c1.835,0.43,3.673-0.71,4.101-2.546
+						 l2.732-11.675l39.883,9.329l-6.267,26.795c-0.43,1.835,0.71,3.671,2.546,4.099c0.263,0.061,0.524,0.09,0.782,0.09
+						 c1.55,0,2.953-1.062,3.318-2.635l7.045-30.118C162.328,33.319,162.176,32.391,161.698,31.623z"></path>
+                </g>
+            </g>
+            <g>
+                <g>
+                    <path d="M102.497,39.692l-3.11-26.305c-0.106-0.899-0.565-1.72-1.277-2.28c-0.712-0.56-1.611-0.816-2.514-0.71l-57.09,6.748
+						 c-1.871,0.222-3.209,1.918-2.988,3.791l5.185,43.873c0.206,1.737,1.679,3.014,3.386,3.014c0.133,0,0.27-0.009,0.406-0.024
+						 c1.87-0.222,3.208-1.918,2.988-3.791l-4.785-40.486l50.311-5.946l2.708,22.915c0.222,1.872,1.91,3.202,3.791,2.99
+						 C101.379,43.261,102.717,41.564,102.497,39.692z"></path>
+                </g>
+            </g>
+            <g>
+                <g>
+                    <path d="M129.492,63.556l-6.775-28.174c-0.212-0.879-0.765-1.64-1.536-2.113c-0.771-0.469-1.696-0.616-2.581-0.406L63.613,46.087
+						 c-1.833,0.44-2.961,2.284-2.521,4.117l3.386,14.082c0.44,1.835,2.284,2.964,4.116,2.521c1.833-0.44,2.961-2.284,2.521-4.117
+						 l-2.589-10.764l48.35-11.626l5.977,24.854c0.375,1.565,1.775,2.615,3.316,2.615c0.265,0,0.533-0.031,0.802-0.096
+						 C128.804,67.232,129.932,65.389,129.492,63.556z"></path>
+                </g>
+            </g>
+            <g>
+                <g>
+                    <path
+                        d="M179.197,64.679c-0.094-1.814-1.592-3.238-3.41-3.238H25.6c-1.818,0-3.316,1.423-3.41,3.238l-6.827,133.12
+						 c-0.048,0.934,0.29,1.848,0.934,2.526c0.645,0.677,1.539,1.062,2.475,1.062h163.84c0.935,0,1.83-0.384,2.478-1.062
+						 c0.643-0.678,0.981-1.591,0.934-2.526L179.197,64.679z M22.364,194.56l6.477-126.293h143.701l6.477,126.293H22.364z">
+                    </path>
+                </g>
+            </g>
+            <g>
+                <g>
+                    <path d="M126.292,75.093c-5.647,0-10.24,4.593-10.24,10.24c0,5.647,4.593,10.24,10.24,10.24c5.647,0,10.24-4.593,10.24-10.24
+						 C136.532,79.686,131.939,75.093,126.292,75.093z M126.292,88.747c-1.883,0-3.413-1.531-3.413-3.413s1.531-3.413,3.413-3.413
+						 c1.882,0,3.413,1.531,3.413,3.413S128.174,88.747,126.292,88.747z"></path>
+                </g>
+            </g>
+            <g>
+                <g>
+                    <path d="M75.092,75.093c-5.647,0-10.24,4.593-10.24,10.24c0,5.647,4.593,10.24,10.24,10.24c5.647,0,10.24-4.593,10.24-10.24
+						 C85.332,79.686,80.739,75.093,75.092,75.093z M75.092,88.747c-1.882,0-3.413-1.531-3.413-3.413s1.531-3.413,3.413-3.413
+						 s3.413,1.531,3.413,3.413S76.974,88.747,75.092,88.747z"></path>
+                </g>
+            </g>
+            <g>
+                <g>
+                    <path d="M126.292,85.333h-0.263c-1.884,0-3.413,1.529-3.413,3.413c0,0.466,0.092,0.911,0.263,1.316v17.457
+						 c0,12.233-9.953,22.187-22.187,22.187s-22.187-9.953-22.187-22.187V88.747c0-1.884-1.529-3.413-3.413-3.413
+						 s-3.413,1.529-3.413,3.413v18.773c0,15.998,13.015,29.013,29.013,29.013s29.013-13.015,29.013-29.013V88.747
+						 C129.705,86.863,128.176,85.333,126.292,85.333z"></path>
+                </g>
+            </g>
+        </symbol>
+        <symbol id="icon-sold-out" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+            stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="9"></circle>
+            <line x1="5" y1="5" x2="19" y2="19"></line>
+        </symbol>
+        <symbol id="icon-heart-filled" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1.5"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path
+                d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.8 1-1a5.5 5.5 0 0 0 0-7.8z">
+            </path>
+        </symbol>
+        <symbol id="icon-chevron-down" viewBox="0 0 24 24">
+            <path d="M6 9.5l6 5 6-5" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round"
+                stroke-linejoin="round"></path>
+        </symbol>
+        <symbol id="icon-arrow-left" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path d="M15 18l-6-6 6-6"></path>
+        </symbol>
+        <symbol id="icon-arrow-right" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path d="M9 6l6 6-6 6"></path>
+        </symbol>
+        <!-- Phone Icon -->
+        <symbol id="icon-phone" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path d="M22 16.92v3a2 2 0 0 1-2.18 2A19.79 19.79 0 0 1 3.08 4.18
+				 2 2 0 0 1 5 2h3a2 2 0 0 1 2 1.72 12.05 12.05 0 0 0 .6 2.57
+				 2 2 0 0 1-.45 2.11L9 9c1.5 3.1 3.9 5.5 7 7l.6-.6a2 2 0 0 1 2.11-.45
+				 12.05 12.05 0 0 0 2.57.6A2 2 0 0 1 22 16.92z"></path>
+        </symbol>
+
+        <!-- Email Icon -->
+        <symbol id="icon-email" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+            stroke-linecap="round" stroke-linejoin="round">
+            <rect x="2" y="4" width="20" height="16" rx="2" ry="2"></rect>
+            <path d="M22 6 12 13 2 6"></path>
+        </symbol>
+
+        <!-- Location Icon -->
+        <symbol id="icon-location" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 10c0 6-9 13-9 13S3 16 3 10a9 9 0 0 1 18 0z"></path>
+            <circle cx="12" cy="10" r="3"></circle>
+        </symbol>
+        <symbol id="icon-compare" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="10 3 3 10 10 17"></polyline>
+            <line x1="3" y1="10" x2="21" y2="10"></line>
+            <polyline points="14 21 21 14 14 7"></polyline>
+            <line x1="21" y1="14" x2="3" y2="14"></line>
+        </symbol>
+        <symbol id="icon-expand" viewBox="0 0 24 24" fill="none">
+            <path d="M15 3h6v6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            </path>
+            <path d="M9 21H3v-6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                stroke-linejoin="round"></path>
+            <path d="M21 3l-7 7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                stroke-linejoin="round"></path>
+            <path d="M3 21l7-7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            </path>
+        </symbol>
+        <symbol id="icon-calendar" viewBox="0 0 24 24" fill="none">
+            <rect x="3" y="4" width="18" height="18" rx="2" ry="2" stroke="currentColor" stroke-width="1.5"></rect>
+            <path d="M16 2v4M8 2v4M3 10h18" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path>
+        </symbol>
+        <symbol id="icon-qty-minus" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+            stroke-linecap="round" stroke-linejoin="round">
+            <line x1="6" y1="12" x2="18" y2="12"></line>
+        </symbol>
+        <symbol id="icon-qty-plus" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+            stroke-linecap="round" stroke-linejoin="round">
+            <line x1="12" y1="6" x2="12" y2="18"></line>
+            <line x1="6" y1="12" x2="18" y2="12"></line>
+        </symbol>
+        <symbol id="icon-gift-2" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+            stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="20 12 20 22 4 22 4 12"></polyline>
+            <rect x="2" y="7" width="20" height="5" rx="1"></rect>
+            <path d="M12 22V7"></path>
+            <path d="M12 7c-1.333-2.667-4-4-5.5-2.5S5.5 7 8 7h8c2.5 0 3-3-0.5-4.5S13.333 4.333 12 7z"></path>
+        </symbol>
+        <symbol id="icon-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+            stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="20 6 9 17 4 12"></polyline>
+        </symbol>
+        <symbol id="icon-size-chart" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+            stroke-linecap="round" stroke-linejoin="round">
+            <rect x="3" y="4" width="18" height="16" rx="2"></rect>
+            <path d="M3 10h18"></path>
+            <path d="M9 4v16"></path>
+            <path d="M6 7h0.01"></path>
+            <path d="M6 13h0.01"></path>
+            <path d="M12 7h0.01"></path>
+            <path d="M12 13h0.01"></path>
+            <path d="M18 7h0.01"></path>
+            <path d="M18 13h0.01"></path>
+        </symbol>
+        <symbol id="icon-back-to-top" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="18 15 12 9 6 15"></polyline>
+        </symbol>
+    </svg>
+
     <!-- latest jquery-->
-    <script src="../assets/js/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
 
     <!-- jquery ui-->
-    <script src="../assets/js/jquery-ui.min.js"></script>
+    <script src="assets/js/jquery-ui.min.js"></script>
 
     <!-- Lord-icon Js -->
-    <script src="../assets/js/lusqsztk.js"></script>
+    <script src="assets/js/lusqsztk.js"></script>
 
     <!-- Bootstrap js-->
-    <script src="../assets/js/bootstrap/bootstrap.bundle.min.js"></script>
-    <script src="../assets/js/bootstrap/popper.min.js"></script>
-    <script src="../assets/js/bootstrap/bootstrap-notify.min.js"></script>
+    <script src="assets/js/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/bootstrap/popper.min.js"></script>
 
     <!-- feather icon js-->
-    <script src="../assets/js/feather/feather.min.js"></script>
-    <script src="../assets/js/feather/feather-icon.js"></script>
+    <script src="assets/js/feather/feather.min.js"></script>
+    <script src="assets/js/feather/feather-icon.js"></script>
 
     <!-- Lazyload Js -->
-    <script src="../assets/js/lazysizes.min.js"></script>
+    <script src="assets/js/lazysizes.min.js"></script>
 
     <!-- Delivery Option js -->
-    <script src="../assets/js/delivery-option.js"></script>
+    <script src="assets/js/delivery-option.js"></script>
 
     <!-- Slick js-->
-    <script src="../assets/js/slick/slick.js"></script>
-    <script src="../assets/js/slick/custom_slick.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/izitoast/1.4.0/js/iziToast.min.js"></script>
+    <script src="assets/js/slick/slick.js"></script>
+    <script src="assets/js/slick/custom_slick.js"></script>
 
     <!-- Quantity js -->
-    <script src="../assets/js/quantity.js"></script>
+    <script src="assets/js/quantity.js"></script>
 
     <!-- script js -->
-    <script src="../assets/js/script.js"></script>
+    <script src="assets/js/script.js"></script>
 
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            const addressList = document.getElementById('address-list');
-            const saveAddressBtn = document.getElementById('saveAddressBtn');
-            const addressForm = document.getElementById('addressForm');
-            const addressModalEl = document.getElementById('add-address');
+    <!-- Redux Core and Persistence -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/redux/4.2.1/redux.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="assets/js/cartReducer.js"></script>
+    <script src="assets/js/wishlistReducer.js"></script>
+    <script src="assets/js/toast-handler.js"></script>
+    <script src="assets/js/checkout-handler.js"></script>
+    <script src="assets/js/store.js"></script>
 
-            // Check if bootstrap is available
-            const bootstrapModal = typeof bootstrap !== 'undefined' ? new bootstrap.Modal(addressModalEl) : null;
+    <!-- Global Utilities -->
+    <script src="assets/js/product-common.js"></script>
 
-            function loadAddresses() {
-                const savedAddresses = JSON.parse(localStorage.getItem('user_addresses') || '[]');
-                savedAddresses.forEach(renderAddress);
-            }
 
-            function renderAddress(data, isSelected = false) {
-                const addressId = 'addr-' + Date.now() + Math.floor(Math.random() * 1000);
-                const checkedAttr = isSelected ? 'checked' : '';
-                const addressHtml = `
-                    <div class="col-xxl-6 col-lg-12 col-md-6 custom-address-block">
-                        <div class="delivery-address-box">
-                            <div>
-                                <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="jack" id="${addressId}" ${checkedAttr}>
-                                </div>
-
-                                <div class="label">
-                                    <label>Địa chỉ mới</label>
-                                </div>
-
-                                <ul class="delivery-address-detail">
-                                    <li>
-                                        <h4 class="fw-500">${data.fname}</h4>
-                                    </li>
-
-                                    <li>
-                                        <p class="text-content">
-                                            <span class="text-title">Địa chỉ: </span>
-                                            ${data.address}
-                                        </p>
-                                    </li>
-
-                                    <li>
-                                        <h6 class="text-content">
-                                            <span class="text-title">Email:</span>
-                                            ${data.email}
-                                        </h6>
-                                    </li>
-
-                                    <li>
-                                        <h6 class="text-content mb-0">
-                                            <span class="text-title">Điện thoại:</span> ${data.phone}
-                                        </h6>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                `;
-                addressList.insertAdjacentHTML('beforeend', addressHtml);
-            }
-
-            saveAddressBtn.addEventListener('click', function () {
-                const fname = document.getElementById('fname').value;
-                const phone = document.getElementById('phone').value;
-                const email = document.getElementById('email').value;
-                const address = document.getElementById('address').value;
-
-                if (!fname || !phone || !email || !address) {
-                    alert('Vui lòng điền đầy đủ thông tin!');
-                    return;
-                }
-
-                const newAddress = { fname, phone, email, address };
-                const savedAddresses = JSON.parse(localStorage.getItem('user_addresses') || '[]');
-                savedAddresses.push(newAddress);
-                localStorage.setItem('user_addresses', JSON.stringify(savedAddresses));
-
-                renderAddress(newAddress, true);
-
-                if (bootstrapModal) {
-                    bootstrapModal.hide();
-                    // Manually remove backdrop if needed because new bootstrap instance might conflict with the one triggered by data-bs-toggle
-                    const backdrop = document.querySelector('.modal-backdrop');
-                    if (backdrop) backdrop.remove();
-                    document.body.classList.remove('modal-open');
-                    document.body.style.overflow = '';
-                    document.body.style.paddingRight = '';
-                }
-                addressForm.reset();
-            });
-
-            // Save payment method
-            const paymentMethods = document.querySelectorAll('input[name="flexRadioDefault"]');
-            paymentMethods.forEach(method => {
-                method.addEventListener('change', function () {
-                    if (this.checked) {
-                        localStorage.setItem('selected_payment_method', this.id);
-                    }
-                });
-            });
-
-            // Set default if not exists
-            if (!localStorage.getItem('selected_payment_method')) {
-                localStorage.setItem('selected_payment_method', 'cash');
-            } else {
-                // Restore selection if exists
-                const savedMethod = localStorage.getItem('selected_payment_method');
-                const radioToCheck = document.getElementById(savedMethod);
-                if (radioToCheck) {
-                    radioToCheck.checked = true;
-                    // Trigger collapse if needed (Fastkart uses bootstrap accordion)
-                    const targetCollapseId = radioToCheck.closest('.accordion-button')?.getAttribute('data-bs-target');
-                    if (targetCollapseId) {
-                        const targetCollapse = document.querySelector(targetCollapseId);
-                        if (targetCollapse) {
-                            const bsCollapse = new bootstrap.Collapse(targetCollapse, { toggle: false });
-                            bsCollapse.show();
-                        }
-                    }
-                }
-            }
-
-            loadAddresses();
-        });
-    </script>
+    <!-- search-redirect.js -->
+    <script src="assets/js/search-redirect.js"></script>
+    <script src="assets/js/address-api.js"></script>
 </body>
 
 </html>

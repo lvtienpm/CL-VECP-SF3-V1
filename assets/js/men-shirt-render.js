@@ -4,7 +4,7 @@
 ==========================**/
 document.addEventListener('DOMContentLoaded', () => {
     const container = document.getElementById('men-shirt-row');
-    const jsonPath = '../assets/data/products.json';
+    const jsonPath = 'assets/data/products.json';
     const targetCategory = "Áo sơ mi nam";
 
     let allProducts = [];
@@ -53,9 +53,11 @@ document.addEventListener('DOMContentLoaded', () => {
                     if (el) el.checked = true;
                 });
 
-                // Reset Stock Status UI
-                const stockBtn = document.getElementById('dropdownStockStatus');
-                if (stockBtn) stockBtn.querySelector('span').innerText = "Kho hàng";
+                // Reset Stock Status UI (Horizontal Checkboxes)
+                const stockInCbs = document.querySelectorAll('.stock-filter-group .checkbox_animated');
+                stockInCbs.forEach(cb => cb.checked = false);
+                const allStockCb = document.getElementById('stock-all-top');
+                if (allStockCb) allStockCb.checked = true;
                 container.dataset.currentStock = 'stock-all-top';
 
                 applyFilters(baseProducts);
@@ -79,19 +81,22 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         });
 
-        // Lắng nghe dropdown Kho hàng (Stock Status)
-        const stockItems = document.querySelectorAll('.top-filter-menu .dropdown-menu .dropdown-item[id^="stock-"]');
-        stockItems.forEach(item => {
-            item.addEventListener('click', (e) => {
-                e.preventDefault();
-                const stockType = item.id; // stock-all-top, stock-in-top, stock-out-top
-                const stockText = item.innerText;
-
-                // Cập nhật UI dropdown kho hàng
-                const btn = document.getElementById('dropdownStockStatus');
-                if (btn) btn.querySelector('span').innerText = stockText;
-
-                container.dataset.currentStock = stockType;
+        // Lắng nghe nút Kho hàng (Stock Status - Horizontal Checkboxes)
+        const stockCheckboxes = document.querySelectorAll('.stock-filter-group .checkbox_animated');
+        stockCheckboxes.forEach(cb => {
+            cb.addEventListener('change', () => {
+                if (cb.checked) {
+                    // Mutual exclusivity: uncheck others
+                    stockCheckboxes.forEach(other => {
+                        if (other !== cb) other.checked = false;
+                    });
+                    container.dataset.currentStock = cb.id;
+                } else {
+                    // If unchecked, default back to 'all'
+                    const allBtn = document.getElementById('stock-all-top');
+                    if (allBtn) allBtn.checked = true;
+                    container.dataset.currentStock = 'stock-all-top';
+                }
                 applyFilters(baseProducts);
             });
         });
@@ -249,14 +254,15 @@ document.addEventListener('DOMContentLoaded', () => {
                 <div class="product-box-4 h-100 ${isOutOfStock ? 'out-of-stock-box' : ''}">
                     ${discountHTML}
                     <div class="product-image">
-                        <a href="product-left-thumbnail.html">
+                        <a href="product-left-thumbnail.html?id=${product.id}">
                             <img src="${product.image}" class="img-fluid" alt="${product.name}">
                         </a>
                         ${isOutOfStock ? '<div class="out-of-stock-label">Hết hàng</div>' : ''}
 
                         <ul class="option">
                             <li data-bs-toggle="tooltip" data-bs-placement="top" title="Xem nhanh">
-                                <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#view">
+                                <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#view"
+                                    class="quick-view-btn" data-id="${product.id}">
                                     <i class="fa-regular fa-eye"></i>
                                 </a>
                             </li>
@@ -266,23 +272,13 @@ document.addEventListener('DOMContentLoaded', () => {
                                     <i class="fa-regular fa-heart"></i>
                                 </a>
                             </li>
-
-                            <li data-bs-toggle="tooltip" data-bs-placement="top" title="So sánh">
-                                <a href="compare.html">
-                                    <i class="fa-solid fa-right-left"></i>
-                                </a>
-                            </li>
                         </ul>
-
-                        <a href="javascript:void(0)" class="add-to-cart-btn btn-cart-dynamic ${isOutOfStock ? 'disabled' : ''}" data-id="${product.id}">
-                            <i class="fa-solid fa-cart-plus"></i> ${isOutOfStock ? 'Hết hàng' : 'Thêm vào giỏ'}
-                        </a>
                     </div>
 
                     <div class="product-footer">
                         <div class="product-detail">
                             <span class="span-name-tag">${categoryText}</span>
-                            <a href="product-left-thumbnail.html">
+                            <a href="product-left-thumbnail.html?id=${product.id}">
                                 <h5 class="name">${product.name}</h5>
                             </a>
 
@@ -322,24 +318,7 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
     const handleProductAction = (e) => {
-        const cartBtn = e.target.closest('.btn-cart-dynamic');
         const wishlistBtn = e.target.closest('.wishlist-btn');
-
-        if (cartBtn && !cartBtn.classList.contains('disabled')) {
-            e.preventDefault();
-            const id = parseInt(cartBtn.dataset.id);
-            const product = allProducts.find(p => p.id === id);
-            if (product && window.dispatchAddToCart) {
-                window.dispatchAddToCart({
-                    id: product.id,
-                    name: product.name,
-                    price: product.price,
-                    image: product.image
-                });
-                window.showToast(`Đã thêm "${product.name}" vào giỏ hàng!`);
-            }
-            return;
-        }
 
         if (wishlistBtn) {
             e.preventDefault();

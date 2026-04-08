@@ -5,7 +5,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     const productContainer = document.getElementById('dynamic-product-row');
     const exclusiveContainer = document.getElementById('exclusive-products-row');
-    const jsonPath = '../assets/data/products.json';
+    const jsonPath = 'assets/data/products.json';
 
     let allProducts = [];
 
@@ -66,13 +66,13 @@ document.addEventListener('DOMContentLoaded', () => {
                 <div class="product-box-4 h-100">
                     ${containerId === 'exclusive-products-row' ? '' : discountHTML}
                     <div class="product-image">
-                        <a href="product-left-thumbnail.html">
+                        <a href="product-left-thumbnail.html?id=${product.id}">
                             <img src="${product.image}" class="img-fluid" alt="${product.name}">
                         </a>
 
                         <ul class="option">
                             <li data-bs-toggle="tooltip" data-bs-placement="top" title="Xem nhanh">
-                                <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#view">
+                                <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#view" class="quick-view-btn" data-id="${product.id}">
                                     <i class="fa-regular fa-eye"></i>
                                 </a>
                             </li>
@@ -83,16 +83,12 @@ document.addEventListener('DOMContentLoaded', () => {
                                 </a>
                             </li>
                         </ul>
-
-                        <a href="javascript:void(0)" class="add-to-cart-btn btn-cart-dynamic" data-id="${product.id}">
-                            <i class="fa-solid fa-cart-plus"></i> Thêm vào giỏ hàng
-                        </a>
                     </div>
 
                     <div class="product-footer">
                         <div class="product-detail">
                             <span class="span-name-tag">${categoryText}</span>
-                            <a href="product-left-thumbnail.html">
+                            <a href="product-left-thumbnail.html?id=${product.id}">
                                 <h5 class="name">${product.name}</h5>
                             </a>
 
@@ -213,24 +209,7 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
     const handleProductAction = (e) => {
-        const cartBtn = e.target.closest('.btn-cart-dynamic');
         const wishlistBtn = e.target.closest('.wishlist-btn');
-
-        if (cartBtn) {
-            e.preventDefault();
-            const id = parseInt(cartBtn.dataset.id);
-            const fullProduct = allProducts.find(p => p.id === id);
-            if (fullProduct && window.dispatchAddToCart) {
-                window.dispatchAddToCart({
-                    id: fullProduct.id,
-                    name: fullProduct.name,
-                    price: fullProduct.price,
-                    image: fullProduct.image
-                });
-                window.showToast(`Đã thêm "${fullProduct.name}" vào giỏ hàng!`);
-            }
-            return;
-        }
 
         if (wishlistBtn) {
             e.preventDefault();

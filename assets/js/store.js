@@ -2,16 +2,16 @@
     Redux Store JS (Root Store)
     Combines Cart and Wishlist reducers
 ==========================**/
-(function() {
-    const CART_STORAGE_KEY = 'fastkart_cart';
-    const WISHLIST_STORAGE_KEY = 'fastkart_wishlist';
-    const OLD_STORAGE_KEY = 'fastkart_cart_state';
+(function () {
+    const CART_STORAGE_KEY = 'thefaded_cart';
+    const WISHLIST_STORAGE_KEY = 'thefaded_wishlist';
+    const OLD_STORAGE_KEY = 'thefaded_cart_state';
 
     const loadState = () => {
         try {
             let cartState = JSON.parse(localStorage.getItem(CART_STORAGE_KEY));
             let wishlistState = JSON.parse(localStorage.getItem(WISHLIST_STORAGE_KEY));
-            
+
             if (!cartState && !wishlistState) {
                 const oldState = JSON.parse(localStorage.getItem(OLD_STORAGE_KEY));
                 if (oldState) {
@@ -60,7 +60,7 @@
             const previousCart = currentCart;
             const previousWishlist = currentWishlist;
             const newState = store.getState();
-            
+
             currentCart = newState.cart;
             currentWishlist = newState.wishlist;
 
@@ -81,8 +81,14 @@
 
         window.cartStore = store;
         window.dispatchAddToCart = (product) => store.dispatch({ type: 'ADD_TO_CART', payload: product });
-        window.dispatchRemoveFromCart = (id) => store.dispatch({ type: 'REMOVE_FROM_CART', payload: id });
-        window.dispatchUpdateCartQuantity = (id, quantity) => store.dispatch({ type: 'UPDATE_CART_QUANTITY', payload: { id, quantity } });
+        window.dispatchRemoveFromCart = (sku) => store.dispatch({
+            type: 'REMOVE_FROM_CART',
+            payload: sku
+        });
+        window.dispatchUpdateCartQuantity = (sku, quantity) => store.dispatch({
+            type: 'UPDATE_CART_QUANTITY',
+            payload: { sku, quantity }
+        });
         window.dispatchToggleWishlist = (product) => store.dispatch({ type: 'TOGGLE_WISHLIST', payload: product });
     } else {
         console.error("Lỗi: Redux hoặc các Reducer chưa sẵn sàng!");

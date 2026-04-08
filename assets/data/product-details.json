@@ -1,0 +1,823 @@
+[
+    {
+        "id": 1,
+        "hasSaleTimer": true,
+        "saleEndDate": "2026-04-02T23:59:59",
+        "shortDescription": "Striped Oxford Fun Shirt với phong cách phối màu Rainbow độc đáo. Đây là mẫu áo sơ mi mang tính biểu tượng của sự trẻ trung và sáng tạo. Chất liệu Oxford bền bỉ, càng mặc càng mềm mại.",
+        "sizes": [
+            "Size S",
+            "Size M",
+            "Size L"
+        ],
+        "gallery": [
+            "../assets/images/product/sp1.jpg",
+            "../assets/images/product/sp2.jpg",
+            "../assets/images/product/sp3.jpg",
+            "../assets/images/product/sp4.jpg"
+        ],
+        "details": {
+            "type": "Áo sơ mi nam",
+            "sku": "SM-2024-001",
+            "dateAdded": "20 Tháng 04, 2024",
+            "stockCount": 10,
+            "tags": [
+                "Thời trang",
+                "Oxford",
+                "Unisex"
+            ]
+        }
+    },
+    {
+        "id": 2,
+        "hasSaleTimer": true,
+        "saleEndDate": "2024-11-30T23:59:59",
+        "shortDescription": "Áo thun Polo Stretch Mesh với hiệu ứng màu Ombre chuyển sắc độc đáo. Chất liệu vải lưới co giãn, thấm hút mồ hôi cực tốt, mang lại sự thoải mái tối đa cho người mặc.",
+        "sizes": [
+            "Size S",
+            "Size M",
+            "Size L",
+            "Size XL"
+        ],
+        "gallery": [
+            "../assets/images/product/sp2.jpg",
+            "../assets/images/product/sp1.jpg"
+        ],
+        "details": {
+            "type": "Áo thun nam",
+            "sku": "PL-2024-OMB",
+            "dateAdded": "05 Tháng 05, 2024",
+            "stockCount": 32,
+            "tags": [
+                "Polo",
+                "Ombre",
+                "Exclusive"
+            ]
+        }
+    },
+    {
+        "id": 3,
+        "hasSaleTimer": false,
+        "saleEndDate": "",
+        "shortDescription": "Polo Royal Blue thanh lịch với cấu trúc vải mesh bền bỉ. Màu xanh hoàng gia tôn da, dễ dàng kết hợp cùng quần jeans hoặc quần kaki.",
+        "sizes": [
+            "Size M",
+            "Size L",
+            "Size XL"
+        ],
+        "gallery": [
+            "../assets/images/product/sp3.jpg",
+            "../assets/images/product/sp4.jpg"
+        ],
+        "details": {
+            "type": "Áo thun nam",
+            "sku": "PL-2024-ROY",
+            "dateAdded": "10 Tháng 05, 2024",
+            "stockCount": 15,
+            "tags": [
+                "Polo",
+                "Royal Blue",
+                "Mới về"
+            ]
+        }
+    },
+    {
+        "id": 4,
+        "hasSaleTimer": true,
+        "saleEndDate": "2024-12-15T23:59:59",
+        "shortDescription": "Màu Xanh Mint tươi mát kết hợp với form dáng Slim Fit hiện đại. Chiếc áo này là lựa chọn hoàn hảo cho những ngày hè năng động.",
+        "sizes": [
+            "Size S",
+            "Size M",
+            "Size L"
+        ],
+        "gallery": [
+            "../assets/images/product/sp4.jpg",
+            "../assets/images/product/sp5.jpg"
+        ],
+        "details": {
+            "type": "Áo thun nam",
+            "sku": "PL-2024-MIN",
+            "dateAdded": "12 Tháng 05, 2024",
+            "stockCount": 20,
+            "tags": [
+                "Polo",
+                "Mint",
+                "Summer"
+            ]
+        }
+    },
+    {
+        "id": 5,
+        "hasSaleTimer": false,
+        "saleEndDate": "",
+        "shortDescription": "Dòng Iconic Mesh Polo với sắc đỏ rực rỡ. Chất liệu cotton cao cấp cùng kỹ thuật thêu logo tỉ mỉ tạo nên đẳng cấp cho người mặc.",
+        "sizes": [
+            "Size M",
+            "Size L"
+        ],
+        "gallery": [
+            "../assets/images/product/sp5.jpg",
+            "../assets/images/product/sp6.jpg"
+        ],
+        "details": {
+            "type": "Áo thun nam",
+            "sku": "PL-2024-RED",
+            "dateAdded": "15 Tháng 05, 2024",
+            "stockCount": 8,
+            "tags": [
+                "Iconic",
+                "Bestseller",
+                "Red"
+            ]
+        }
+    },
+    {
+        "id": 6,
+        "hasSaleTimer": false,
+        "saleEndDate": "",
+        "shortDescription": "Áo Polo Navy phối đường line vàng tạo điểm nhấn tinh tế ở cổ và tay áo. Phù hợp cho phong cách lịch sự nhưng không quá cứng nhắc.",
+        "sizes": [
+            "Size S",
+            "Size M",
+            "Size L"
+        ],
+        "gallery": [
+            "../assets/images/product/sp6.jpg",
+            "../assets/images/product/sp7.jpg",
+            "../assets/images/product/sp8.jpg",
+            "../assets/images/product/sp9.jpg"
+        ],
+        "details": {
+            "type": "Áo thun nam",
+            "sku": "PL-2024-NVY",
+            "dateAdded": "18 Tháng 05, 2024",
+            "stockCount": 25,
+            "tags": [
+                "Polo",
+                "Navy",
+                "Casual"
+            ]
+        }
+    },
+    {
+        "id": 7,
+        "hasSaleTimer": false,
+        "saleEndDate": "",
+        "shortDescription": "Thiết kế cổ Tipped Collar mang lại vẻ ngoài thể thao. Màu xanh Navy trường tồn với thời gian, dễ mặc cho mọi độ tuổi.",
+        "sizes": [
+            "Size S",
+            "Size M",
+            "Size L",
+            "Size XL"
+        ],
+        "gallery": [
+            "../assets/images/product/sp7.jpg"
+        ],
+        "details": {
+            "type": "Áo thun nam",
+            "sku": "PL-2024-TIP",
+            "dateAdded": "20 Tháng 05, 2024",
+            "stockCount": 14,
+            "tags": [
+                "Polo",
+                "Navy",
+                "Modern"
+            ]
+        }
+    },
+    {
+        "id": 8,
+        "hasSaleTimer": true,
+        "saleEndDate": "2024-12-31T23:59:59",
+        "shortDescription": "White Classic Polo tinh khôi với chất liệu Mesh dệt mật độ cao. Giữ form cực tốt sau nhiều lần giặt, không bị giãn chảy.",
+        "sizes": [
+            "Size M",
+            "Size L",
+            "Size XL"
+        ],
+        "gallery": [
+            "../assets/images/product/sp8.jpg"
+        ],
+        "details": {
+            "type": "Áo thun nam",
+            "sku": "PL-2024-WHT",
+            "dateAdded": "22 Tháng 05, 2024",
+            "stockCount": 5,
+            "tags": [
+                "Polo",
+                "White",
+                "Premium"
+            ]
+        }
+    },
+    {
+        "id": 9,
+        "hasSaleTimer": false,
+        "saleEndDate": "",
+        "shortDescription": "Sơ mi Oxford trắng biểu tượng của sự thanh lịch. Vải Oxford dày dặn đặc trưng, cổ cài nút Button-down chỉn chu.",
+        "sizes": [
+            "Size S",
+            "Size M",
+            "Size L",
+            "Size XL"
+        ],
+        "gallery": [
+            "../assets/images/product/sp9.jpg"
+        ],
+        "details": {
+            "type": "Áo sơ mi nam",
+            "sku": "SM-2024-WHT",
+            "dateAdded": "01 Tháng 06, 2024",
+            "stockCount": 40,
+            "tags": [
+                "Oxford",
+                "White",
+                "Bestseller"
+            ]
+        }
+    },
+    {
+        "id": 10,
+        "hasSaleTimer": false,
+        "saleEndDate": "",
+        "shortDescription": "Sơ mi Garment Oxford Blue với hiệu ứng màu vintage đẹp mắt. Chất liệu 100% cotton mang lại sự thoáng mát cả ngày dài.",
+        "sizes": [
+            "Size M",
+            "Size L",
+            "Size XL"
+        ],
+        "gallery": [
+            "../assets/images/product/sp10.jpg"
+        ],
+        "details": {
+            "type": "Áo sơ mi nam",
+            "sku": "SM-2024-BLU",
+            "dateAdded": "03 Tháng 06, 2024",
+            "stockCount": 18,
+            "tags": [
+                "Oxford",
+                "Blue",
+                "Vintage"
+            ]
+        }
+    },
+    {
+        "id": 11,
+        "hasSaleTimer": true,
+        "saleEndDate": "2024-12-25T23:59:59",
+        "shortDescription": "Poplin Shirt màu xanh nhạt nhẹ nhàng. Vải Poplin có bề mặt mịn màng, ít nhăn, phù hợp cho môi trường công sở chuyên nghiệp.",
+        "sizes": [
+            "Size S",
+            "Size M",
+            "Size L"
+        ],
+        "gallery": [
+            "../assets/images/product/sp1.jpg"
+        ],
+        "details": {
+            "type": "Áo sơ mi nam",
+            "sku": "SM-2024-POP",
+            "dateAdded": "05 Tháng 06, 2024",
+            "stockCount": 12,
+            "tags": [
+                "Poplin",
+                "Blue",
+                "Office"
+            ]
+        }
+    },
+    {
+        "id": 12,
+        "hasSaleTimer": false,
+        "saleEndDate": "",
+        "shortDescription": "Linen Shirt màu kem tự nhiên. Sợi lanh thoáng khí giúp bạn luôn mát mẻ trong những ngày nóng nực nhất.",
+        "sizes": [
+            "Size M",
+            "Size L",
+            "Size XL"
+        ],
+        "gallery": [
+            "../assets/images/product/1.3.jpg"
+        ],
+        "details": {
+            "type": "Áo sơ mi nam",
+            "sku": "SM-2024-LIN",
+            "dateAdded": "08 Tháng 06, 2024",
+            "stockCount": 7,
+            "tags": [
+                "Linen",
+                "Cream",
+                "Luxury"
+            ]
+        }
+    },
+    {
+        "id": 13,
+        "hasSaleTimer": false,
+        "saleEndDate": "",
+        "shortDescription": "Seersucker Shirt sọc xanh đặc trưng với bề mặt vải nhăn tự nhiên, không cần ủi, cực kỳ tiện lợi khi đi du lịch.",
+        "sizes": [
+            "Size S",
+            "Size M",
+            "Size L"
+        ],
+        "gallery": [
+            "../assets/images/product/1.4.jpg"
+        ],
+        "details": {
+            "type": "Áo sơ mi nam",
+            "sku": "SM-2024-SEE",
+            "dateAdded": "10 Tháng 06, 2024",
+            "stockCount": 15,
+            "tags": [
+                "Seersucker",
+                "Striped",
+                "Travel"
+            ]
+        }
+    },
+    {
+        "id": 14,
+        "hasSaleTimer": false,
+        "saleEndDate": "",
+        "shortDescription": "Twill Cotton Shirt bền chắc với đường dệt chéo đặc trưng. Màu Navy sâu thẳm mang lại vẻ ngoài quyền lực.",
+        "sizes": [
+            "Size M",
+            "Size L",
+            "Size XL",
+            "Size XXL"
+        ],
+        "gallery": [
+            "../assets/images/product/1.5.jpg"
+        ],
+        "details": {
+            "type": "Áo sơ mi nam",
+            "sku": "SM-2024-TWI",
+            "dateAdded": "12 Tháng 06, 2024",
+            "stockCount": 10,
+            "tags": [
+                "Twill",
+                "Navy",
+                "Formal"
+            ]
+        }
+    },
+    {
+        "id": 15,
+        "hasSaleTimer": true,
+        "saleEndDate": "2024-11-20T23:59:59",
+        "shortDescription": "Áo Flannel kẻ caro đỏ mềm mại, giữ ấm tốt. Thích hợp mặc như áo khoác nhẹ bên ngoài áo thun trắng.",
+        "sizes": [
+            "Size S",
+            "Size M",
+            "Size L",
+            "Size XL"
+        ],
+        "gallery": [
+            "../assets/images/product/1.4.jpg"
+        ],
+        "details": {
+            "type": "Áo sơ mi nam",
+            "sku": "SM-2024-FLA",
+            "dateAdded": "15 Tháng 06, 2024",
+            "stockCount": 20,
+            "tags": [
+                "Flannel",
+                "Plaid",
+                "Streetstyle"
+            ]
+        }
+    },
+    {
+        "id": 16,
+        "hasSaleTimer": false,
+        "saleEndDate": "",
+        "shortDescription": "Denim Shirt màu Indigo phong trần. Chất liệu vải denim cao cấp, càng mặc càng đẹp theo thời gian.",
+        "sizes": [
+            "Size M",
+            "Size L",
+            "Size XL"
+        ],
+        "gallery": [
+            "../assets/images/product/1.2.jpg"
+        ],
+        "details": {
+            "type": "Áo sơ mi nam",
+            "sku": "SM-2024-DEN",
+            "dateAdded": "18 Tháng 06, 2024",
+            "stockCount": 6,
+            "tags": [
+                "Denim",
+                "Indigo",
+                "Cá tính"
+            ]
+        }
+    },
+    {
+        "id": 17,
+        "hasSaleTimer": false,
+        "saleEndDate": "",
+        "shortDescription": "Classic Harrington Jacket phong cách Anh Quốc với lớp lót caro đặc trưng. Khả năng kháng gió và nước nhẹ.",
+        "sizes": [
+            "Size M",
+            "Size L",
+            "Size XL"
+        ],
+        "gallery": [
+            "../assets/images/product/sp1.jpg"
+        ],
+        "details": {
+            "type": "Áo khoác nam",
+            "sku": "JK-2024-HAR",
+            "dateAdded": "20 Tháng 06, 2024",
+            "stockCount": 12,
+            "tags": [
+                "Jacket",
+                "Classic",
+                "Navy"
+            ]
+        }
+    },
+    {
+        "id": 18,
+        "hasSaleTimer": false,
+        "saleEndDate": "",
+        "shortDescription": "Water-Repellent Puffer Jacket siêu nhẹ, giữ nhiệt cực tốt. Sản phẩm hiện đang cháy hàng do nhu cầu cao.",
+        "sizes": [
+            "Size S",
+            "Size M",
+            "Size L"
+        ],
+        "gallery": [
+            "../assets/images/product/sp2.jpg"
+        ],
+        "details": {
+            "type": "Áo khoác nam",
+            "sku": "JK-2024-PUF",
+            "dateAdded": "22 Tháng 06, 2024",
+            "stockCount": 0,
+            "tags": [
+                "Puffer",
+                "Winter",
+                "Black"
+            ]
+        }
+    },
+    {
+        "id": 19,
+        "hasSaleTimer": true,
+        "saleEndDate": "2024-12-31T23:59:59",
+        "shortDescription": "Modern Sport Coat Blazer xám sang trọng. Form dáng Slim fit ôm vừa vặn, tạo nét hiện đại cho quý ông.",
+        "sizes": [
+            "Size L",
+            "Size XL"
+        ],
+        "gallery": [
+            "../assets/images/product/sp3.jpg"
+        ],
+        "details": {
+            "type": "Áo khoác nam",
+            "sku": "BLZ-2024-GRY",
+            "dateAdded": "25 Tháng 06, 2024",
+            "stockCount": 4,
+            "tags": [
+                "Blazer",
+                "Sport Coat",
+                "Grey"
+            ]
+        }
+    },
+    {
+        "id": 20,
+        "hasSaleTimer": false,
+        "saleEndDate": "",
+        "shortDescription": "Trucker Denim Jacket màu xanh cổ điển. Thiết kế túi nắp và khuy đồng mang lại vẻ ngoài bụi bặm, nam tính.",
+        "sizes": [
+            "Size S",
+            "Size M",
+            "Size L",
+            "Size XL"
+        ],
+        "gallery": [
+            "../assets/images/product/sp4.jpg"
+        ],
+        "details": {
+            "type": "Áo khoác nam",
+            "sku": "JK-2024-TRU",
+            "dateAdded": "28 Tháng 06, 2024",
+            "stockCount": 15,
+            "tags": [
+                "Denim",
+                "Jacket",
+                "Blue"
+            ]
+        }
+    },
+    {
+        "id": 21,
+        "hasSaleTimer": false,
+        "saleEndDate": "",
+        "shortDescription": "Military Bomber Jacket màu Olive mạnh mẽ. Chất liệu vải dù cao cấp, bo thun cổ tay và gấu áo chắc chắn.",
+        "sizes": [
+            "Size M",
+            "Size L"
+        ],
+        "gallery": [
+            "../assets/images/product/sp5.jpg"
+        ],
+        "details": {
+            "type": "Áo khoác nam",
+            "sku": "JK-2024-BOM",
+            "dateAdded": "01 Tháng 07, 2024",
+            "stockCount": 0,
+            "tags": [
+                "Bomber",
+                "Military",
+                "Olive"
+            ]
+        }
+    },
+    {
+        "id": 22,
+        "hasSaleTimer": true,
+        "saleEndDate": "2024-12-31T23:59:59",
+        "shortDescription": "Genuine Leather Biker Jacket làm từ da bò thật 100%. Phom dáng Classic vượt thời gian, là món đồ đầu tư xứng đáng.",
+        "sizes": [
+            "Size L",
+            "Size XL",
+            "Size XXL"
+        ],
+        "gallery": [
+            "../assets/images/product/sp6.jpg"
+        ],
+        "details": {
+            "type": "Áo khoác nam",
+            "sku": "JK-2024-LEA",
+            "dateAdded": "05 Tháng 07, 2024",
+            "stockCount": 2,
+            "tags": [
+                "Leather",
+                "Biker",
+                "Luxury"
+            ]
+        }
+    },
+    {
+        "id": 23,
+        "hasSaleTimer": true,
+        "saleEndDate": "2024-12-31T23:59:59",
+        "shortDescription": "Áo khoác Blazer nam nữ với chất liệu vải tuyết mưa cao cấp, đứng form và không nhăn. Thiết kế hiện đại theo phong cách tối giản, dễ dàng phối hợp với nhiều loại trang phục từ công sở đến dạo phố hằng ngày",
+        "sizes": [
+            "Size S",
+            "Size M",
+            "Size L",
+            "Size XL",
+            "Size XXL"
+        ],
+        "gallery": [
+            "../assets/images/product/sp1.jpg",
+            "../assets/images/product/1.2.jpg",
+            "../assets/images/product/1.3.jpg",
+            "../assets/images/product/1.4.jpg",
+            "../assets/images/product/1.5.jpg"
+        ],
+        "details": {
+            "type": "Áo khoác Blazer",
+            "sku": "BLZ-2024-VNB",
+            "dateAdded": "15 Tháng 05, 2024",
+            "stockCount": 5,
+            "tags": [
+                "Thời trang",
+                "Blazer",
+                "Công sở"
+            ]
+        }
+    },
+    {
+        "id": 24,
+        "hasSaleTimer": false,
+        "saleEndDate": "",
+        "shortDescription": "Windbreaker Lightweight Jacket siêu nhẹ, chống thấm nước và cản gió tốt. Màu sắc Yellow/Black nổi bật.",
+        "sizes": [
+            "Size S",
+            "Size M",
+            "Size L"
+        ],
+        "gallery": [
+            "../assets/images/product/sp2.jpg"
+        ],
+        "details": {
+            "type": "Áo khoác nam",
+            "sku": "JK-2024-WIN",
+            "dateAdded": "10 Tháng 07, 2024",
+            "stockCount": 18,
+            "tags": [
+                "Windbreaker",
+                "Sport",
+                "Yellow"
+            ]
+        }
+    },
+    {
+        "id": 25,
+        "hasSaleTimer": true,
+        "saleEndDate": "2024-11-15T23:59:59",
+        "shortDescription": "Premium Cotton V-Neck Tee với chất liệu cotton 100% co giãn 4 chiều. Màu xám cơ bản, thấm hút mồ hôi hiệu quả.",
+        "sizes": [
+            "Size S",
+            "Size M",
+            "Size L",
+            "Size XL"
+        ],
+        "gallery": [
+            "../assets/images/product/sp4.jpg"
+        ],
+        "details": {
+            "type": "Áo thun nam",
+            "sku": "TS-2024-GRY",
+            "dateAdded": "12 Tháng 07, 2024",
+            "stockCount": 50,
+            "tags": [
+                "T-Shirt",
+                "Basic",
+                "Grey"
+            ]
+        }
+    },
+    {
+        "id": 26,
+        "hasSaleTimer": false,
+        "saleEndDate": "",
+        "shortDescription": "Cashmere V-Neck Sweater dệt từ sợi cashmere siêu mềm mịn, giữ ấm tuyệt đối mà vẫn nhẹ nhàng.",
+        "sizes": [
+            "Size M",
+            "Size L"
+        ],
+        "gallery": [
+            "../assets/images/product/sp5.jpg"
+        ],
+        "details": {
+            "type": "Áo len nam",
+            "sku": "SW-2024-CAS",
+            "dateAdded": "15 Tháng 07, 2024",
+            "stockCount": 6,
+            "tags": [
+                "Cashmere",
+                "Sweater",
+                "Luxury"
+            ]
+        }
+    },
+    {
+        "id": 27,
+        "hasSaleTimer": false,
+        "saleEndDate": "",
+        "shortDescription": "Cable-Knit Cardigan với họa tiết dệt vặn thừng cổ điển. Sản phẩm hiện đang tạm hết hàng.",
+        "sizes": [
+            "Size L",
+            "Size XL"
+        ],
+        "gallery": [
+            "../assets/images/product/sp6.jpg"
+        ],
+        "details": {
+            "type": "Áo len nam",
+            "sku": "SW-2024-CAR",
+            "dateAdded": "18 Tháng 07, 2024",
+            "stockCount": 0,
+            "tags": [
+                "Cardigan",
+                "Navy",
+                "Winter"
+            ]
+        }
+    },
+    {
+        "id": 28,
+        "hasSaleTimer": true,
+        "saleEndDate": "2024-12-31T23:59:59",
+        "shortDescription": "Slim Fit Stretch Jeans màu xanh sáng trẻ trung. Chất vải jean co giãn thoải mái cho mọi vận động hằng ngày.",
+        "sizes": [
+            "Size 29",
+            "Size 30",
+            "Size 31",
+            "Size 32"
+        ],
+        "gallery": [
+            "../assets/images/product/sp8.jpg"
+        ],
+        "details": {
+            "type": "Quần nam",
+            "sku": "JN-2024-SLI",
+            "dateAdded": "20 Tháng 07, 2024",
+            "stockCount": 25,
+            "tags": [
+                "Jeans",
+                "Slim Fit",
+                "Bestseller"
+            ]
+        }
+    },
+    {
+        "id": 29,
+        "hasSaleTimer": false,
+        "saleEndDate": "",
+        "shortDescription": "Straight Fit Chino Pants màu Khaki lịch sự. Phù hợp cho cả đi làm và đi chơi với chất liệu kaki cotton bền đẹp.",
+        "sizes": [
+            "Size 30",
+            "Size 32",
+            "Size 34"
+        ],
+        "gallery": [
+            "../assets/images/product/sp9.jpg"
+        ],
+        "details": {
+            "type": "Quần nam",
+            "sku": "PN-2024-CHI",
+            "dateAdded": "22 Tháng 07, 2024",
+            "stockCount": 20,
+            "tags": [
+                "Chinos",
+                "Khaki",
+                "Office"
+            ]
+        }
+    },
+    {
+        "id": 30,
+        "hasSaleTimer": true,
+        "saleEndDate": "2024-12-31T23:59:59",
+        "shortDescription": "Leather Heritage Sneakers da trắng phối xanh lá phong cách retro. Đế cao su đúc nguyên khối chống trơn trượt.",
+        "sizes": [
+            "Size 40",
+            "Size 41",
+            "Size 42",
+            "Size 43"
+        ],
+        "gallery": [
+            "../assets/images/product/sp10.jpg"
+        ],
+        "details": {
+            "type": "Giày nam",
+            "sku": "SH-2024-SNK",
+            "dateAdded": "25 Tháng 07, 2024",
+            "stockCount": 12,
+            "tags": [
+                "Sneakers",
+                "Leather",
+                "White"
+            ]
+        }
+    },
+    {
+        "id": 31,
+        "hasSaleTimer": false,
+        "saleEndDate": "",
+        "shortDescription": "Classic Suede Loafers da lộn màu nâu sang trọng. Thiết kế không dây tiện lợi, êm chân.",
+        "sizes": [
+            "Size 39",
+            "Size 40",
+            "Size 41",
+            "Size 42"
+        ],
+        "gallery": [
+            "../assets/images/product/sp3.jpg"
+        ],
+        "details": {
+            "type": "Giày nam",
+            "sku": "SH-2024-LOA",
+            "dateAdded": "28 Tháng 07, 2024",
+            "stockCount": 0,
+            "tags": [
+                "Loafers",
+                "Suede",
+                "Brown"
+            ]
+        }
+    },
+    {
+        "id": 32,
+        "hasSaleTimer": false,
+        "saleEndDate": "",
+        "shortDescription": "Brogue Oxford Shoes da thật màu đen bóng bẩy với họa tiết đục lỗ nghệ thuật. Đẳng cấp cho những bộ suit trang trọng.",
+        "sizes": [
+            "Size 40",
+            "Size 41",
+            "Size 42"
+        ],
+        "gallery": [
+            "../assets/images/product/sp1.jpg"
+        ],
+        "details": {
+            "type": "Giày nam",
+            "sku": "SH-2024-OXF",
+            "dateAdded": "30 Tháng 07, 2024",
+            "stockCount": 8,
+            "tags": [
+                "Oxford",
+                "Black",
+                "Formal"
+            ]
+        }
+    }
+]

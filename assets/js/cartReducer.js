@@ -11,57 +11,69 @@ function cartReducer(state = cartInitialState, action) {
     switch (action.type) {
         case 'ADD_TO_CART': {
             const product = action.payload;
-            const existingItem = state.items.find(item => item.id === product.id);
+            // Nhận diện sản phẩm DUY NHẤT bằng SKU
+            const existingItem = state.items.find(item => item.sku === product.sku);
             
             let newItems;
+            const addQty = product.quantity || 1;
+
             if (existingItem) {
                 newItems = state.items.map(item =>
-                    item.id === product.id 
-                    ? { ...item, quantity: item.quantity + 1 } 
+                    (item.sku === product.sku)
+                    ? { ...item, quantity: item.quantity + addQty } 
                     : item
                 );
             } else {
-                newItems = [...state.items, { ...product, quantity: 1 }];
+                newItems = [...state.items, { ...product, quantity: addQty }];
             }
+
+            const totalItems = newItems.reduce((sum, item) => sum + item.quantity, 0);
+            const totalPrice = newItems.reduce((sum, item) => sum + (item.price * item.quantity), 0);
 
             return {
                 ...state,
                 items: newItems,
-                totalPrice: state.totalPrice + product.price,
-                totalItems: state.totalItems + 1
+                totalPrice: totalPrice,
+                totalItems: totalItems
             };
         }
 
         case 'REMOVE_FROM_CART': {
-            const productId = action.payload;
-            const itemToRemove = state.items.find(item => item.id === productId);
-            if (!itemToRemove) return state;
+            // Xóa dựa trên SKU chính xác
+            const skuToRemove = action.payload;
+            const newItems = state.items.filter(item => item.sku !== skuToRemove);
 
-            const newItems = state.items.filter(item => item.id !== productId);
+            const totalItems = newItems.reduce((sum, item) => sum + item.quantity, 0);
+            const totalPrice = newItems.reduce((sum, item) => sum + (item.price * item.quantity), 0);
+
             return {
                 ...state,
                 items: newItems,
-                totalPrice: state.totalPrice - (itemToRemove.price * itemToRemove.quantity),
-                totalItems: state.totalItems - itemToRemove.quantity
+                totalPrice: totalPrice,
+                totalItems: totalItems
             };
         }
 
         case 'UPDATE_CART_QUANTITY': {
-            const { id, quantity } = action.payload;
-            const item = state.items.find(item => item.id === id);
-            if (!item || quantity < 1) return state;
-
-            const diff = quantity - item.quantity;
-            const newItems = state.items.map(item =>
-                item.id === id ? { ...item, quantity: quantity } : item
+            const { sku, quantity } = action.payload;
+            
+            const newItems = state.items.map(item => 
+                (item.sku === sku) ? { ...item, quantity: quantity } : item
             );
+
+            const totalItems = newItems.reduce((sum, item) => sum + item.quantity, 0);
+            const totalPrice = newItems.reduce((sum, item) => sum + (item.price * item.quantity), 0);
 
             return {
                 ...state,
                 items: newItems,
-                totalPrice: state.totalPrice + (item.price * diff),
-                totalItems: state.totalItems + diff
+                totalPrice: totalPrice,
+                totalItems: totalItems
             };
+        }
+
+        case 'CLEAR_CART': {
+            return cartInitialState;
         }
 
         default:

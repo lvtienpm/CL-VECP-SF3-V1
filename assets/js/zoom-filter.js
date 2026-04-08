@@ -1,6 +1,7 @@
 /**=====================
-    zoom js
+    zoom js disabled - handled by image-lightbox.js for zoom-on-click
 ==========================**/
+/*
 if ($(window).width() > 991) {
     $('.product-main, .product-main-2').on('afterChange', function (event, slick, currentSlide, nextSlide) {
         var imgs = $('[class*="image_zoom_cls-"]');
@@ -24,3 +25,4 @@ if ($(window).width() > 991) {
         });
     }, 100);
 }
+*/

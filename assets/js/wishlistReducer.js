@@ -30,7 +30,7 @@ function wishlistReducer(state = wishlistInitialState, action) {
             const productId = action.payload;
             return {
                 ...state,
-                items: state.items.filter(item => item.id !== productId)
+                items: state.items.filter(item => item.id != productId)
             };
         }
 

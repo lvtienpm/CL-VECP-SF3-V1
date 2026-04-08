@@ -9,32 +9,6 @@ window.formatCurrency = (number) => {
     return number.toLocaleString('vi-VN').replace(/,/g, '.') + ' VNĐ';
 };
 
-// 2. Thông báo (Sử dụng $.notify)
-window.showToast = (message, title = "Thành công!") => {
-    if (window.jQuery && jQuery.notify) {
-        jQuery.notify({
-            icon: "fa fa-check",
-            title: title,
-            message: message,
-        }, {
-            element: "body",
-            position: null,
-            type: "info",
-            allow_dismiss: true,
-            newest_on_top: false,
-            showProgressbar: true,
-            placement: { from: "top", align: "right" },
-            offset: 20,
-            spacing: 10,
-            z_index: 1031,
-            delay: 2000,
-            animate: { enter: "animated fadeInDown", exit: "animated fadeOutUp" },
-            icon_type: "class"
-        });
-    } else {
-        console.log("Toast:", message);
-    }
-};
 
 // 3. Cập nhật giao diện Header từ Store
 window.updateHeaderUI = (state) => {
@@ -58,7 +32,8 @@ window.updateHeaderUI = (state) => {
                         <div class="drop-contain">
                             <a href="product-detail.html"><h5>${item.name}</h5></a>
                             <h6><span>${item.quantity} x</span> ${window.formatCurrency(item.price)}</h6>
-                            <button class="close-button close_button" onclick="dispatchRemoveFromCart(${item.id})">
+                            <small class="text-muted d-block mb-1">Size: ${item.size.replace(/Size\s+/i, '')}</small>
+                            <button class="close-button close_button" onclick="dispatchRemoveFromCart('${item.sku}')">
                                 <i class="fa-solid fa-xmark"></i>
                             </button>
                         </div>

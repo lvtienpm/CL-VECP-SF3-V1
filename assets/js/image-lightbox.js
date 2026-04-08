@@ -38,9 +38,12 @@ document.addEventListener("DOMContentLoaded", () => {
             setTimeout(() => {
                 lightboxImg.src = imgSrc;
                 lightboxImg.style.opacity = '1';
+                // Reset zoom state on image change
+                lightboxImg.classList.remove('zoomed');
+                lightboxImg.style.transform = 'none';
             }, 150);
         }
-        
+
         // Update arrow visibility (only hide if only one image exists)
         if (currentGallery.length <= 1) {
             prevBtn.style.display = 'none';
@@ -52,14 +55,43 @@ document.addEventListener("DOMContentLoaded", () => {
     };
 
     /**
+     * Toggles zoom state and sets up panning logic.
+     */
+    const toggleZoom = (e) => {
+        if (!lightboxImg.src) return;
+
+        lightboxImg.classList.toggle('zoomed');
+
+        if (lightboxImg.classList.contains('zoomed')) {
+            updateZoomPosition(e);
+        } else {
+            lightboxImg.style.transform = 'none';
+        }
+    };
+
+    /**
+     * Updates the transform-origin based on mouse position relative to image.
+     */
+    const updateZoomPosition = (e) => {
+        if (!lightboxImg.classList.contains('zoomed')) return;
+
+        const rect = lightboxImg.getBoundingClientRect();
+        const x = ((e.clientX - rect.left) / rect.width) * 100;
+        const y = ((e.clientY - rect.top) / rect.height) * 100;
+
+        lightboxImg.style.transformOrigin = `${x}% ${y}%`;
+        lightboxImg.style.transform = 'scale(2.5)';
+    };
+
+    /**
      * Opens the gallery starting at a specific index.
      * @param {number} idx - Index of the image to open.
      */
     const openGallery = (idx) => {
         // Find all main product images, excluding slick clones for accuracy
         const imageElements = document.querySelectorAll('.product-main-2 .slider-image img:not(.slick-cloned)');
-        currentGallery = Array.from(imageElements).map(img => img.getAttribute('data-zoom-image') || img.src);
-        
+        currentGallery = Array.from(imageElements).map(img => img.src);
+
         currentIndex = idx;
         if (currentIndex === -1) currentIndex = 0;
 
@@ -90,9 +122,9 @@ document.addEventListener("DOMContentLoaded", () => {
     const closeLightbox = () => {
         lightbox.classList.remove('show');
         document.body.style.overflow = ''; // Restore background scroll
-        setTimeout(() => { 
+        setTimeout(() => {
             if (!lightbox.classList.contains('show')) {
-                lightboxImg.src = ''; 
+                lightboxImg.src = '';
             }
         }, 300);
     };
@@ -128,6 +160,17 @@ document.addEventListener("DOMContentLoaded", () => {
     prevBtn.addEventListener('click', (e) => { e.stopPropagation(); showPrev(); });
     nextBtn.addEventListener('click', (e) => { e.stopPropagation(); showNext(); });
 
+    // Zoom Controls on the Lightbox Image
+    lightboxImg.addEventListener('click', (e) => {
+        e.stopPropagation();
+        toggleZoom(e);
+    });
+    lightboxImg.addEventListener('mousemove', (e) => {
+        if (lightboxImg.classList.contains('zoomed')) {
+            updateZoomPosition(e);
+        }
+    });
+
     lightbox.addEventListener('click', (e) => {
         // Close if clicking the backdrop, not the image or nav buttons
         if (e.target === lightbox || e.target.classList.contains('fk-lightbox-container')) {
@@ -138,11 +181,35 @@ document.addEventListener("DOMContentLoaded", () => {
     // Accessibility: Keyboard Navigation
     document.addEventListener('keydown', (e) => {
         if (!lightbox.classList.contains('show')) return;
-        
-        switch(e.key) {
+
+        switch (e.key) {
             case 'Escape': closeLightbox(); break;
             case 'ArrowRight': showNext(); break;
             case 'ArrowLeft': showPrev(); break;
         }
     });
+
+    // Inject Zoom-Specific Styles
+    const style = document.createElement('style');
+    style.innerHTML = `
+        .fk-lightbox-container {
+            overflow: hidden;
+            background: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: default;
+        }
+        .fk-lightbox-image {
+            transition: opacity 0.3s ease, transform 0.1s ease-out;
+            cursor: zoom-in;
+            max-width: 90vw;
+            max-height: 85vh;
+            object-fit: contain;
+        }
+        .fk-lightbox-image.zoomed {
+            cursor: zoom-out;
+        }
+    `;
+    document.head.appendChild(style);
 });
